@@ -7,8 +7,8 @@ import 'package:flutter/services.dart';
 import 'controller.dart';
 
 class Video extends StatefulWidget {
-  final Function onViewCreated;
-  final PopsicalMediaController controller;
+  final Function? onViewCreated;
+  final PopsicalMediaController? controller;
 
   const Video({
     this.onViewCreated,
@@ -20,7 +20,7 @@ class Video extends StatefulWidget {
 }
 
 class _VideoState extends State<Video> {
-  PopsicalMediaController controller;
+  PopsicalMediaController? controller;
   Widget _playerWidget = Container();
 
   void applyController(BuildContext context) {
@@ -48,29 +48,29 @@ class _VideoState extends State<Video> {
       _playerWidget = AndroidView(
         viewType: "tv.native.player.pops",
         creationParams: {
-          "autoPlay": controller.autoPlay,
-          "loop": controller.loop,
-          "url": controller.url,
-          "title": controller.title ?? "",
-          "subtitle": controller.subtitle ?? "",
-          "position": controller.position,
-          "speed": controller.speed.toString(),
-          "pitch": controller.pitch.toString(),
+          "autoPlay": controller?.autoPlay ?? true,
+          "loop": controller?.loop ?? false,
+          "url": controller?.url ?? '',
+          "title": controller?.title ?? "",
+          "subtitle": controller?.subtitle ?? "",
+          "position": controller?.position ?? 0.0,
+          "speed": controller?.speed?.toString() ?? 0.0,
+          "pitch": controller?.pitch?.toString() ?? 0.0,
           "code": controller?.preferredAudioLanguage,
-          "userId": controller.userId ?? "",
-          "trackId": controller.trackId ?? "",
-          "videoId": controller.videoId ?? "",
-          "experimentName": controller.muxName ?? "",
-          "propertyKey": controller.muxKey ?? "",
-          "enableMuxStats": controller.enableMux
+          "userId": controller?.userId ?? "",
+          "trackId": controller?.trackId ?? "",
+          "videoId": controller?.videoId ?? "",
+          "experimentName": controller?.muxName ?? "",
+          "propertyKey": controller?.muxKey ?? "",
+          "enableMuxStats": controller?.enableMux ?? false
         },
         creationParamsCodec: const StandardMessageCodec(),
         onPlatformViewCreated: (viewId) {
-          controller.onPlatformViewCreated(viewId);
+          controller?.onPlatformViewCreated(viewId);
           if (widget.onViewCreated == null) {
             return;
           }
-          widget.onViewCreated(viewId);
+          widget.onViewCreated!(viewId);
         },
         hitTestBehavior: PlatformViewHitTestBehavior.translucent,
         gestureRecognizers: const <Factory<OneSequenceGestureRecognizer>>{},
@@ -80,9 +80,9 @@ class _VideoState extends State<Video> {
 
   @override
   void dispose() {
-    if (controller.methodChannel != null) {
-      controller.methodChannel.invokeMethod("dispose");
-      controller.methodChannel = null;
+    if (controller?.methodChannel != null) {
+      controller?.methodChannel?.invokeMethod("dispose");
+      controller?.methodChannel = null;
       controller?.dispose();
     }
     super.dispose();

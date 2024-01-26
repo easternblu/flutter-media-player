@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 typedef void LyricsViewCreatedCallback(LyricsController controller);
 
 class PluginLyrics extends StatelessWidget {
-  final LyricsViewCreatedCallback onLyricsViewCreated;
+  final LyricsViewCreatedCallback? onLyricsViewCreated;
 
   PluginLyrics(this.onLyricsViewCreated);
   final String viewType = 'tv.native.player.pops';
@@ -22,7 +22,7 @@ class PluginLyrics extends StatelessWidget {
         if (onLyricsViewCreated == null) {
           return;
         }
-        onLyricsViewCreated(new LyricsController._(viewId));
+        onLyricsViewCreated!(new LyricsController._(viewId));
       },
       hitTestBehavior: PlatformViewHitTestBehavior.translucent,
       gestureRecognizers: const <Factory<OneSequenceGestureRecognizer>>{},
@@ -31,46 +31,46 @@ class PluginLyrics extends StatelessWidget {
 }
 
 class LyricsController {
-  LyricsController._(int id)
+  LyricsController._(int? id)
       : _channel = new MethodChannel('tv.popsical/LyricsMethodChannel_$id');
 
-  MethodChannel _channel;
+  MethodChannel? _channel;
 
-  Future<void> loadLyrics(String lyrics) async {
-    return await _channel.invokeMethod('loadLyrics', lyrics ?? '');
+  Future<void> loadLyrics(String? lyrics) async {
+    return await _channel?.invokeMethod('loadLyrics', lyrics ?? '');
   }
 
-  Future<void> setLyricsDuration(int duration) async {
-    if (duration > 0) {
-      return await _channel.invokeMethod('setLyricsDuration', duration ?? 0);
+  Future<void> setLyricsDuration(int? duration) async {
+    if (duration != null && duration > 0) {
+      return await _channel?.invokeMethod('setLyricsDuration', duration);
     }
   }
 
-  Future<void> onPlayerProgressUpdate(int sec) async {
-    if (sec > 0) {
-      return await _channel.invokeMethod('onPlayerProgressUpdate', sec ?? 0);
+  Future<void> onPlayerProgressUpdate(int? sec) async {
+    if (sec != null && sec > 0) {
+      return await _channel?.invokeMethod('onPlayerProgressUpdate', sec);
     }
   }
 
   Future<void> onMediaStart() async {
-    return await _channel.invokeMethod('onMediaStart');
+    return await _channel?.invokeMethod('onMediaStart');
   }
 
   Future<void> onMediaResume() async {
-    return await _channel.invokeMethod('onMediaResume');
+    return await _channel?.invokeMethod('onMediaResume');
   }
 
   Future<void> onMediaPause() async {
-    return await _channel.invokeMethod('onMediaPause');
+    return await _channel?.invokeMethod('onMediaPause');
   }
 
   Future<void> resetLyricsView() async {
-    return await _channel.invokeMethod('resetLyricsView');
+    return await _channel?.invokeMethod('resetLyricsView');
   }
 
   Future<void> dispose() async {
     if (_channel != null) {
-      await _channel.invokeMethod("dispose");
+      await _channel?.invokeMethod("dispose");
       _channel = null;
     }
   }

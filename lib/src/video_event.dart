@@ -7,8 +7,8 @@ class VideoEvent {
     this.buffered,
   });
 
-  final VideoEventType eventType;
-  final List<DurationRange> buffered;
+  final VideoEventType? eventType;
+  final List<DurationRange>? buffered;
 
   @override
   bool operator ==(Object other) {

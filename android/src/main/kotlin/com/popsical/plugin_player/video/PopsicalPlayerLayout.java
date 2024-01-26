@@ -48,7 +48,7 @@ import io.flutter.plugin.common.JSONMethodCodec;
 
 import static com.google.android.exoplayer2.Player.REPEAT_MODE_OFF;
 
-public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer, EventChannel.StreamHandler {
+public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer {
 
     /**
      * Playback Rate for the MediaPlayer is always 1.0.
@@ -65,11 +65,6 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
      * The underlying {@link MediaSessionCompat}.
      */
     private MediaSessionCompat mMediaSessionCompat;
-    /**
-     * An instance of Flutter event sink
-     */
-    private EventChannel.EventSink eventSink;
-
     private int viewId;
 
     private DefaultTrackSelector trackSelector;
@@ -96,8 +91,8 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
     private JSONArray subtitles = null;
     private long mediaDuration = 0L;
     private MuxStatsExoPlayer muxStats;
-
-
+    private  EventChannel eventChannel;
+    private EventChannel.EventSink eventSink;
 
     public PopsicalPlayerLayout(Context context) {
         super(context);
@@ -106,6 +101,7 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
     public PopsicalPlayerLayout(@NonNull Context context,
                                 BinaryMessenger messenger,
                                 int id,
+                                EventChannel eventChannel,
                                 Object arguments) {
 
         super(context);
@@ -115,7 +111,7 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
         this.messenger = messenger;
 
         this.viewId = id;
-
+        this.eventChannel = eventChannel;
         try {
 
             HashMap<String, Object> args = (HashMap<String, Object>) arguments;
@@ -159,17 +155,6 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
         }
     }
 
-
-    @Override
-    public void onListen(Object o, EventChannel.EventSink eventSink) {
-        this.eventSink = eventSink;
-    }
-
-    @Override
-    public void onCancel(Object o) {
-        this.eventSink = null;
-    }
-
     private void initPlayer() {
         trackSelector = new DefaultTrackSelector(context);
 
@@ -194,10 +179,18 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
         listenForPlayerTimeChange();
         listenForPlayerTimeChangeMilli();
         this.setPlayer(mPlayerView);
-        new EventChannel(
-                messenger,
-                "tv.popsical/NativeVideoPlayerEventChannel_" + this.viewId,
-                JSONMethodCodec.INSTANCE).setStreamHandler(this);
+        eventChannel.setStreamHandler(
+                new EventChannel.StreamHandler() {
+                    @Override
+                    public void onListen(Object o, EventChannel.EventSink sink) {
+                        eventSink = sink;
+                    }
+
+                    @Override
+                    public void onCancel(Object o) {
+                        eventSink = null;
+                    }
+                });
         updateMediaSource();
         setupMediaSession();
     }
@@ -443,7 +436,7 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
 
     private void updateMediaSource() {
         DataSource.Factory dataSourceFactory = new DefaultDataSourceFactory(context,
-                Util.getUserAgent(context, "flutter_playout"));
+                Util.getUserAgent(context, "plugin_player"));
         mPlayerView.prepare(withSubtitles(dataSourceFactory, updateMediaSource(dataSourceFactory)));
     }
 
@@ -665,14 +658,12 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
     @Override
     public void onDestroy() {
         try {
+            eventChannel.setStreamHandler(null);
             isBound = false;
-
+            eventSink = null;
             mPlayerView.stop(true);
-
             mPlayerView.release();
-
             activePlayer = null;
-
             releaseMuxStats();
 
         } catch (Exception e) { /* ignore */ }

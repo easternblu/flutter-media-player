@@ -8,7 +8,7 @@ mixin PlayerObserver {
   Future<void> listenForVideoPlayerEvents(int viewId) async {
     EventChannel eventChannel = EventChannel(
         "tv.popsical/NativeVideoPlayerEventChannel_$viewId", JSONMethodCodec());
-    eventChannel?.receiveBroadcastStream()?.listen(_processEvent);
+    eventChannel.receiveBroadcastStream().listen(_processEvent);
   }
 
   /// Override this method to get notifications when media is paused.
@@ -99,8 +99,6 @@ mixin PlayerObserver {
 
       case "onError":
         onError(event["error"]);
-        break;
-
         break;
       default:
         break;
