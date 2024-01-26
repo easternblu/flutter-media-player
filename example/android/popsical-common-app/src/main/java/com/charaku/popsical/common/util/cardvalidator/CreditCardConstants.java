@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util.cardvalidator;
+package com.charaku.kstream.common.util.cardvalidator;
 
 /**
  * Created by tyln on 28.04.16.

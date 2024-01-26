@@ -1,4 +1,4 @@
-package com.charaku.popsical.media.player
+package com.charaku.kstream.media.player
 
 import android.media.MediaPlayer
 import java.io.File

@@ -1,58 +1,58 @@
-package com.charaku.popsical.common.api;
+package com.charaku.kstream.common.api;
 
-import com.charaku.popsical.common.CharakuConfig;
-import com.charaku.popsical.common.Common;
+import com.charaku.kstream.common.CharakuConfig;
+import com.charaku.kstream.common.Common;
 
-import static com.charaku.popsical.common.Common.AND;
-import static com.charaku.popsical.common.Common.EQUALS;
-import static com.charaku.popsical.common.Common.QUESTION_MARK;
-import static com.charaku.popsical.common.Common.SLASH;
-import static com.charaku.popsical.common.api.CharakuPathConstant.APP_VERSION;
-import static com.charaku.popsical.common.api.CharakuPathConstant.ARTISTS;
-import static com.charaku.popsical.common.api.CharakuPathConstant.ARTIST_ID_SUB;
-import static com.charaku.popsical.common.api.CharakuPathConstant.AUTH;
-import static com.charaku.popsical.common.api.CharakuPathConstant.AUTHORIZE;
-import static com.charaku.popsical.common.api.CharakuPathConstant.CURRENT;
-import static com.charaku.popsical.common.api.CharakuPathConstant.DELETE_ALL;
-import static com.charaku.popsical.common.api.CharakuPathConstant.DEVICES;
-import static com.charaku.popsical.common.api.CharakuPathConstant.GENRES;
-import static com.charaku.popsical.common.api.CharakuPathConstant.JSON;
-import static com.charaku.popsical.common.api.CharakuPathConstant.LANGUAGES;
-import static com.charaku.popsical.common.api.CharakuPathConstant.LISTS;
-import static com.charaku.popsical.common.api.CharakuPathConstant.ME;
-import static com.charaku.popsical.common.api.CharakuPathConstant.OAUTH;
-import static com.charaku.popsical.common.api.CharakuPathConstant.PLAYLISTS;
-import static com.charaku.popsical.common.api.CharakuPathConstant.PLAYLIST_ID_SUB;
-import static com.charaku.popsical.common.api.CharakuPathConstant.PLAYQUEUE;
-import static com.charaku.popsical.common.api.CharakuPathConstant.POPULAR;
-import static com.charaku.popsical.common.api.CharakuPathConstant.PROFILES;
-import static com.charaku.popsical.common.api.CharakuPathConstant.PROFILE_ID_SUB;
-import static com.charaku.popsical.common.api.CharakuPathConstant.REQUEST;
-import static com.charaku.popsical.common.api.CharakuPathConstant.SESSIONS;
-import static com.charaku.popsical.common.api.CharakuPathConstant.TOKEN;
-import static com.charaku.popsical.common.api.CharakuPathConstant.TOP_LANGUAGES;
-import static com.charaku.popsical.common.api.CharakuPathConstant.TRACKS;
-import static com.charaku.popsical.common.api.CharakuPathConstant.TRACK_ID_SUB;
-import static com.charaku.popsical.common.api.CharakuPathConstant.USERS;
-import static com.charaku.popsical.common.api.CharakuPathConstant.VERSION;
-import static com.charaku.popsical.common.api.CharakuPathConstant._FORCE_ADD;
-import static com.charaku.popsical.common.api.CharakuPathConstant._INCLUDES;
-import static com.charaku.popsical.common.api.CharakuPathConstant._PAGE;
-import static com.charaku.popsical.common.api.CharakuPathConstant._PER_PAGE;
-import static com.charaku.popsical.common.api.CharakuPathConstant._TRACKS;
+import static com.charaku.kstream.common.Common.AND;
+import static com.charaku.kstream.common.Common.EQUALS;
+import static com.charaku.kstream.common.Common.QUESTION_MARK;
+import static com.charaku.kstream.common.Common.SLASH;
+import static com.charaku.kstream.common.api.CharakuPathConstant.APP_VERSION;
+import static com.charaku.kstream.common.api.CharakuPathConstant.ARTISTS;
+import static com.charaku.kstream.common.api.CharakuPathConstant.ARTIST_ID_SUB;
+import static com.charaku.kstream.common.api.CharakuPathConstant.AUTH;
+import static com.charaku.kstream.common.api.CharakuPathConstant.AUTHORIZE;
+import static com.charaku.kstream.common.api.CharakuPathConstant.CURRENT;
+import static com.charaku.kstream.common.api.CharakuPathConstant.DELETE_ALL;
+import static com.charaku.kstream.common.api.CharakuPathConstant.DEVICES;
+import static com.charaku.kstream.common.api.CharakuPathConstant.GENRES;
+import static com.charaku.kstream.common.api.CharakuPathConstant.JSON;
+import static com.charaku.kstream.common.api.CharakuPathConstant.LANGUAGES;
+import static com.charaku.kstream.common.api.CharakuPathConstant.LISTS;
+import static com.charaku.kstream.common.api.CharakuPathConstant.ME;
+import static com.charaku.kstream.common.api.CharakuPathConstant.OAUTH;
+import static com.charaku.kstream.common.api.CharakuPathConstant.PLAYLISTS;
+import static com.charaku.kstream.common.api.CharakuPathConstant.PLAYLIST_ID_SUB;
+import static com.charaku.kstream.common.api.CharakuPathConstant.PLAYQUEUE;
+import static com.charaku.kstream.common.api.CharakuPathConstant.POPULAR;
+import static com.charaku.kstream.common.api.CharakuPathConstant.PROFILES;
+import static com.charaku.kstream.common.api.CharakuPathConstant.PROFILE_ID_SUB;
+import static com.charaku.kstream.common.api.CharakuPathConstant.REQUEST;
+import static com.charaku.kstream.common.api.CharakuPathConstant.SESSIONS;
+import static com.charaku.kstream.common.api.CharakuPathConstant.TOKEN;
+import static com.charaku.kstream.common.api.CharakuPathConstant.TOP_LANGUAGES;
+import static com.charaku.kstream.common.api.CharakuPathConstant.TRACKS;
+import static com.charaku.kstream.common.api.CharakuPathConstant.TRACK_ID_SUB;
+import static com.charaku.kstream.common.api.CharakuPathConstant.USERS;
+import static com.charaku.kstream.common.api.CharakuPathConstant.VERSION;
+import static com.charaku.kstream.common.api.CharakuPathConstant._FORCE_ADD;
+import static com.charaku.kstream.common.api.CharakuPathConstant._INCLUDES;
+import static com.charaku.kstream.common.api.CharakuPathConstant._PAGE;
+import static com.charaku.kstream.common.api.CharakuPathConstant._PER_PAGE;
+import static com.charaku.kstream.common.api.CharakuPathConstant._TRACKS;
 
 /**
- * Popsical API end-points
+ * kstream API end-points
  * Deprecated, copy this entire class to your own app
  *
  *
- * use {@link PopsicalApi} instead
+ * use {@link kstreamApi} instead
  * Created by leechunhoe on 4/7/16.
  */
 @Deprecated
 public class CharakuApi {
-    private static final String CHARAKU_API_DOMAIN_LIVE = "https://app.popsical.tv";
-    private static final String CHARAKU_API_DOMAIN_STAGING = "https://app-staging.popsical.tv";
+    private static final String CHARAKU_API_DOMAIN_LIVE = "https://app.kstream.tv";
+    private static final String CHARAKU_API_DOMAIN_STAGING = "https://app-staging.kstream.tv";
 
     @Deprecated
     public static final String CHARAKU_API_DOMAIN = CharakuConfig.IS_PRODUCTION ? CHARAKU_API_DOMAIN_LIVE : CHARAKU_API_DOMAIN_STAGING;
@@ -182,7 +182,7 @@ public class CharakuApi {
 
     /**
      * GET /me/play_queue.json
-     * http://developers.popsical.com/#!/PlayQueue/get_me_play_queue_json
+     * http://developers.kstream.com/#!/PlayQueue/get_me_play_queue_json
      *
      * @param page    Page number
      * @param perPage Tracks per page

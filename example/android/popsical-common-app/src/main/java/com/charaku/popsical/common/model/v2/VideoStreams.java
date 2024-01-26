@@ -1,8 +1,8 @@
-package com.charaku.popsical.common.model.v2;
+package com.charaku.kstream.common.model.v2;
 
-import com.charaku.popsical.common.Common;
-import com.charaku.popsical.common.api.CharakuPathConstant;
-import com.charaku.popsical.common.util.Strings;
+import com.charaku.kstream.common.Common;
+import com.charaku.kstream.common.api.CharakuPathConstant;
+import com.charaku.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -17,7 +17,7 @@ public class VideoStreams implements Serializable {
     //    {
 //        "video_id": 15784,
 //            "dash": {
-//        "p720": "https://popsical.vo.llnwd.net/storage/521032_0010e8008e5bb29bc45342e02543ad9d/521032.mpd?e=1501559198&h=a1b0b5d8cb4310a584d206abd55bc96a"
+//        "p720": "https://kstream.vo.llnwd.net/storage/521032_0010e8008e5bb29bc45342e02543ad9d/521032.mpd?e=1501559198&h=a1b0b5d8cb4310a584d206abd55bc96a"
 //    }
 //    }
     @Expose

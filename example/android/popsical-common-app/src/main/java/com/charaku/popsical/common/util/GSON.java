@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

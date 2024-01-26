@@ -1,4 +1,4 @@
-//package com.charaku.popsical.media.exoplayer2;
+//package com.charaku.kstream.media.exoplayer2;
 //
 //import com.google.android.exoplayer2.upstream.BandwidthMeter;
 //import com.google.android.exoplayer2.upstream.TransferListener;

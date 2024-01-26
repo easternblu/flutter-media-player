@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.video
+package com.kstream.plugin_player.video
 import android.content.Context
 import android.util.Log
 import android.view.View
@@ -12,9 +12,9 @@ class PlayerView(context: Context, id: Int, messenger: BinaryMessenger?,
                  @Nullable creationParams: Map<String?, Any?>?) : PlatformView, MethodCallHandler {
 
     var eventChannel = EventChannel(
-            messenger, "tv.popsical/NativeVideoPlayerEventChannel_" + id,JSONMethodCodec.INSTANCE)
+            messenger, "tv.kstream/NativeVideoPlayerEventChannel_" + id,JSONMethodCodec.INSTANCE)
 
-    private var player: PopsicalPlayerLayout = PopsicalPlayerLayout(context, messenger, id, eventChannel, creationParams)
+    private var player: kstreamPlayerLayout = kstreamPlayerLayout(context, messenger, id, eventChannel, creationParams)
     override fun getView(): View {
         return player
     }
@@ -23,7 +23,7 @@ class PlayerView(context: Context, id: Int, messenger: BinaryMessenger?,
         player.onDestroy()}
 
     init {
-        MethodChannel(messenger, "tv.popsical/NativeVideoPlayerMethodChannel_$id")
+        MethodChannel(messenger, "tv.kstream/NativeVideoPlayerMethodChannel_$id")
                 .setMethodCallHandler(this)
     }
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {

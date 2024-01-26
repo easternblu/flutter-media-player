@@ -1,10 +1,10 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.view.Utils;
 
 /**
- * Used to build string supported by {@link com.charaku.popsical.ktr.view.FuriganaStrokeTextView}
+ * Used to build string supported by {@link com.charaku.kstream.ktr.view.FuriganaStrokeTextView}
  * Created by pan on 25/1/18.
  */
 public class FuriganaStringBuilder {

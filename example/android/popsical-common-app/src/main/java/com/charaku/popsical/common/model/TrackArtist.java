@@ -1,8 +1,8 @@
-package com.charaku.popsical.common.model;
+package com.charaku.kstream.common.model;
 
-import com.charaku.popsical.common.api.CharakuPathConstant;
-import com.charaku.popsical.common.util.Converter;
-import com.charaku.popsical.common.util.Strings;
+import com.charaku.kstream.common.api.CharakuPathConstant;
+import com.charaku.kstream.common.util.Converter;
+import com.charaku.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

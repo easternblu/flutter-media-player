@@ -1,4 +1,4 @@
-library popsical_flutter_player;
+library kstream_flutter_player;
 
 export './src/controller.dart';
 export 'src/video.dart';

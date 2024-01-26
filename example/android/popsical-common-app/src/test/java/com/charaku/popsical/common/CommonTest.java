@@ -1,7 +1,7 @@
-package com.charaku.popsical.common;
+package com.charaku.kstream.common;
 
 
-import com.charaku.popsical.common.util.Dates;
+import com.charaku.kstream.common.util.Dates;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>

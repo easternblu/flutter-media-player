@@ -5,7 +5,7 @@
  */
 
 // Package
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 // Imports
 
@@ -21,7 +21,7 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.charaku.popsical.media.R;
+import com.charaku.kstream.media.R;
 
 import java.util.ArrayList;
 

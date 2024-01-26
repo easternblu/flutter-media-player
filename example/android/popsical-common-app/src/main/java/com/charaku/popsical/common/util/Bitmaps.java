@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;

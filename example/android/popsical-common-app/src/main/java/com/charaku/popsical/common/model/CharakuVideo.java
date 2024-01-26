@@ -1,13 +1,13 @@
-package com.charaku.popsical.common.model;
+package com.charaku.kstream.common.model;
 
 import android.text.TextUtils;
 
-import com.charaku.popsical.common.Common;
-import com.charaku.popsical.common.api.CharakuPathConstant;
-import com.charaku.popsical.common.model.v2.VideoStreams;
-import com.charaku.popsical.common.util.Dates;
-import com.charaku.popsical.common.util.Range;
-import com.charaku.popsical.common.util.Strings;
+import com.charaku.kstream.common.Common;
+import com.charaku.kstream.common.api.CharakuPathConstant;
+import com.charaku.kstream.common.model.v2.VideoStreams;
+import com.charaku.kstream.common.util.Dates;
+import com.charaku.kstream.common.util.Range;
+import com.charaku.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  * Where to find the spec for this object:
- * http://developers.popsical.com/#!/Track/get_tracks_json
+ * http://developers.kstream.com/#!/Track/get_tracks_json
  */
 //    "video": {
 //        "id": 0,

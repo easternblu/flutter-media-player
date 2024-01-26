@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 /**
  * Created by pan on 12/3/17.

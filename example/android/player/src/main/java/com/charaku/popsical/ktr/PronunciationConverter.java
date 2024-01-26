@@ -1,19 +1,19 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 import android.content.Context;
 
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.Lines;
-import com.charaku.popsical.ktr.model.Phrase;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.Lines;
+import com.charaku.kstream.ktr.model.Phrase;
+import com.charaku.kstream.ktr.view.Utils;
 
 import java.util.List;
 
 import name.pilgr.pipinyin.PiPinyin;
 import timber.log.Timber;
 
-import static com.charaku.popsical.ktr.PronunciationConverter.Mode.Inline;
-import static com.charaku.popsical.ktr.PronunciationConverter.Mode.Replace;
+import static com.charaku.kstream.ktr.PronunciationConverter.Mode.Inline;
+import static com.charaku.kstream.ktr.PronunciationConverter.Mode.Replace;
 
 /**
  * Created by yatpanng on 22/1/18.
@@ -46,8 +46,8 @@ public class PronunciationConverter {
         if (hasPinyinSupport(lines)) {
             converter = new ChinesePinyinConverter();
             if (mode == Replace) {
-                lines.putMeta(LRCMetaNames.X_POPSICAL_FONT_SCALE, "0.8");
-                lines.putMeta(LRCMetaNames.X_POPSICAL_LANG, "ZH_pinyin");
+                lines.putMeta(LRCMetaNames.X_kstream_FONT_SCALE, "0.8");
+                lines.putMeta(LRCMetaNames.X_kstream_LANG, "ZH_pinyin");
             } else {
                 // nothing
             }

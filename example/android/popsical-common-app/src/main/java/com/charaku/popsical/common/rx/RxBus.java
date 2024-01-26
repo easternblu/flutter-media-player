@@ -1,12 +1,12 @@
-package com.charaku.popsical.common.rx;
+package com.charaku.kstream.common.rx;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.Pair;
 
-import com.charaku.popsical.common.util.Converter;
-import com.charaku.popsical.common.util.Maps;
-import com.charaku.popsical.common.util.Strings;
+import com.charaku.kstream.common.util.Converter;
+import com.charaku.kstream.common.util.Maps;
+import com.charaku.kstream.common.util.Strings;
 
 import java.util.Collections;
 import java.util.Comparator;

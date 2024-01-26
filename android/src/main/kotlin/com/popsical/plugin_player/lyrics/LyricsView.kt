@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.lyrics
+package com.kstream.plugin_player.lyrics
 import android.content.Context
 import android.content.ContextWrapper
 import android.content.SharedPreferences
@@ -7,18 +7,18 @@ import android.graphics.Color
 import android.os.SystemClock
 import android.view.LayoutInflater
 import android.view.View
-import com.charaku.popsical.common.util.SizeF
-import com.charaku.popsical.ktr.KaraokeLyricsView
-import com.charaku.popsical.ktr.LRC2KTRConverter
-import com.charaku.popsical.ktr.PlayerDelegate
-import com.charaku.popsical.ktr.PopsicalKaraokeLyricsStyle
-import com.charaku.popsical.ktr.model.Lines
+import com.charaku.kstream.common.util.SizeF
+import com.charaku.kstream.ktr.KaraokeLyricsView
+import com.charaku.kstream.ktr.LRC2KTRConverter
+import com.charaku.kstream.ktr.PlayerDelegate
+import com.charaku.kstream.ktr.kstreamKaraokeLyricsStyle
+import com.charaku.kstream.ktr.model.Lines
 import com.pixplicity.easyprefs.library.Prefs
-import com.popsical.plugin_player.R
-import com.popsical.plugin_player.lyrics.App.Companion.resources
-import com.popsical.plugin_player.lyrics.utils.AppPrefs
-import com.popsical.plugin_player.lyrics.utils.ContentLanguageUtil
-import com.popsical.plugin_player.lyrics.utils.Views
+import com.kstream.plugin_player.R
+import com.kstream.plugin_player.lyrics.App.Companion.resources
+import com.kstream.plugin_player.lyrics.utils.AppPrefs
+import com.kstream.plugin_player.lyrics.utils.ContentLanguageUtil
+import com.kstream.plugin_player.lyrics.utils.Views
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -41,7 +41,7 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
     private var playing = false
 
     init {
-        MethodChannel(messenger, "tv.popsical/LyricsMethodChannel_$id")
+        MethodChannel(messenger, "tv.kstream/LyricsMethodChannel_$id")
                 .setMethodCallHandler(this)
         context?.let { App.setContext(it) }
         initEasyPrefs()
@@ -78,7 +78,7 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
         try {
 
             val debugLyricsRendering = Prefs.getBoolean(AppPrefs.PREFS_DEBUG_LYRICS_RENDERER, false)
-            PopsicalKaraokeLyricsStyle(
+            kstreamKaraokeLyricsStyle(
                     ctx,
                     Views.loadTypeface(ctx, Views.COOLVETICA_REGULAR),
                     Views.loadTypeface(ctx, Views.SHARP_STD_CLOUD_YUAN_CU_GBK)).setup(karaokeLyricsView, lines, debugLyricsRendering, getScreenSizeDp(

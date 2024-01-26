@@ -1,4 +1,4 @@
-//package com.charaku.popsical.media.exoplayer2;
+//package com.charaku.kstream.media.exoplayer2;
 //
 //import android.app.Activity;
 //import android.app.AlertDialog;
@@ -12,9 +12,9 @@
 //import android.view.ViewGroup;
 //import android.widget.CheckedTextView;
 //
-//import com.charaku.popsical.media.MediaConstants;
-//import com.charaku.popsical.media.R;
-//import com.charaku.popsical.media.model.TrackFormat;
+//import com.charaku.kstream.media.MediaConstants;
+//import com.charaku.kstream.media.R;
+//import com.charaku.kstream.media.model.TrackFormat;
 //import com.google.android.exoplayer2.C;
 //import com.google.android.exoplayer2.Format;
 //import com.google.android.exoplayer2.Player;
@@ -29,13 +29,13 @@
 //import java.util.Collection;
 //import java.util.List;
 //
-////12-06 09:43:34.658 23507-23507/com.charaku.popsical.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=0,format=Format(video-mp4-def-0, video/mp4, video/avc, 1224245, null, [854, 480, 29.97003], [-1, -1])
-////        12-06 09:43:34.658 23507-23507/com.charaku.popsical.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=1,format=Format(video-mp4-def-1, video/mp4, video/avc, 684906, null, [640, 360, 29.97003], [-1, -1])
-////        12-06 09:43:34.658 23507-23507/com.charaku.popsical.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=2,format=Format(video-mp4-def-2, video/mp4, video/avc, 197622, null, [416, 234, 29.97003], [-1, -1])
-////        12-06 09:43:34.658 23507-23507/com.charaku.popsical.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=3,format=Format(video-mp4-def-3, video/mp4, video/avc, 5553964, null, [1920, 1080, 29.97003], [-1, -1])
-////        12-06 09:43:34.658 23507-23507/com.charaku.popsical.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=4,format=Format(video-mp4-def-4, video/mp4, video/avc, 2944661, null, [1280, 720, 29.97003], [-1, -1])
-////        12-06 09:43:34.658 23507-23507/com.charaku.popsical.tv D/DefaultExoPlayerTrackSelector: rendererType=1,rendererIndex=1,trackGroupArrayIndex=0,formatIndex=0,format=Format(audio-mp4-en-0, audio/mp4, audio/mp4a-latm, 131453, en, [-1, -1, -1.0], [2, 48000])
-////        12-06 09:43:34.658 23507-23507/com.charaku.popsical.tv D/DefaultExoPlayerTrackSelector: rendererType=1,rendererIndex=1,trackGroupArrayIndex=1,formatIndex=0,format=Format(audio-mp4-ie-0, audio/mp4, audio/mp4a-latm, 131493, ie, [-1, -1, -1.0], [2, 48000])
+////12-06 09:43:34.658 23507-23507/com.charaku.kstream.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=0,format=Format(video-mp4-def-0, video/mp4, video/avc, 1224245, null, [854, 480, 29.97003], [-1, -1])
+////        12-06 09:43:34.658 23507-23507/com.charaku.kstream.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=1,format=Format(video-mp4-def-1, video/mp4, video/avc, 684906, null, [640, 360, 29.97003], [-1, -1])
+////        12-06 09:43:34.658 23507-23507/com.charaku.kstream.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=2,format=Format(video-mp4-def-2, video/mp4, video/avc, 197622, null, [416, 234, 29.97003], [-1, -1])
+////        12-06 09:43:34.658 23507-23507/com.charaku.kstream.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=3,format=Format(video-mp4-def-3, video/mp4, video/avc, 5553964, null, [1920, 1080, 29.97003], [-1, -1])
+////        12-06 09:43:34.658 23507-23507/com.charaku.kstream.tv D/DefaultExoPlayerTrackSelector: rendererType=2,rendererIndex=0,trackGroupArrayIndex=0,formatIndex=4,format=Format(video-mp4-def-4, video/mp4, video/avc, 2944661, null, [1280, 720, 29.97003], [-1, -1])
+////        12-06 09:43:34.658 23507-23507/com.charaku.kstream.tv D/DefaultExoPlayerTrackSelector: rendererType=1,rendererIndex=1,trackGroupArrayIndex=0,formatIndex=0,format=Format(audio-mp4-en-0, audio/mp4, audio/mp4a-latm, 131453, en, [-1, -1, -1.0], [2, 48000])
+////        12-06 09:43:34.658 23507-23507/com.charaku.kstream.tv D/DefaultExoPlayerTrackSelector: rendererType=1,rendererIndex=1,trackGroupArrayIndex=1,formatIndex=0,format=Format(audio-mp4-ie-0, audio/mp4, audio/mp4a-latm, 131493, ie, [-1, -1, -1.0], [2, 48000])
 ////
 //
 ///**

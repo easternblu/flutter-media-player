@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 import java.io.Closeable;
 import java.io.IOException;

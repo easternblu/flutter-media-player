@@ -1,9 +1,9 @@
-//package com.charaku.popsical.media.exoplayer2;
+//package com.charaku.kstream.media.exoplayer2;
 //
 //import android.util.Log;
 //
-//import com.charaku.popsical.media.Utils;
-//import com.charaku.popsical.media.model.TrackFormat;
+//import com.charaku.kstream.media.Utils;
+//import com.charaku.kstream.media.model.TrackFormat;
 //import com.google.android.exoplayer2.util.MimeTypes;
 //
 //import java.util.ArrayList;

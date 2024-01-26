@@ -1,7 +1,7 @@
-package com.charaku.popsical.common.model;
+package com.charaku.kstream.common.model;
 
-import com.charaku.popsical.common.Common;
-import com.charaku.popsical.common.api.CharakuPathConstant;
+import com.charaku.kstream.common.Common;
+import com.charaku.kstream.common.api.CharakuPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * Created by leechunhoe on 22/2/17.
  *
  * Documentation:
- * http://developers.popsical.com
+ * http://developers.kstream.com
  */
 // TODO: Implement CharakuResponse
 // TODO: Move to /api/model/ folder

@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.lyrics.utils;
+package com.kstream.plugin_player.lyrics.utils;
 
 
 import android.app.Activity;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-import com.popsical.plugin_player.R;
+import com.kstream.plugin_player.R;
 
 
 /**

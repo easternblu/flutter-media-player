@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -19,19 +19,19 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.widget.FrameLayout;
 
-import com.charaku.popsical.ktr.MainThreadScheduler;
-import com.charaku.popsical.ktr.PlayerDelegate;
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.LineConfig;
-import com.charaku.popsical.ktr.model.Phrase;
-import com.charaku.popsical.media.R;
+import com.charaku.kstream.ktr.MainThreadScheduler;
+import com.charaku.kstream.ktr.PlayerDelegate;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.LineConfig;
+import com.charaku.kstream.ktr.model.Phrase;
+import com.charaku.kstream.media.R;
 
 import timber.log.Timber;
 
-import static com.charaku.popsical.ktr.view.State.DONE;
-import static com.charaku.popsical.ktr.view.State.NOT_INIT;
-import static com.charaku.popsical.ktr.view.State.PENDING;
-import static com.charaku.popsical.ktr.view.State.SWEEPING;
+import static com.charaku.kstream.ktr.view.State.DONE;
+import static com.charaku.kstream.ktr.view.State.NOT_INIT;
+import static com.charaku.kstream.ktr.view.State.PENDING;
+import static com.charaku.kstream.ktr.view.State.SWEEPING;
 
 /**
  * A layout to manage the two layers of {@link StrokeTextView}

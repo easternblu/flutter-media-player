@@ -1,8 +1,8 @@
-package com.charaku.popsical.media;
+package com.charaku.kstream.media;
 
 import android.net.Uri;
 
-import com.charaku.popsical.media.model.PlaybackErrorType;
+import com.charaku.kstream.media.model.PlaybackErrorType;
 
 /**
  * Created by yatpanng on 23/4/17.

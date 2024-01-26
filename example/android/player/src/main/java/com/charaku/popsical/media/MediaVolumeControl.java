@@ -1,7 +1,7 @@
-package com.charaku.popsical.media;
+package com.charaku.kstream.media;
 
 
-import com.charaku.popsical.media.model.StereoVolume;
+import com.charaku.kstream.media.model.StereoVolume;
 
 /**
  * A interface that abstract the audio control aspect of a media player. Can be referenced by a UI class

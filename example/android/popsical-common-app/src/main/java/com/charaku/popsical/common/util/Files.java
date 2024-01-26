@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 import android.content.Context;
 import android.os.Environment;
@@ -177,8 +177,8 @@ public class Files {
      * @see EnvironmentCompat#getStorageState(File)
      */
     public static File[] getExternalFilesDirs(Context ctx, boolean rootFolderOnly) {
-        //  07-12 15:45:26.146 D/InfoActivity: [D]/storage/emulated/0/Android/data/com.charaku.popsical.tv/files
-        //  07-12 15:45:26.147 D/InfoActivity: [D]/storage/1EF5-15F8/Android/data/com.charaku.popsical.tv/files
+        //  07-12 15:45:26.146 D/InfoActivity: [D]/storage/emulated/0/Android/data/com.charaku.kstream.tv/files
+        //  07-12 15:45:26.147 D/InfoActivity: [D]/storage/1EF5-15F8/Android/data/com.charaku.kstream.tv/files
         File[] fileDirs = ContextCompat.getExternalFilesDirs(ctx, null);
         if (!rootFolderOnly || fileDirs == null)
             return fileDirs;

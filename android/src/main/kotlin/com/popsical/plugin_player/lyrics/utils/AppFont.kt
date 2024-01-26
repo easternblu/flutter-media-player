@@ -1,10 +1,10 @@
-package com.popsical.plugin_player.lyrics.utils
+package com.kstream.plugin_player.lyrics.utils
 import android.content.Context
 import android.graphics.Typeface
 import androidx.annotation.StringRes
 import android.widget.TextView
-import com.popsical.plugin_player.R
-import com.popsical.plugin_player.lyrics.App
+import com.kstream.plugin_player.R
+import com.kstream.plugin_player.lyrics.App
 import uk.co.chrisjenx.calligraphy.TypefaceUtils
 
 interface AppFont {

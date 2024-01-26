@@ -1,10 +1,10 @@
-package com.charaku.popsical.ktr.model;
+package com.charaku.kstream.ktr.model;
 
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import androidx.annotation.IntDef;
 
-import com.charaku.popsical.ktr.view.StrokeTextView;
+import com.charaku.kstream.ktr.view.StrokeTextView;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

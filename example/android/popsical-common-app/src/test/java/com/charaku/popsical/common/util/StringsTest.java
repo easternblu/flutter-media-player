@@ -1,7 +1,7 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
-import com.charaku.popsical.common.CommonTest;
-import com.charaku.popsical.common.model.Track;
+import com.charaku.kstream.common.CommonTest;
+import com.charaku.kstream.common.model.Track;
 
 import org.junit.Test;
 

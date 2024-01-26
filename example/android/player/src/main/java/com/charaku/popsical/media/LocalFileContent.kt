@@ -1,7 +1,7 @@
-package com.charaku.popsical.media
+package com.charaku.kstream.media
 
 import android.net.Uri
-import com.charaku.popsical.media.model.MediaContent
+import com.charaku.kstream.media.model.MediaContent
 import java.io.File
 import java.util.*
 

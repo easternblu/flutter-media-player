@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.video;
+package com.kstream.plugin_player.video;
 
 public enum PlayerState {
     IDLE,

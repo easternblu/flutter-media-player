@@ -1,7 +1,7 @@
-package com.popsical.plugin_player.lyrics.utils;
+package com.kstream.plugin_player.lyrics.utils;
 
 
-import com.charaku.popsical.common.util.Strings;
+import com.charaku.kstream.common.util.Strings;
 
 public class AppPrefs {
     public final String TAG = this.getClass().getSimpleName();

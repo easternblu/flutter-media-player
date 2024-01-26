@@ -1,10 +1,10 @@
-package com.charaku.popsical.ktr.model;
+package com.charaku.kstream.ktr.model;
 
 
 import android.graphics.Color;
 import androidx.annotation.ColorInt;
 
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.view.Utils;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -14,7 +14,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Models a line that will be displayed in {@link com.charaku.popsical.ktr.KaraokeLyricsView}
+ * Models a line that will be displayed in {@link com.charaku.kstream.ktr.KaraokeLyricsView}
  * Created by pan on 18/5/17.
  */
 

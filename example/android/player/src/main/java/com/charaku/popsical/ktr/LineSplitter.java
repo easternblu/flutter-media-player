@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -10,11 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.LineConfig;
-import com.charaku.popsical.ktr.model.Lines;
-import com.charaku.popsical.ktr.model.Phrase;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.LineConfig;
+import com.charaku.kstream.ktr.model.Lines;
+import com.charaku.kstream.ktr.model.Phrase;
+import com.charaku.kstream.ktr.view.Utils;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

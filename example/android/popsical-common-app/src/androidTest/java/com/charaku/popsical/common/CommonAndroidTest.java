@@ -1,4 +1,4 @@
-package com.charaku.popsical.common;
+package com.charaku.kstream.common;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

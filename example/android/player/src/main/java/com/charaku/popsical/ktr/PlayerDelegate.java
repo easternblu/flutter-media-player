@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 /**
  * An interface to get information from the media player

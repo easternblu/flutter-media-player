@@ -1,9 +1,9 @@
-//package com.charaku.popsical.media.model;
+//package com.charaku.kstream.media.model;
 //
 //import androidx.annotation.NonNull;
 //
-//import com.charaku.popsical.media.Utils;
-//import com.charaku.popsical.media.exoplayer2.MediaPlayerCore;
+//import com.charaku.kstream.media.Utils;
+//import com.charaku.kstream.media.exoplayer2.MediaPlayerCore;
 //import com.google.android.exoplayer2.C;
 //
 ///**

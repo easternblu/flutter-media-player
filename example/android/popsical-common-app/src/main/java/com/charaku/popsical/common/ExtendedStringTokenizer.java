@@ -1,4 +1,4 @@
-package com.charaku.popsical.common;
+package com.charaku.kstream.common;
 
 import java.util.HashSet;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,18 +9,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.LineConfig;
-import com.charaku.popsical.ktr.model.LineConfigBuilder;
-import com.charaku.popsical.ktr.model.Lines;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.LineConfig;
+import com.charaku.kstream.ktr.model.LineConfigBuilder;
+import com.charaku.kstream.ktr.model.Lines;
+import com.charaku.kstream.ktr.view.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * A class to consolidate the custom visual style Popsical content team wanted
+ * A class to consolidate the custom visual style kstream content team wanted
  */
 public class LucasSingLyricsStyle {
     public final String TAG = this.getClass().getSimpleName();

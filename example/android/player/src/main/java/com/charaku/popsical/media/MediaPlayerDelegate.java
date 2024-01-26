@@ -1,4 +1,4 @@
-//package com.charaku.popsical.media;
+//package com.charaku.kstream.media;
 //
 //import android.app.Activity;
 //import android.graphics.Point;
@@ -7,8 +7,8 @@
 //import android.view.LayoutInflater;
 //import android.widget.TextView;
 //
-//import com.charaku.popsical.media.model.MediaActivitySupport;
-//import com.charaku.popsical.media.model.MediaContent;
+//import com.charaku.kstream.media.model.MediaActivitySupport;
+//import com.charaku.kstream.media.model.MediaContent;
 //import com.google.android.exoplayer2.source.MediaSourceEventListener;
 //import com.mux.stats.sdk.core.model.CustomerPlayerData;
 //import com.mux.stats.sdk.core.model.CustomerVideoData;

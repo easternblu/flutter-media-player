@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.model;
+package com.charaku.kstream.common.model;
 
 import java.util.List;
 

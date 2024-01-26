@@ -1,12 +1,12 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 
 import androidx.annotation.Nullable;
 
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.Lines;
-import com.charaku.popsical.ktr.model.Phrase;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.Lines;
+import com.charaku.kstream.ktr.model.Phrase;
+import com.charaku.kstream.ktr.view.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

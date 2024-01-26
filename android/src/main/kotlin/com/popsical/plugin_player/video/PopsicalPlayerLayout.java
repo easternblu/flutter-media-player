@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.video;
+package com.kstream.plugin_player.video;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -48,14 +48,14 @@ import io.flutter.plugin.common.JSONMethodCodec;
 
 import static com.google.android.exoplayer2.Player.REPEAT_MODE_OFF;
 
-public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer {
+public class kstreamPlayerLayout extends PlayerView implements FlutterAVPlayer {
 
     /**
      * Playback Rate for the MediaPlayer is always 1.0.
      */
     private static final float PLAYBACK_RATE = 1.0f;
     public static SimpleExoPlayer activePlayer;
-    private final String TAG = "PopsicalPlayerLayout";
+    private final String TAG = "kstreamPlayerLayout";
     /**
      * Reference to the {@link SimpleExoPlayer}
      */
@@ -94,11 +94,11 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer 
     private  EventChannel eventChannel;
     private EventChannel.EventSink eventSink;
 
-    public PopsicalPlayerLayout(Context context) {
+    public kstreamPlayerLayout(Context context) {
         super(context);
     }
 
-    public PopsicalPlayerLayout(@NonNull Context context,
+    public kstreamPlayerLayout(@NonNull Context context,
                                 BinaryMessenger messenger,
                                 int id,
                                 EventChannel eventChannel,
@@ -202,7 +202,7 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer 
 
         /* Create a new MediaSession */
         mMediaSessionCompat = new MediaSessionCompat(context,
-                PopsicalPlayerLayout.class.getSimpleName(), receiver, null);
+                kstreamPlayerLayout.class.getSimpleName(), receiver, null);
 
         mMediaSessionCompat.setFlags(MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS
                 | MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS);

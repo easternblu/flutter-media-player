@@ -32,7 +32,7 @@ class PluginLyrics extends StatelessWidget {
 
 class LyricsController {
   LyricsController._(int? id)
-      : _channel = new MethodChannel('tv.popsical/LyricsMethodChannel_$id');
+      : _channel = new MethodChannel('tv.kstream/LyricsMethodChannel_$id');
 
   MethodChannel? _channel;
 

@@ -1,17 +1,17 @@
-package com.charaku.popsical.ktr.model;
+package com.charaku.kstream.ktr.model;
 
 import android.os.Build;
 
 
-import com.charaku.popsical.ktr.FuriganaStringBuilder;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.FuriganaStringBuilder;
+import com.charaku.kstream.ktr.view.Utils;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 /**
  * This is used to model one or more "words" inside a lyrics that can be animated with constant speed (actual singing speed should only varies in a unnoticable level)
  * <p>
- * It can be one word or multiple. Even if it is one phrase per word. The user should use {@link com.charaku.popsical.ktr.PhraseJoiner} after the conversion to simplify the actual phrases
+ * It can be one word or multiple. Even if it is one phrase per word. The user should use {@link com.charaku.kstream.ktr.PhraseJoiner} after the conversion to simplify the actual phrases
  * Created by pan on 18/5/17.
  */
 public class Phrase {

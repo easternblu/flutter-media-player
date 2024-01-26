@@ -1,9 +1,9 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.Lines;
-import com.charaku.popsical.ktr.model.Phrase;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.Lines;
+import com.charaku.kstream.ktr.model.Phrase;
+import com.charaku.kstream.ktr.view.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,8 +29,8 @@ public class PhraseJoiner implements LRCMetaNames {
     private Map<Phrase, Meta> metas = new HashMap<>();
 
     public void joinPhrases(Lines lines) {
-        maxJoinGapMs = lines.getLong(X_POPSICAL_MAX_JOIN_GAP_MS, maxJoinGapMs);
-        maxJoinADPLCoef = lines.getFloat(X_POPSICAL_MAX_JOIN_ADPL_COEF, maxJoinADPLCoef);
+        maxJoinGapMs = lines.getLong(X_kstream_MAX_JOIN_GAP_MS, maxJoinGapMs);
+        maxJoinADPLCoef = lines.getFloat(X_kstream_MAX_JOIN_ADPL_COEF, maxJoinADPLCoef);
 
         for (int i = 0; i < lines.size(); i++) {
             obtainStats(lines.getLine(i));

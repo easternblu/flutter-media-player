@@ -5,7 +5,7 @@
  */
 
 // Package
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 // Constraint optimizer class
 public class QuadraticOptimizer {

@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.api;
+package com.charaku.kstream.common.api;
 
 import androidx.annotation.Nullable;
 import android.util.Pair;

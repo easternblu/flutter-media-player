@@ -13,7 +13,7 @@
 // * See the License for the specific language governing permissions and
 // * limitations under the License.
 // */
-//package com.charaku.popsical.media.exoplayer2;
+//package com.charaku.kstream.media.exoplayer2;
 //
 //import android.os.SystemClock;
 //import androidx.annotation.Nullable;

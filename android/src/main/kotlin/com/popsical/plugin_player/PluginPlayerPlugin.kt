@@ -1,4 +1,4 @@
-package com.popsical.plugin_player
+package com.kstream.plugin_player
 import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 

@@ -1,4 +1,4 @@
-//package com.charaku.popsical.media.exoplayer2;
+//package com.charaku.kstream.media.exoplayer2;
 //
 //import android.content.Context;
 //import android.net.Uri;
@@ -6,8 +6,8 @@
 //import androidx.annotation.Nullable;
 //import android.util.Pair;
 //
-//import com.charaku.popsical.media.MediaPlayerListener;
-//import com.charaku.popsical.media.Utils;
+//import com.charaku.kstream.media.MediaPlayerListener;
+//import com.charaku.kstream.media.Utils;
 //import com.google.android.exoplayer2.upstream.BandwidthMeter;
 //import com.google.android.exoplayer2.upstream.DataSpec;
 //import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;

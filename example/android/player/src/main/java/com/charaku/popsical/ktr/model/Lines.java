@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.model;
+package com.charaku.kstream.ktr.model;
 
 
 import android.graphics.Color;
@@ -6,8 +6,8 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.charaku.popsical.ktr.LRCMetaNames;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.LRCMetaNames;
+import com.charaku.kstream.ktr.view.Utils;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -64,12 +64,12 @@ public class Lines implements LRCMetaNames {
 
 
     static String getSingerColorMetaName(String singer) {
-        return String.format(X_POPSICAL_SINGER_COLOR_FORMAT, singer).toLowerCase();
+        return String.format(X_kstream_SINGER_COLOR_FORMAT, singer).toLowerCase();
     }
 
     @ColorInt
     public int getDefaultSingerColor() {
-        return toColor(getMeta(X_POPSICAL_SINGER_COLOR_DEFAULT, Line.DEFAULT_SINGER_COLOR_STRING));
+        return toColor(getMeta(X_kstream_SINGER_COLOR_DEFAULT, Line.DEFAULT_SINGER_COLOR_STRING));
     }
 
     @ColorInt
@@ -179,16 +179,16 @@ public class Lines implements LRCMetaNames {
     }
 
     public int getPreviewOffset() {
-        return getInt(X_POPSICAL_PREVIEW_OFFSET, 10000);
+        return getInt(X_kstream_PREVIEW_OFFSET, 10000);
     }
 
     public float getFontScale() {
-        return getFloat(X_POPSICAL_FONT_SCALE, 1f);
+        return getFloat(X_kstream_FONT_SCALE, 1f);
     }
 
     @NonNull
     public String getLang() {
-        return getMeta(X_POPSICAL_LANG, "en");
+        return getMeta(X_kstream_LANG, "en");
     }
 
     @Nullable
@@ -245,7 +245,7 @@ public class Lines implements LRCMetaNames {
     @Nullable
     @ColorInt
     public Integer getBackgroundColor() {
-        String color = getMeta(X_POPSICAL_BG_COLOR);
+        String color = getMeta(X_kstream_BG_COLOR);
         return color == null ? null : Color.parseColor(color);
     }
 
@@ -257,7 +257,7 @@ public class Lines implements LRCMetaNames {
      * @return
      */
     public float[] getMargins() {
-        return toFloatArray(parseElements(getMeta(X_POPSICAL_MARGINS, "0.025f,0.15f,0.025f,0.15f")));
+        return toFloatArray(parseElements(getMeta(X_kstream_MARGINS, "0.025f,0.15f,0.025f,0.15f")));
     }
 
 

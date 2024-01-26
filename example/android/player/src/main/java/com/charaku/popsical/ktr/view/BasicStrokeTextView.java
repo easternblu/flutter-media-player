@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 
-import com.charaku.popsical.media.R;
+import com.charaku.kstream.media.R;
 
 /**
  * Copyright 2016 Evander Palacios

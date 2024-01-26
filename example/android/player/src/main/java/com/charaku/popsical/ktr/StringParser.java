@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 public class StringParser {
     public final String TAG = this.getClass().getSimpleName();

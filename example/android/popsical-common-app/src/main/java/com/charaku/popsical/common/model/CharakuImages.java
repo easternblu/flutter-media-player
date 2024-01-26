@@ -1,6 +1,6 @@
-package com.charaku.popsical.common.model;
+package com.charaku.kstream.common.model;
 
-import com.charaku.popsical.common.api.CharakuPathConstant;
+import com.charaku.kstream.common.api.CharakuPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * Where to find the spec for this object:
- * http://developers.popsical.com/#!/Track/get_tracks_json
+ * http://developers.kstream.com/#!/Track/get_tracks_json
  * Created by yatpanng on 15/2/17.
  */
 //    "images": {

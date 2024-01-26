@@ -1,8 +1,8 @@
-package com.popsical.plugin_player.lyrics.utils;
+package com.kstream.plugin_player.lyrics.utils;
 
 
-import com.charaku.popsical.common.util.Strings;
-import com.popsical.plugin_player.lyrics.App;
+import com.charaku.kstream.common.util.Strings;
+import com.kstream.plugin_player.lyrics.App;
 
 /**
  * for converting content from server to simplified chinese or traditional chinese based on language preference

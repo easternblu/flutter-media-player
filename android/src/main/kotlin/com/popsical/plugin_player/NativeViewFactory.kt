@@ -1,7 +1,7 @@
-package com.popsical.plugin_player
+package com.kstream.plugin_player
 import android.content.Context
-import com.popsical.plugin_player.lyrics.LyricsView
-import com.popsical.plugin_player.video.PlayerView
+import com.kstream.plugin_player.lyrics.LyricsView
+import com.kstream.plugin_player.video.PlayerView
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView

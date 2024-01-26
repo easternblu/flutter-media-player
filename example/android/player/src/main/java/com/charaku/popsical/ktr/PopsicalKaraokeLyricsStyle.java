@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -6,21 +6,21 @@ import android.graphics.PointF;
 import android.graphics.Typeface;
 import android.view.View;
 
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.LineConfig;
-import com.charaku.popsical.ktr.model.LineConfigBuilder;
-import com.charaku.popsical.ktr.model.Lines;
-import com.charaku.popsical.ktr.model.Phrase;
-import com.charaku.popsical.ktr.view.Utils;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.LineConfig;
+import com.charaku.kstream.ktr.model.LineConfigBuilder;
+import com.charaku.kstream.ktr.model.Lines;
+import com.charaku.kstream.ktr.model.Phrase;
+import com.charaku.kstream.ktr.view.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * A class to consolidate the custom visual style Popsical content team wanted
+ * A class to consolidate the custom visual style kstream content team wanted
  */
-public class PopsicalKaraokeLyricsStyle {
+public class kstreamKaraokeLyricsStyle {
     public final String TAG = this.getClass().getSimpleName();
     private float fontSizeDpToScreenWidthRatio = 1f * 53 / 1280;
     private float strokeWidthDpToScreenWidthRatio = 1f * 6 / 1280;
@@ -39,7 +39,7 @@ public class PopsicalKaraokeLyricsStyle {
      * @param coolVeticaRegular
      * @param cloudYuanCuGBK
      */
-    public PopsicalKaraokeLyricsStyle(Context ctx, Typeface coolVeticaRegular, Typeface cloudYuanCuGBK) {
+    public kstreamKaraokeLyricsStyle(Context ctx, Typeface coolVeticaRegular, Typeface cloudYuanCuGBK) {
         this.ctx = ctx;
         this.coolVeticaRegular = coolVeticaRegular;
         this.cloudYuanCuGBK = cloudYuanCuGBK;

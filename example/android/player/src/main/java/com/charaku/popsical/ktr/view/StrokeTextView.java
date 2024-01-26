@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 import android.graphics.Typeface;
 import androidx.annotation.ColorInt;

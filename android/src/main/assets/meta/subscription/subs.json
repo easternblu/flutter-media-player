@@ -59,7 +59,7 @@
       "selection_text": {
         "id": "sub_selection_text"
       },
-      "web_payment_url": "popsical.com/plans",
+      "web_payment_url": "kstream.com/plans",
       "action_ids": [
         "logout"
       ]
@@ -68,7 +68,7 @@
       "pos": 2,
       "recommended": true,
       "id": "premium_monthly",
-      "subscription_id_regex": "popsical-premium$|popsical-[a-z]*-monthly$|premium-[a-z]*-monthly$",
+      "subscription_id_regex": "kstream-premium$|kstream-[a-z]*-monthly$|premium-[a-z]*-monthly$",
       "title": {
         "id": "sub_premium_monthly_title"
       },
@@ -99,7 +99,7 @@
       "selection_text": {
         "id": "sub_selection_text"
       },
-      "web_payment_url": "popsical.com/plans",
+      "web_payment_url": "kstream.com/plans",
       "action_ids": [
         "logout",
         "cancel"
@@ -120,7 +120,7 @@
       "pos": 0,
       "recommended": true,
       "id": "premium_plus",
-      "subscription_id_regex": "popsical-premium-plus$",
+      "subscription_id_regex": "kstream-premium-plus$",
       "title": {
         "id": "sub_premium_plus_title"
       },
@@ -151,7 +151,7 @@
       "selection_text": {
         "id": "sub_selection_text"
       },
-      "web_payment_url": "popsical.com/plan",
+      "web_payment_url": "kstream.com/plan",
       "action_ids": [
         "logout",
         "cancel"

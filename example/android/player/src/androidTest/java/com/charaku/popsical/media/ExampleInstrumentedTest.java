@@ -1,4 +1,4 @@
-package com.charaku.popsical.media;
+package com.charaku.kstream.media;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.charaku.popsical.media.test", appContext.getPackageName());
+        assertEquals("com.charaku.kstream.media.test", appContext.getPackageName());
     }
 }

@@ -1,9 +1,9 @@
-package com.charaku.popsical.media;
+package com.charaku.kstream.media;
 
 import androidx.annotation.Nullable;
 
-import com.charaku.popsical.media.model.ChannelMapping;
-import com.charaku.popsical.media.model.MediaContent;
+import com.charaku.kstream.media.model.ChannelMapping;
+import com.charaku.kstream.media.model.MediaContent;
 
 /**
  * A interface that abstract the playback control aspect of a media player. Can be referenced by a UI class

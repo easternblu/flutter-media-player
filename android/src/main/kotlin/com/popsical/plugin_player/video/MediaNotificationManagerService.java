@@ -1,5 +1,5 @@
 
-package com.popsical.plugin_player.video;
+package com.kstream.plugin_player.video;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;

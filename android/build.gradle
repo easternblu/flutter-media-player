@@ -1,4 +1,4 @@
-group 'com.popsical.plugin_player'
+group 'com.kstream.plugin_player'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -53,7 +53,7 @@ dependencies {
     implementation "uk.co.chrisjenx:calligraphy:2.2.0"
     implementation(name:'mux-r2.11.1', ext:'aar')
     implementation project(':player')
-    implementation project(':popsical-common-app')
+    implementation project(':kstream-common-app')
 }
 ext {
     minSdkVersion = 21

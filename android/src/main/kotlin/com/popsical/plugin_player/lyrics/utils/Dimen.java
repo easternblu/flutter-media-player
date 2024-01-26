@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.lyrics.utils;
+package com.kstream.plugin_player.lyrics.utils;
 
 
 import android.content.Context;

@@ -1,9 +1,9 @@
-package com.charaku.popsical.common.util.cardvalidator.strategy;
+package com.charaku.kstream.common.util.cardvalidator.strategy;
 
 import android.text.Editable;
 import android.text.TextUtils;
 
-import com.charaku.popsical.common.util.cardvalidator.CreditCardConstants;
+import com.charaku.kstream.common.util.cardvalidator.CreditCardConstants;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.model;
+package com.charaku.kstream.common.model;
 
 import android.media.MediaDescription;
 import android.os.Parcel;

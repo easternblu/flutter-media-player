@@ -1,4 +1,4 @@
-//package com.charaku.popsical.media.exoplayer2;
+//package com.charaku.kstream.media.exoplayer2;
 //
 //import android.annotation.TargetApi;
 //import android.content.Context;
@@ -7,7 +7,7 @@
 //import androidx.annotation.FloatRange;
 //import androidx.annotation.Nullable;
 //
-//import com.charaku.popsical.media.model.ChannelMapping;
+//import com.charaku.kstream.media.model.ChannelMapping;
 //import com.google.android.exoplayer2.C;
 //import com.google.android.exoplayer2.DefaultLoadControl;
 //import com.google.android.exoplayer2.PlaybackParameters;

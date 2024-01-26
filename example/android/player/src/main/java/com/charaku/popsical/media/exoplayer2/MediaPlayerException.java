@@ -1,4 +1,4 @@
-package com.charaku.popsical.media.exoplayer2;
+package com.charaku.kstream.media.exoplayer2;
 
 public class MediaPlayerException extends Exception {
     public MediaPlayerException(String message) {

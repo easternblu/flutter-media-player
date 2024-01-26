@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 import android.content.Context;
 import android.content.res.Resources;

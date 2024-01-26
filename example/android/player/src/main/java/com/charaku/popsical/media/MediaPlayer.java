@@ -1,4 +1,4 @@
-//package com.charaku.popsical.media;
+//package com.charaku.kstream.media;
 //
 //import android.app.Activity;
 //import android.content.Context;
@@ -23,22 +23,22 @@
 //import android.widget.FrameLayout;
 //import android.widget.TextView;
 //
-//import com.charaku.popsical.media.exoplayer2.DefaultExoPlayerTrackSelector;
-//import com.charaku.popsical.media.exoplayer2.EventLogger;
-//import com.charaku.popsical.media.exoplayer2.MediaBandWidthMeterImpl;
-//import com.charaku.popsical.media.exoplayer2.MediaBandwidthMeter;
-//import com.charaku.popsical.media.exoplayer2.MediaContentSelector;
-//import com.charaku.popsical.media.exoplayer2.MediaPlayerCore;
-//import com.charaku.popsical.media.exoplayer2.MediaPlayerException;
-//import com.charaku.popsical.media.exoplayer2.PlayerDebugHelper;
-//import com.charaku.popsical.media.model.ChannelMapping;
-//import com.charaku.popsical.media.model.MediaActivityListener;
-//import com.charaku.popsical.media.model.MediaContent;
-//import com.charaku.popsical.media.model.PlaybackErrorType;
-//import com.charaku.popsical.media.model.ResumeInfo;
-//import com.charaku.popsical.media.model.SetupExtraParam;
-//import com.charaku.popsical.media.model.StereoVolume;
-//import com.charaku.popsical.media.model.TrackFormat;
+//import com.charaku.kstream.media.exoplayer2.DefaultExoPlayerTrackSelector;
+//import com.charaku.kstream.media.exoplayer2.EventLogger;
+//import com.charaku.kstream.media.exoplayer2.MediaBandWidthMeterImpl;
+//import com.charaku.kstream.media.exoplayer2.MediaBandwidthMeter;
+//import com.charaku.kstream.media.exoplayer2.MediaContentSelector;
+//import com.charaku.kstream.media.exoplayer2.MediaPlayerCore;
+//import com.charaku.kstream.media.exoplayer2.MediaPlayerException;
+//import com.charaku.kstream.media.exoplayer2.PlayerDebugHelper;
+//import com.charaku.kstream.media.model.ChannelMapping;
+//import com.charaku.kstream.media.model.MediaActivityListener;
+//import com.charaku.kstream.media.model.MediaContent;
+//import com.charaku.kstream.media.model.PlaybackErrorType;
+//import com.charaku.kstream.media.model.ResumeInfo;
+//import com.charaku.kstream.media.model.SetupExtraParam;
+//import com.charaku.kstream.media.model.StereoVolume;
+//import com.charaku.kstream.media.model.TrackFormat;
 //import com.google.android.exoplayer2.C;
 //import com.google.android.exoplayer2.DefaultRenderersFactory;
 //import com.google.android.exoplayer2.ExoPlaybackException;
@@ -107,10 +107,10 @@
 //import okhttp3.logging.HttpLoggingInterceptor;
 //import timber.log.Timber;
 //
-//import static com.charaku.popsical.media.model.PlaybackErrorType.EXOPLAYER_SOURCE_ERROR;
-//import static com.charaku.popsical.media.model.PlaybackErrorType.EXOPLAYER_SOURCE_WITH_CONNECTION_ERROR;
-//import static com.charaku.popsical.media.model.PlaybackErrorType.EXOPLAYER_SOURCE_WITH_INVALID_CODE_ERROR;
-//import static com.charaku.popsical.media.model.PlaybackErrorType.EXOPLAYER_UNEXPECTED_ERROR;
+//import static com.charaku.kstream.media.model.PlaybackErrorType.EXOPLAYER_SOURCE_ERROR;
+//import static com.charaku.kstream.media.model.PlaybackErrorType.EXOPLAYER_SOURCE_WITH_CONNECTION_ERROR;
+//import static com.charaku.kstream.media.model.PlaybackErrorType.EXOPLAYER_SOURCE_WITH_INVALID_CODE_ERROR;
+//import static com.charaku.kstream.media.model.PlaybackErrorType.EXOPLAYER_UNEXPECTED_ERROR;
 //
 ///**
 // * A wrapper that encapsulate all the boilerplate code that is needed to "init" an exoplayer
@@ -1888,7 +1888,7 @@
 //        ConnectionPool connectionPool = new ConnectionPool(0, 5, TimeUnit.MINUTES);
 //        //TODO: NOTE VIDEO MIGHT NEED A LONGER TIMEOUT
 //        OkHttpClient.Builder builder = new OkHttpClient.Builder().
-//                cache(new Cache(new File(getCacheDir(), "popsical_videos"), 1000 * 1000 * 1000)). // 1GB
+//                cache(new Cache(new File(getCacheDir(), "kstream_videos"), 1000 * 1000 * 1000)). // 1GB
 //                connectTimeout(15, TimeUnit.SECONDS).
 //                readTimeout(15, TimeUnit.SECONDS). // fadhli wants a shorter timeout
 //                writeTimeout(15, TimeUnit.SECONDS). // fadhli wants a shorter timeout
@@ -1946,7 +1946,7 @@
 //    @NonNull
 //    private List<Pair<String, String>> getCustomHeaders() {
 //        List<Pair<String, String>> headers = new ArrayList<>(1);
-//        headers.add(new Pair<>("X-Popsical-Pan-Custom-Header", "lalala"));
+//        headers.add(new Pair<>("X-kstream-Pan-Custom-Header", "lalala"));
 //        return headers;
 //    }
 //

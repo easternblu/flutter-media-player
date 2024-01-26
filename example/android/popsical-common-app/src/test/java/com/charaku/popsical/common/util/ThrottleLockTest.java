@@ -1,8 +1,8 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
-import com.charaku.popsical.common.CommonTest;
-import com.charaku.popsical.common.util.throttle.ThreadSafeThrottle;
-import com.charaku.popsical.common.util.throttle.Throttle;
+import com.charaku.kstream.common.CommonTest;
+import com.charaku.kstream.common.util.throttle.ThreadSafeThrottle;
+import com.charaku.kstream.common.util.throttle.Throttle;
 
 import org.junit.Test;
 

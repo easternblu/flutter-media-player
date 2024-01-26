@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.video;
+package com.kstream.plugin_player.video;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -21,13 +21,13 @@ public class RemoteReceiver extends BroadcastReceiver {
 
                         case KeyEvent.KEYCODE_MEDIA_PAUSE:
 
-                            PopsicalPlayerLayout.activePlayer.setPlayWhenReady(false);
+                            kstreamPlayerLayout.activePlayer.setPlayWhenReady(false);
 
                             break;
 
                         case KeyEvent.KEYCODE_MEDIA_PLAY:
 
-                            PopsicalPlayerLayout.activePlayer.setPlayWhenReady(true);
+                            kstreamPlayerLayout.activePlayer.setPlayWhenReady(true);
 
                             break;
                     }

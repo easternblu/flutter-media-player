@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 import android.content.Context;
 import android.os.Build;
@@ -12,15 +12,15 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.charaku.popsical.ktr.MainThreadScheduler;
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.Lines;
+import com.charaku.kstream.ktr.MainThreadScheduler;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.Lines;
 
 import java.util.UUID;
 
 import kotlin.jvm.Synchronized;
 
-import static com.charaku.popsical.ktr.view.State.DONE;
+import static com.charaku.kstream.ktr.view.State.DONE;
 
 
 public class LineLayout extends LinearLayout {

@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.ui;
+package com.charaku.kstream.common.ui;
 
 import android.content.Intent;
 import android.os.Bundle;

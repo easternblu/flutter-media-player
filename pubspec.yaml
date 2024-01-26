@@ -28,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.popsical.plugin_player
+        package: com.kstream.plugin_player
         pluginClass: PluginPlayerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:

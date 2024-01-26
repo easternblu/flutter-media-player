@@ -1,11 +1,11 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 import android.os.Build;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.charaku.popsical.common.Common;
+import com.charaku.kstream.common.Common;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

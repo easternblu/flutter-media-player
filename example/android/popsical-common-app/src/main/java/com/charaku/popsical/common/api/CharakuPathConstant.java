@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.api;
+package com.charaku.kstream.common.api;
 
 import androidx.annotation.StringDef;
 
@@ -328,7 +328,7 @@ public interface CharakuPathConstant {
     public static final String _ALGOLIA_ATTRIBUTE_BLOCK = _BLOCK;
 
 
-    public static final String _POPSICAL_SIMPLEDATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
+    public static final String _kstream_SIMPLEDATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
 
     public static final String GENDER_MALE = "m";
     public static final String GENDER_FEMALE = "f";

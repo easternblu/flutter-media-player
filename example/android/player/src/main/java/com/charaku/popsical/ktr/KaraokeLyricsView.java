@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr;
+package com.charaku.kstream.ktr;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -18,17 +18,17 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import com.charaku.popsical.ktr.model.Line;
-import com.charaku.popsical.ktr.model.LineConfig;
-import com.charaku.popsical.ktr.model.Lines;
-import com.charaku.popsical.ktr.model.Phrase;
-import com.charaku.popsical.ktr.view.FuriganaStrokeTextView;
-import com.charaku.popsical.ktr.view.LineLayout;
-import com.charaku.popsical.ktr.view.State;
-import com.charaku.popsical.ktr.view.SweepingStrokeTextViewLayout;
-import com.charaku.popsical.ktr.view.TempoIndicatorView;
-import com.charaku.popsical.ktr.view.Utils;
-import com.charaku.popsical.media.R;
+import com.charaku.kstream.ktr.model.Line;
+import com.charaku.kstream.ktr.model.LineConfig;
+import com.charaku.kstream.ktr.model.Lines;
+import com.charaku.kstream.ktr.model.Phrase;
+import com.charaku.kstream.ktr.view.FuriganaStrokeTextView;
+import com.charaku.kstream.ktr.view.LineLayout;
+import com.charaku.kstream.ktr.view.State;
+import com.charaku.kstream.ktr.view.SweepingStrokeTextViewLayout;
+import com.charaku.kstream.ktr.view.TempoIndicatorView;
+import com.charaku.kstream.ktr.view.Utils;
+import com.charaku.kstream.media.R;
 
 import java.util.HashMap;
 import java.util.List;
@@ -36,10 +36,10 @@ import java.util.Map;
 
 import timber.log.Timber;
 
-import static com.charaku.popsical.ktr.view.State.DONE;
-import static com.charaku.popsical.ktr.view.State.NOT_INIT;
-import static com.charaku.popsical.ktr.view.State.PENDING;
-import static com.charaku.popsical.ktr.view.State.SWEEPING;
+import static com.charaku.kstream.ktr.view.State.DONE;
+import static com.charaku.kstream.ktr.view.State.NOT_INIT;
+import static com.charaku.kstream.ktr.view.State.PENDING;
+import static com.charaku.kstream.ktr.view.State.SWEEPING;
 
 
 /**

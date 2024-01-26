@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class PopsicalMediaController with ChangeNotifier {
+class kstreamMediaController with ChangeNotifier {
   MethodChannel? methodChannel;
   String? _url = "";
 
@@ -49,7 +49,7 @@ class PopsicalMediaController with ChangeNotifier {
 
   bool? get enableMux => _enableMux;
 
-  PopsicalMediaController(String? url,
+  kstreamMediaController(String? url,
       {void Function()? onInited,
       final String? title,
       final String? subtitle,
@@ -193,6 +193,6 @@ class PopsicalMediaController with ChangeNotifier {
   Future<void> onPlatformViewCreated(int viewId) async {
     if (methodChannel != null) return;
     methodChannel =
-        MethodChannel("tv.popsical/NativeVideoPlayerMethodChannel_$viewId");
+        MethodChannel("tv.kstream/NativeVideoPlayerMethodChannel_$viewId");
   }
 }

@@ -7,7 +7,7 @@ import 'video_event.dart';
 mixin PlayerObserver {
   Future<void> listenForVideoPlayerEvents(int viewId) async {
     EventChannel eventChannel = EventChannel(
-        "tv.popsical/NativeVideoPlayerEventChannel_$viewId", JSONMethodCodec());
+        "tv.kstream/NativeVideoPlayerEventChannel_$viewId", JSONMethodCodec());
     eventChannel.receiveBroadcastStream().listen(_processEvent);
   }
 

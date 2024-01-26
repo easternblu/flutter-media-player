@@ -1,4 +1,4 @@
-package com.charaku.popsical.media;
+package com.charaku.kstream.media;
 
 import org.junit.Test;
 

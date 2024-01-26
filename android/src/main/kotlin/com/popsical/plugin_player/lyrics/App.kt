@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.lyrics
+package com.kstream.plugin_player.lyrics
 import android.content.Context
 import android.content.res.Resources
 import androidx.annotation.StringRes

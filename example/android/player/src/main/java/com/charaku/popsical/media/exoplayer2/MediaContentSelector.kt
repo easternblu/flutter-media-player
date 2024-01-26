@@ -1,7 +1,7 @@
-//package com.charaku.popsical.media.exoplayer2
+//package com.charaku.kstream.media.exoplayer2
 //
 //import android.content.Context
-//import com.charaku.popsical.media.exoplayer2.MediaContentSelector.*
+//import com.charaku.kstream.media.exoplayer2.MediaContentSelector.*
 //import com.google.android.exoplayer2.C
 //import com.google.android.exoplayer2.Format
 //import com.google.android.exoplayer2.RendererCapabilities

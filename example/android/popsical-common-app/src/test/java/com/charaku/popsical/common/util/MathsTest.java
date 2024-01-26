@@ -1,7 +1,7 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 
-import com.charaku.popsical.common.CommonTest;
+import com.charaku.kstream.common.CommonTest;
 
 import org.junit.Test;
 

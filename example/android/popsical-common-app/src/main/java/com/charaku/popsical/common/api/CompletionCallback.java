@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.api;
+package com.charaku.kstream.common.api;
 
 /**
  * A generic callback for things asynchronous task that can either end in success or error

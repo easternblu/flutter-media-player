@@ -1,8 +1,8 @@
 
 
 import com.pixplicity.easyprefs.library.Prefs
-import com.popsical.plugin_player.lyrics.utils.AppPrefs
-import com.popsical.plugin_player.lyrics.utils.ZHConverter
+import com.kstream.plugin_player.lyrics.utils.AppPrefs
+import com.kstream.plugin_player.lyrics.utils.ZHConverter
 
 
 object PrefsKt : AppPrefs() {

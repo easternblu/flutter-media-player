@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.service;
+package com.charaku.kstream.common.service;
 
 import android.app.Service;
 import android.content.Intent;

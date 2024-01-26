@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.view;
+package com.charaku.kstream.ktr.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.charaku.popsical.ktr.PlayerDelegate;
+import com.charaku.kstream.ktr.PlayerDelegate;
 
 import timber.log.Timber;
 

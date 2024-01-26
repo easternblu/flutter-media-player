@@ -1,4 +1,4 @@
-package com.charaku.popsical.media.model;
+package com.charaku.kstream.media.model;
 
 /**
  * Created by pan on 21/4/17.

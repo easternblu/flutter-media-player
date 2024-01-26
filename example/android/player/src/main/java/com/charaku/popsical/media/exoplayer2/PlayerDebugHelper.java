@@ -1,8 +1,8 @@
-//package com.charaku.popsical.media.exoplayer2;
+//package com.charaku.kstream.media.exoplayer2;
 //
 //import android.widget.TextView;
 //
-//import com.charaku.popsical.media.Utils;
+//import com.charaku.kstream.media.Utils;
 //import com.google.android.exoplayer2.ExoPlaybackException;
 //import com.google.android.exoplayer2.ExoPlayer;
 //import com.google.android.exoplayer2.Format;

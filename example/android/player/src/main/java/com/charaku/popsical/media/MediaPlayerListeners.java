@@ -1,10 +1,10 @@
-//package com.charaku.popsical.media;
+//package com.charaku.kstream.media;
 //
 //import android.net.Uri;
 //import androidx.annotation.Nullable;
 //
-//import com.charaku.popsical.media.model.MediaContent;
-//import com.charaku.popsical.media.model.PlaybackErrorType;
+//import com.charaku.kstream.media.model.MediaContent;
+//import com.charaku.kstream.media.model.PlaybackErrorType;
 //import com.google.android.exoplayer2.Player;
 //
 //import java.util.ArrayList;

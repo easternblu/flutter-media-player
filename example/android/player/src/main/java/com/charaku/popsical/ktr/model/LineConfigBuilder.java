@@ -1,4 +1,4 @@
-package com.charaku.popsical.ktr.model;
+package com.charaku.kstream.ktr.model;
 
 import android.graphics.Color;
 import android.graphics.Typeface;

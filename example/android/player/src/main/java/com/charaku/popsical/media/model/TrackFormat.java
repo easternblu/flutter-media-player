@@ -1,9 +1,9 @@
-//package com.charaku.popsical.media.model;
+//package com.charaku.kstream.media.model;
 //
 //import androidx.annotation.NonNull;
 //import androidx.annotation.Nullable;
 //
-//import com.charaku.popsical.media.Utils;
+//import com.charaku.kstream.media.Utils;
 //import com.google.android.exoplayer2.Format;
 //import com.google.android.exoplayer2.util.MimeTypes;
 //
@@ -19,7 +19,7 @@
 // * Created by pan on 30/1/18.
 // * <p>
 // * A container class to encapsulate the {@link Format} object.
-// * Logic specific to Popsical can be put here.
+// * Logic specific to kstream can be put here.
 // */
 //public class TrackFormat {
 //    private static final Set<String> nonVocalLangs;

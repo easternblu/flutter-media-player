@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util;
+package com.charaku.kstream.common.util;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -51,8 +51,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.URLUtil;
 import android.widget.TextView;
 
-import com.charaku.popsical.common.Common;
-import com.charaku.popsical.common.R;
+import com.charaku.kstream.common.Common;
+import com.charaku.kstream.common.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

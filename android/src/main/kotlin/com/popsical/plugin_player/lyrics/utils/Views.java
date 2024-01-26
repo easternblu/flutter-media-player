@@ -1,4 +1,4 @@
-package com.popsical.plugin_player.lyrics.utils;
+package com.kstream.plugin_player.lyrics.utils;
 
 
 import android.animation.Animator;
@@ -46,11 +46,11 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.charaku.popsical.common.util.CloseableUtil;
-import com.charaku.popsical.common.util.Lambda;
-import com.charaku.popsical.common.util.Streams;
-import com.charaku.popsical.common.util.Strings;
-import com.popsical.plugin_player.R;
+import com.charaku.kstream.common.util.CloseableUtil;
+import com.charaku.kstream.common.util.Lambda;
+import com.charaku.kstream.common.util.Streams;
+import com.charaku.kstream.common.util.Strings;
+import com.kstream.plugin_player.R;
 
 import java.io.File;
 import java.io.IOException;

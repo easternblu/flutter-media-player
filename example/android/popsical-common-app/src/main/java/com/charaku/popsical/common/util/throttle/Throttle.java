@@ -1,4 +1,4 @@
-package com.charaku.popsical.common.util.throttle;
+package com.charaku.kstream.common.util.throttle;
 
 /**
  * Created by pan on 7/6/17.

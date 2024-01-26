@@ -1,4 +1,4 @@
-package com.charaku.popsical.media.model;
+package com.charaku.kstream.media.model;
 
 import android.net.Uri;
 

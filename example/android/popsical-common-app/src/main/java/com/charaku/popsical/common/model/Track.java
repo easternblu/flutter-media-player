@@ -1,13 +1,13 @@
-package com.charaku.popsical.common.model;
+package com.charaku.kstream.common.model;
 
 import android.text.TextUtils;
 
-import com.charaku.popsical.common.Common;
-import com.charaku.popsical.common.api.CharakuPathConstant;
-import com.charaku.popsical.common.util.CommonMethod;
-import com.charaku.popsical.common.util.JSONArrays;
-import com.charaku.popsical.common.util.Lists;
-import com.charaku.popsical.common.util.Strings;
+import com.charaku.kstream.common.Common;
+import com.charaku.kstream.common.api.CharakuPathConstant;
+import com.charaku.kstream.common.util.CommonMethod;
+import com.charaku.kstream.common.util.JSONArrays;
+import com.charaku.kstream.common.util.Lists;
+import com.charaku.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -20,15 +20,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.charaku.popsical.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_ARTISTS;
-import static com.charaku.popsical.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_BLOCK;
-import static com.charaku.popsical.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_LANG_CODE;
-import static com.charaku.popsical.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_OBJECT_ID;
-import static com.charaku.popsical.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_POSTER_URL;
-import static com.charaku.popsical.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_TITLE;
+import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_ARTISTS;
+import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_BLOCK;
+import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_LANG_CODE;
+import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_OBJECT_ID;
+import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_POSTER_URL;
+import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_TITLE;
 
 /**
- * <a href="https://developers.popsical.com/#!/PlayQueue/get_me_play_queue_json">API DOC</a>
+ * <a href="https://developers.kstream.com/#!/PlayQueue/get_me_play_queue_json">API DOC</a>
  * Track object
  * Created by Pradeep on 1/3/16 na karma.
  * Modified by Pan
