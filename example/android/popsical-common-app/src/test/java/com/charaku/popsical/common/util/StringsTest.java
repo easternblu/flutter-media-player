@@ -1,7 +1,7 @@
-package com.charaku.kstream.common.util;
+package com.easternblu.kstream.common.util;
 
-import com.charaku.kstream.common.CommonTest;
-import com.charaku.kstream.common.model.Track;
+import com.easternblu.kstream.common.CommonTest;
+import com.easternblu.kstream.common.model.Track;
 
 import org.junit.Test;
 

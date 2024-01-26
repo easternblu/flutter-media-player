@@ -1,13 +1,13 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
 import android.text.TextUtils;
 
-import com.charaku.kstream.common.Common;
-import com.charaku.kstream.common.api.CharakuPathConstant;
-import com.charaku.kstream.common.util.CommonMethod;
-import com.charaku.kstream.common.util.JSONArrays;
-import com.charaku.kstream.common.util.Lists;
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.Common;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
+import com.easternblu.kstream.common.util.CommonMethod;
+import com.easternblu.kstream.common.util.JSONArrays;
+import com.easternblu.kstream.common.util.Lists;
+import com.easternblu.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -20,12 +20,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_ARTISTS;
-import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_BLOCK;
-import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_LANG_CODE;
-import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_OBJECT_ID;
-import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_POSTER_URL;
-import static com.charaku.kstream.common.api.CharakuPathConstant._ALGOLIA_ATTRIBUTE_TITLE;
+import static com.easternblu.kstream.common.api.easternbluPathConstant._ALGOLIA_ATTRIBUTE_ARTISTS;
+import static com.easternblu.kstream.common.api.easternbluPathConstant._ALGOLIA_ATTRIBUTE_BLOCK;
+import static com.easternblu.kstream.common.api.easternbluPathConstant._ALGOLIA_ATTRIBUTE_LANG_CODE;
+import static com.easternblu.kstream.common.api.easternbluPathConstant._ALGOLIA_ATTRIBUTE_OBJECT_ID;
+import static com.easternblu.kstream.common.api.easternbluPathConstant._ALGOLIA_ATTRIBUTE_POSTER_URL;
+import static com.easternblu.kstream.common.api.easternbluPathConstant._ALGOLIA_ATTRIBUTE_TITLE;
 
 /**
  * <a href="https://developers.kstream.com/#!/PlayQueue/get_me_play_queue_json">API DOC</a>
@@ -42,15 +42,15 @@ public class Track implements Serializable {
     }
 
     @Expose
-    @SerializedName(CharakuPathConstant._MUSIXMATCH_ID)
+    @SerializedName(easternbluPathConstant._MUSIXMATCH_ID)
     private int musixMatchId;
 
     @Expose
-    @SerializedName(CharakuPathConstant._MUSIXMATCH_LYRICS_ID)
+    @SerializedName(easternbluPathConstant._MUSIXMATCH_LYRICS_ID)
     private int musixMatchLyricsId;
 
     @Expose
-    @SerializedName(CharakuPathConstant._MUSIXMATCH_SUBTITLE_ID)
+    @SerializedName(easternbluPathConstant._MUSIXMATCH_SUBTITLE_ID)
     private int musixSubtitleId;
 
     public int getMusixMatchId() {
@@ -78,80 +78,80 @@ public class Track implements Serializable {
     }
 
     @Expose
-    @SerializedName(CharakuPathConstant._ID)
+    @SerializedName(easternbluPathConstant._ID)
     private int id;
 
     @Expose
-    @SerializedName(CharakuPathConstant._NUMBER)
+    @SerializedName(easternbluPathConstant._NUMBER)
     private int number;
 
     @Expose
-    @SerializedName(CharakuPathConstant._TITLE)
+    @SerializedName(easternbluPathConstant._TITLE)
     private String title;
 
     @Expose
-    @SerializedName(CharakuPathConstant._ALT_TITLE)
+    @SerializedName(easternbluPathConstant._ALT_TITLE)
     private String altTitle;
 
     @Expose
-    @SerializedName(CharakuPathConstant._LANG_CODE)
+    @SerializedName(easternbluPathConstant._LANG_CODE)
     private String langCode;
 
     @Expose
-    @SerializedName(CharakuPathConstant._RUNTIME)
+    @SerializedName(easternbluPathConstant._RUNTIME)
     private int runtime;
 
     @Expose
-    @SerializedName(CharakuPathConstant._RELEASE_DATE)
+    @SerializedName(easternbluPathConstant._RELEASE_DATE)
     private String releaseDate;
 
     @Expose
-    @SerializedName(CharakuPathConstant._SOURCE)
+    @SerializedName(easternbluPathConstant._SOURCE)
     private String source;
 
     @Expose
-    @SerializedName(CharakuPathConstant._PLAYLIST_TRACK_ID)
+    @SerializedName(easternbluPathConstant._PLAYLIST_TRACK_ID)
     private int playlistTrackId;
 
     @Expose
-    @SerializedName(CharakuPathConstant._HAS_VIDEO)
+    @SerializedName(easternbluPathConstant._HAS_VIDEO)
     private boolean hasVideo;
 
     @Expose
-    @SerializedName(CharakuPathConstant._VIDEO)
-    private CharakuVideo video;
+    @SerializedName(easternbluPathConstant._VIDEO)
+    private easternbluVideo video;
 
     @Expose
-    @SerializedName(CharakuPathConstant._BLOCK)
+    @SerializedName(easternbluPathConstant._BLOCK)
     private boolean block;
 
     @Expose
-    @SerializedName(CharakuPathConstant._BLOCK_REASON)
+    @SerializedName(easternbluPathConstant._BLOCK_REASON)
     private BlockReason blockReason;
 
     @Expose
-    @SerializedName(CharakuPathConstant._IS_ORIGINAL)
+    @SerializedName(easternbluPathConstant._IS_ORIGINAL)
     private boolean isOriginal;
 
     @Expose
-    @SerializedName(CharakuPathConstant._LYRICS_COUNT)
+    @SerializedName(easternbluPathConstant._LYRICS_COUNT)
     private int lyricsCount;
 
     @Expose
-    @SerializedName(CharakuPathConstant._PREMIUM)
+    @SerializedName(easternbluPathConstant._PREMIUM)
     private boolean premium;
 
     @Expose
-    @SerializedName(CharakuPathConstant._IMAGES)
-    protected CharakuImages images;
+    @SerializedName(easternbluPathConstant._IMAGES)
+    protected easternbluImages images;
 
     @Deprecated
     @Expose
-    @SerializedName(CharakuPathConstant._ARTISTS)
+    @SerializedName(easternbluPathConstant._ARTISTS)
     private List<Artist> artists;
 
     @Expose
-    @SerializedName(CharakuPathConstant._TRACK_ARTISTS)
+    @SerializedName(easternbluPathConstant._TRACK_ARTISTS)
     private List<TrackArtist> trackArtists;
 
     private volatile boolean trackArtistsSorted = false;
@@ -259,11 +259,11 @@ public class Track implements Serializable {
         this.hasVideo = hasVideo;
     }
 
-    public CharakuVideo getVideo() {
+    public easternbluVideo getVideo() {
         // just because a video is blocked we should still return the object
         // if (isHasVideo() && !isBlocked() && video != null) {
         if (isHasVideo() && video != null) {
-            // CharakuVideo uses some values in Track as fallback, so it needs a back reference of Track
+            // easternbluVideo uses some values in Track as fallback, so it needs a back reference of Track
             video.setTrack(this);
             return video;
         } else {
@@ -271,7 +271,7 @@ public class Track implements Serializable {
         }
     }
 
-    public CharakuImages getImages() {
+    public easternbluImages getImages() {
         return images;
     }
 
@@ -294,7 +294,7 @@ public class Track implements Serializable {
         }
     }
 
-    public void setVideo(CharakuVideo video) {
+    public void setVideo(easternbluVideo video) {
         this.video = video;
     }
 
@@ -540,7 +540,7 @@ public class Track implements Serializable {
     }
 
     @Deprecated
-    Track(int id, int number, String title, String altTitle, String langCode, int runtime, String releaseDate, String source, boolean hasVideo, CharakuVideo video, boolean block, BlockReason blockReason, boolean premium, CharakuImages images, List<Artist> artists, String artistsString, String posterUrl, PlayQueueUser addedBy, int playQueuePosition, int playQueueTrackId, int tempPlayQueuePosition, int playlistId, PlayQueueTrackType playQueueTrackType, boolean trackArtistsSorted) {
+    Track(int id, int number, String title, String altTitle, String langCode, int runtime, String releaseDate, String source, boolean hasVideo, easternbluVideo video, boolean block, BlockReason blockReason, boolean premium, easternbluImages images, List<Artist> artists, String artistsString, String posterUrl, PlayQueueUser addedBy, int playQueuePosition, int playQueueTrackId, int tempPlayQueuePosition, int playlistId, PlayQueueTrackType playQueueTrackType, boolean trackArtistsSorted) {
         this.id = id;
         this.number = number;
         this.title = title;
@@ -588,7 +588,7 @@ public class Track implements Serializable {
         }
         builder.setArtistsString(artistsString);
 
-        CharakuVideo video = new CharakuVideoBuilder().createCharakuVideo();
+        easternbluVideo video = new easternbluVideoBuilder().createeasternbluVideo();
         video.setPosterUrl(posterUrl);
         builder.setVideo(video);
         // set to true, because search result has no video, but we pretend there is

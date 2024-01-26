@@ -1,11 +1,11 @@
-package com.charaku.kstream.common.util.cardvalidator;
+package com.easternblu.kstream.common.util.cardvalidator;
 
 import androidx.annotation.IntDef;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 
-import com.charaku.kstream.common.util.Numbers;
+import com.easternblu.kstream.common.util.Numbers;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -15,7 +15,7 @@ import java.util.Set;
 
 import timber.log.Timber;
 
-import static com.charaku.kstream.common.util.cardvalidator.CreditCardUtils.retainValidChars;
+import static com.easternblu.kstream.common.util.cardvalidator.CreditCardUtils.retainValidChars;
 
 
 /**

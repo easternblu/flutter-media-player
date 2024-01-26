@@ -1,6 +1,6 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
-import com.charaku.kstream.common.api.CharakuPathConstant;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -12,19 +12,19 @@ import java.io.Serializable;
 
 public class BlockReason implements Serializable {
     @Expose
-    @SerializedName(CharakuPathConstant._PREMIUM_ACCESS_BLOCKED)
+    @SerializedName(easternbluPathConstant._PREMIUM_ACCESS_BLOCKED)
     protected boolean premiumAccessBlocked;
 
     @Expose
-    @SerializedName(CharakuPathConstant._COUNTRY_BLOCKED)
+    @SerializedName(easternbluPathConstant._COUNTRY_BLOCKED)
     protected boolean countryBlocked;
 
     @Expose
-    @SerializedName(CharakuPathConstant._PLATFORM_BLOCKED)
+    @SerializedName(easternbluPathConstant._PLATFORM_BLOCKED)
     protected boolean platformBlocked;
 
     @Expose
-    @SerializedName(CharakuPathConstant._TIME_LAPSED_BLOCKED)
+    @SerializedName(easternbluPathConstant._TIME_LAPSED_BLOCKED)
     protected boolean timeLapsedBlocked;
 
     public boolean isPremiumAccessBlocked() {

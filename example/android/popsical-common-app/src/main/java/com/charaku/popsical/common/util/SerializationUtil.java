@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.util;
+package com.easternblu.kstream.common.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

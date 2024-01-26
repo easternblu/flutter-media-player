@@ -1,8 +1,8 @@
-package com.charaku.kstream.common.model.v2;
+package com.easternblu.kstream.common.model.v2;
 
-import com.charaku.kstream.common.Common;
-import com.charaku.kstream.common.api.CharakuPathConstant;
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.Common;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
+import com.easternblu.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -21,16 +21,16 @@ public class VideoStreams implements Serializable {
 //    }
 //    }
     @Expose
-    @SerializedName(CharakuPathConstant._VIDEO_ID)
+    @SerializedName(easternbluPathConstant._VIDEO_ID)
     protected int videoId;
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._DASH)
+    @SerializedName(easternbluPathConstant._DASH)
     protected Map<String, Object> dash;
 
     @Expose
-    @SerializedName(CharakuPathConstant._HLS)
+    @SerializedName(easternbluPathConstant._HLS)
     protected Map<String, Object> hls;
 
     private String videoUrl;
@@ -43,12 +43,12 @@ public class VideoStreams implements Serializable {
         videoUrl = Common.EMPTY_STRING;
         Object p720;
         String dashUrl = null, hlsUrl = null;
-        if (dash != null && (p720 = dash.get(CharakuPathConstant._P720)) != null && p720 instanceof String) {
+        if (dash != null && (p720 = dash.get(easternbluPathConstant._P720)) != null && p720 instanceof String) {
             dashUrl = p720.toString();
 
         }
 
-        if (hls != null && (p720 = hls.get(CharakuPathConstant._P720)) != null && p720 instanceof String) {
+        if (hls != null && (p720 = hls.get(easternbluPathConstant._P720)) != null && p720 instanceof String) {
             hlsUrl = p720.toString();
         }
 

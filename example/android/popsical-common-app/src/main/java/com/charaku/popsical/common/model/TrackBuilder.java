@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
 import java.util.List;
 
@@ -15,12 +15,12 @@ public class TrackBuilder {
     private String mReleaseDate;
     private String mSource;
     private boolean mHasVideo;
-    private CharakuVideo mVideo;
+    private easternbluVideo mVideo;
     private boolean mBlock;
 
     private BlockReason mBlockReason;
     private boolean mPremium;
-    private CharakuImages mImages;
+    private easternbluImages mImages;
     private List<Artist> mArtists;
     private String mArtistsString;
     private boolean mTrackArtistsSorted;
@@ -77,7 +77,7 @@ public class TrackBuilder {
         return this;
     }
 
-    public TrackBuilder setVideo(CharakuVideo video) {
+    public TrackBuilder setVideo(easternbluVideo video) {
         mVideo = video;
         return this;
     }
@@ -97,7 +97,7 @@ public class TrackBuilder {
         return this;
     }
 
-    public TrackBuilder setImages(CharakuImages images) {
+    public TrackBuilder setImages(easternbluImages images) {
         mImages = images;
         return this;
     }

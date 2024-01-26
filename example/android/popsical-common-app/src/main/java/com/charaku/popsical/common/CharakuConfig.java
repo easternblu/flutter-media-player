@@ -1,6 +1,6 @@
-package com.charaku.kstream.common;
+package com.easternblu.kstream.common;
 
-public class CharakuConfig {
+public class easternbluConfig {
     /**
      * Deprecated
      * Get R.string.which_server flag from kstream global properties file
@@ -20,7 +20,7 @@ public class CharakuConfig {
 
     public static final String SCOPE_VALUE_TV = "public manage"; // For TV (Not used in remote)
 
-    public static final String REFRESH_TOKEN_GRANT_TYPE_VALUE = com.charaku.kstream.common.Common.REFRESH_TOKEN;
+    public static final String REFRESH_TOKEN_GRANT_TYPE_VALUE = com.easternblu.kstream.common.Common.REFRESH_TOKEN;
 
     @Deprecated
     public static final String ALGOLIA_SEARCH_TRACK_INDEX_NAME = IS_PRODUCTION ? "Track_production" : "Track_staging";

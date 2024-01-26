@@ -1,4 +1,4 @@
-package com.charaku.kstream.common;
+package com.easternblu.kstream.common;
 
 /**
  * Created by pan on 21/12/17.

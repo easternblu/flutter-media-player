@@ -1,8 +1,8 @@
-package com.charaku.kstream.common.util;
+package com.easternblu.kstream.common.util;
 
 import android.util.Log;
 
-import com.charaku.kstream.common.CommonTest;
+import com.easternblu.kstream.common.CommonTest;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

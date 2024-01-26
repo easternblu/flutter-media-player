@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.api;
+package com.easternblu.kstream.common.api;
 
 /**
  * A generic callback for things asynchronous task that can either end in success or error

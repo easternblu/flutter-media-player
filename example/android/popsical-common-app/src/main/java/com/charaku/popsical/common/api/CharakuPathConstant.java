@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.api;
+package com.easternblu.kstream.common.api;
 
 import androidx.annotation.StringDef;
 
@@ -9,7 +9,7 @@ import java.lang.annotation.RetentionPolicy;
  * Path and parameter keys
  * Created by leechunhoe on 4/7/16.
  */
-public interface CharakuPathConstant {
+public interface easternbluPathConstant {
 
     /**
      * Decide this on app side

@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.service;
+package com.easternblu.kstream.common.service;
 
 import android.content.Intent;
 

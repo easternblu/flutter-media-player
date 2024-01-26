@@ -1,7 +1,7 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
-import com.charaku.kstream.common.Common;
-import com.charaku.kstream.common.api.CharakuPathConstant;
+import com.easternblu.kstream.common.Common;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -15,15 +15,15 @@ import java.util.ArrayList;
  * Documentation:
  * http://developers.kstream.com
  */
-// TODO: Implement CharakuResponse
+// TODO: Implement easternbluResponse
 // TODO: Move to /api/model/ folder
 public class ApiError implements Serializable {
     @Expose
-    @SerializedName(CharakuPathConstant._ERRORS)
+    @SerializedName(easternbluPathConstant._ERRORS)
     private Object errors;
 
     @Expose
-    @SerializedName(CharakuPathConstant._ERR_CODE)
+    @SerializedName(easternbluPathConstant._ERR_CODE)
     private int errCode;
 
     public Object getErrors() {

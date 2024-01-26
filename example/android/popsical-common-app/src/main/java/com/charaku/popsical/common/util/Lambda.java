@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.util;
+package com.easternblu.kstream.common.util;
 
 /**
  * A generic interface that accept 1 input object and return another output object

@@ -1,8 +1,8 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
-import com.charaku.kstream.common.api.CharakuPathConstant;
-import com.charaku.kstream.common.util.Converter;
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
+import com.easternblu.kstream.common.util.Converter;
+import com.easternblu.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -21,11 +21,11 @@ import java.util.Comparator;
 public class TrackArtist implements Serializable {
 
     @Expose
-    @SerializedName(CharakuPathConstant._TYPE)
+    @SerializedName(easternbluPathConstant._TYPE)
     protected String type;
 
     @Expose
-    @SerializedName(CharakuPathConstant._ARTIST)
+    @SerializedName(easternbluPathConstant._ARTIST)
     protected Artist artist;
 
     /**

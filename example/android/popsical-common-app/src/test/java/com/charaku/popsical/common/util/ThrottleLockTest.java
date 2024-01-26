@@ -1,8 +1,8 @@
-package com.charaku.kstream.common.util;
+package com.easternblu.kstream.common.util;
 
-import com.charaku.kstream.common.CommonTest;
-import com.charaku.kstream.common.util.throttle.ThreadSafeThrottle;
-import com.charaku.kstream.common.util.throttle.Throttle;
+import com.easternblu.kstream.common.CommonTest;
+import com.easternblu.kstream.common.util.throttle.ThreadSafeThrottle;
+import com.easternblu.kstream.common.util.throttle.Throttle;
 
 import org.junit.Test;
 

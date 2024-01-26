@@ -2,7 +2,7 @@ package com.kstream.plugin_player.lyrics.utils;
 
 import android.content.Context;
 import androidx.annotation.IntDef;
-import com.charaku.kstream.common.util.CloseableUtil;
+import com.easternblu.kstream.common.util.CloseableUtil;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

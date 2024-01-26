@@ -1,4 +1,4 @@
-package com.charaku.kstream.common;
+package com.easternblu.kstream.common;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

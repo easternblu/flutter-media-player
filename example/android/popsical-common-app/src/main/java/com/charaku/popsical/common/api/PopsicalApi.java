@@ -1,24 +1,24 @@
-//package com.charaku.kstream.common.api;
+//package com.easternblu.kstream.common.api;
 //
 //import android.content.Context;
 //
-//import com.charaku.kstream.common.Common;
-//import com.charaku.kstream.common.R;
+//import com.easternblu.kstream.common.Common;
+//import com.easternblu.kstream.common.R;
 //
-//import static com.charaku.kstream.common.Common.AND;
-//import static com.charaku.kstream.common.Common.EQUALS;
-//import static com.charaku.kstream.common.Common.QUESTION_MARK;
-//import static com.charaku.kstream.common.Common.SLASH;
-//import static com.charaku.kstream.common.api.CharakuPathConstant.ARTIST_ID_SUB;
-//import static com.charaku.kstream.common.api.CharakuPathConstant.JSON;
-//import static com.charaku.kstream.common.api.CharakuPathConstant.PLAYLIST_ID_SUB;
-//import static com.charaku.kstream.common.api.CharakuPathConstant.PLAYLIST_TRACK_ID_SUB;
-//import static com.charaku.kstream.common.api.CharakuPathConstant.PROFILE_ID_SUB;
-//import static com.charaku.kstream.common.api.CharakuPathConstant.TRACK_ID_SUB;
-//import static com.charaku.kstream.common.api.CharakuPathConstant._INCLUDES;
-//import static com.charaku.kstream.common.api.CharakuPathConstant._PAGE;
-//import static com.charaku.kstream.common.api.CharakuPathConstant._PER_PAGE;
-//import static com.charaku.kstream.common.api.CharakuPathConstant._TRACKS;
+//import static com.easternblu.kstream.common.Common.AND;
+//import static com.easternblu.kstream.common.Common.EQUALS;
+//import static com.easternblu.kstream.common.Common.QUESTION_MARK;
+//import static com.easternblu.kstream.common.Common.SLASH;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant.ARTIST_ID_SUB;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant.JSON;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant.PLAYLIST_ID_SUB;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant.PLAYLIST_TRACK_ID_SUB;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant.PROFILE_ID_SUB;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant.TRACK_ID_SUB;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant._INCLUDES;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant._PAGE;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant._PER_PAGE;
+//import static com.easternblu.kstream.common.api.easternbluPathConstant._TRACKS;
 //
 ///**
 // * A place to get URL with your custom parameter(s)
@@ -262,7 +262,7 @@
 //
 //    public static String getGenrePlayListWithTracksApi(String genre, String languageCodes, int currentPage, int playListsPerPage) {
 //        String query = _INCLUDES + EQUALS + _TRACKS
-//                + AND + CharakuPathConstant._LANG + EQUALS + languageCodes
+//                + AND + easternbluPathConstant._LANG + EQUALS + languageCodes
 //                + AND + _PAGE + EQUALS + currentPage
 //                + AND + _PER_PAGE + EQUALS + playListsPerPage;
 //        return GENRE_PLAY_LISTS_API + SLASH + genre + JSON + QUESTION_MARK + query;
@@ -270,7 +270,7 @@
 //
 //    /**
 //     * GET /v1/artist/{id}.json
-//     * https://github.com/charaku/digimon/blob/master/doc/api/v1/api.md#get-artist-show
+//     * https://github.com/easternblu/digimon/blob/master/doc/api/v1/api.md#get-artist-show
 //     *
 //     * @param artistId Artist ID
 //     * @return Url
@@ -283,7 +283,7 @@
 //
 //    /**
 //     * GET /v1/tracks/{id}.json
-//     * https://github.com/charaku/digimon/blob/master/doc/api/v1/api.md#get-tracks-show
+//     * https://github.com/easternblu/digimon/blob/master/doc/api/v1/api.md#get-tracks-show
 //     *
 //     * @param trackId Track ID
 //     * @return Url
@@ -312,7 +312,7 @@
 //     */
 //    public static String registerDeviceUid(int userId) {
 //        String url = REGISTER_DEVICE_API;
-//        url = url.replace(CharakuPathConstant.USER_ID_SUB, Integer.toString(userId));
+//        url = url.replace(easternbluPathConstant.USER_ID_SUB, Integer.toString(userId));
 //        return url;
 //    }
 //}

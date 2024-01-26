@@ -1,13 +1,13 @@
-package com.charaku.kstream.common;
+package com.easternblu.kstream.common;
 
 import android.app.Application;
 import android.content.Context;
 import androidx.annotation.Nullable;
 
-import com.charaku.kstream.common.util.Base64;
-import com.charaku.kstream.common.util.CipherHelper;
-import com.charaku.kstream.common.util.CloseableUtil;
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.util.Base64;
+import com.easternblu.kstream.common.util.CipherHelper;
+import com.easternblu.kstream.common.util.CloseableUtil;
+import com.easternblu.kstream.common.util.Strings;
 
 import java.io.IOException;
 import java.io.InputStream;

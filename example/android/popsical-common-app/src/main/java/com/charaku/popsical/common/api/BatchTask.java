@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.api;
+package com.easternblu.kstream.common.api;
 
 import androidx.annotation.Nullable;
 import android.util.Pair;

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/transparent">
 
-    <com.charaku.kstream.ktr.KaraokeLyricsView
+    <com.easternblu.kstream.ktr.KaraokeLyricsView
         android:id="@+id/karaoke_lyrics_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

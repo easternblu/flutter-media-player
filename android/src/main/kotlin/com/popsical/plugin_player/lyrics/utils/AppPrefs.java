@@ -1,7 +1,7 @@
 package com.kstream.plugin_player.lyrics.utils;
 
 
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.util.Strings;
 
 public class AppPrefs {
     public final String TAG = this.getClass().getSimpleName();

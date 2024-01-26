@@ -1,7 +1,7 @@
-package com.charaku.kstream.common;
+package com.easternblu.kstream.common;
 
 
-import com.charaku.kstream.common.util.Dates;
+import com.easternblu.kstream.common.util.Dates;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>

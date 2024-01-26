@@ -46,10 +46,10 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.charaku.kstream.common.util.CloseableUtil;
-import com.charaku.kstream.common.util.Lambda;
-import com.charaku.kstream.common.util.Streams;
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.util.CloseableUtil;
+import com.easternblu.kstream.common.util.Lambda;
+import com.easternblu.kstream.common.util.Streams;
+import com.easternblu.kstream.common.util.Strings;
 import com.kstream.plugin_player.R;
 
 import java.io.File;

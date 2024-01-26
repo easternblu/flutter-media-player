@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
 import android.media.MediaDescription;
 import android.os.Parcel;

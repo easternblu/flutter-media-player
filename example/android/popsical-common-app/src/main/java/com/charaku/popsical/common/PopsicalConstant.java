@@ -1,4 +1,4 @@
-package com.charaku.kstream.common;
+package com.easternblu.kstream.common;
 
 /**
  * Constants for kstream
@@ -33,7 +33,7 @@ public class kstreamConstant implements kstreamRemoteToTvConstant, kstreamTvToRe
 
     public static final String TAG_ERROR = "kstream";
 
-    //  https://github.com/charaku/digimon/blob/master/doc/api/v1/api.md#device-resource
+    //  https://github.com/easternblu/digimon/blob/master/doc/api/v1/api.md#device-resource
     public static final String DEVICE_TYPE_TV = "tv";
     public static final String DEVICE_TYPE_REMOTE = "remote";
 

@@ -1,13 +1,13 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
 import android.text.TextUtils;
 
-import com.charaku.kstream.common.Common;
-import com.charaku.kstream.common.api.CharakuPathConstant;
-import com.charaku.kstream.common.model.v2.VideoStreams;
-import com.charaku.kstream.common.util.Dates;
-import com.charaku.kstream.common.util.Range;
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.Common;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
+import com.easternblu.kstream.common.model.v2.VideoStreams;
+import com.easternblu.kstream.common.util.Dates;
+import com.easternblu.kstream.common.util.Range;
+import com.easternblu.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -36,19 +36,19 @@ import java.util.Map;
 //            "p720": "string"
 //        }
 //    },
-public class CharakuVideo implements Serializable {
+public class easternbluVideo implements Serializable {
 
     /**
      * An object that describe a range in the video that can be skipped
      */
     public static class SkippableRange {
         @Expose
-        @SerializedName(CharakuPathConstant._FROM)
+        @SerializedName(easternbluPathConstant._FROM)
         String fromRaw;
         Long from = null;
 
         @Expose
-        @SerializedName(CharakuPathConstant._TO)
+        @SerializedName(easternbluPathConstant._TO)
         String toRaw;
         Long to = null;
 
@@ -80,24 +80,24 @@ public class CharakuVideo implements Serializable {
     private static final String DUAL_TRACK = "5";
 
     @Expose
-    @SerializedName(CharakuPathConstant._ID)
+    @SerializedName(easternbluPathConstant._ID)
     int id;
 
     @Expose
-    @SerializedName(CharakuPathConstant._ARTIST_ID)
+    @SerializedName(easternbluPathConstant._ARTIST_ID)
     int artistId;
 
     @Expose
-    @SerializedName(CharakuPathConstant._TITLE)
+    @SerializedName(easternbluPathConstant._TITLE)
     String title;
 
     @Expose
-    @SerializedName(CharakuPathConstant._HAS_STREAM)
+    @SerializedName(easternbluPathConstant._HAS_STREAM)
     boolean hasStream;
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._VOCAL_CHANNEL)
+    @SerializedName(easternbluPathConstant._VOCAL_CHANNEL)
     String vocalChannel;
 
 
@@ -113,7 +113,7 @@ public class CharakuVideo implements Serializable {
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._VIDEO_URL)
+    @SerializedName(easternbluPathConstant._VIDEO_URL)
     @Deprecated
     String oldVideoUrl;
 
@@ -129,11 +129,11 @@ public class CharakuVideo implements Serializable {
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._IMAGES)
-    protected CharakuImages images;
+    @SerializedName(easternbluPathConstant._IMAGES)
+    protected easternbluImages images;
 
     @Expose
-    @SerializedName(CharakuPathConstant._SKIPPABLE_RANGES)
+    @SerializedName(easternbluPathConstant._SKIPPABLE_RANGES)
     protected List<SkippableRange> skippableRanges;
 
     /**
@@ -141,7 +141,7 @@ public class CharakuVideo implements Serializable {
      */
     @Deprecated
     @Expose
-    @SerializedName(CharakuPathConstant._DASH)
+    @SerializedName(easternbluPathConstant._DASH)
     protected Map<String, Object> dash;
 
     /**
@@ -149,7 +149,7 @@ public class CharakuVideo implements Serializable {
      */
     @Deprecated
     @Expose
-    @SerializedName(CharakuPathConstant._HLS)
+    @SerializedName(easternbluPathConstant._HLS)
     protected Map<String, Object> hls;
 
 
@@ -161,14 +161,14 @@ public class CharakuVideo implements Serializable {
     /**
      * Used by GSON
      */
-    public CharakuVideo() {
+    public easternbluVideo() {
     }
 
 
     /**
-     * Used by {@link CharakuVideoBuilder}
+     * Used by {@link easternbluVideoBuilder}
      */
-    CharakuVideo(int id, int artistId, String title, boolean hasStream, long runtime, String type, int number, String description, String releaseDate, String oldVideoUrl, String videoUrl, String posterUrl, CharakuImages images, Map<String, Object> dash, Map<String, Object> hls, Track track) {
+    easternbluVideo(int id, int artistId, String title, boolean hasStream, long runtime, String type, int number, String description, String releaseDate, String oldVideoUrl, String videoUrl, String posterUrl, easternbluImages images, Map<String, Object> dash, Map<String, Object> hls, Track track) {
         this.id = id;
         this.artistId = artistId;
         this.title = title;
@@ -189,7 +189,7 @@ public class CharakuVideo implements Serializable {
 
 
     /**
-     * Consider using {@link CharakuVideoBuilder}
+     * Consider using {@link easternbluVideoBuilder}
      *
      * @param id
      * @param artistId
@@ -204,7 +204,7 @@ public class CharakuVideo implements Serializable {
      * @param posterUrl
      */
     @Deprecated
-    public CharakuVideo(int id, int artistId, String title, long runtime, String type,
+    public easternbluVideo(int id, int artistId, String title, long runtime, String type,
                         int number, String description, String releaseDate, boolean hasStream,
                         String videoUrl, String posterUrl) {
         this.id = id;
@@ -297,7 +297,7 @@ public class CharakuVideo implements Serializable {
         videoUrl = Common.EMPTY_STRING;
 
         Object p720;
-        if (dash != null && (p720 = dash.get(CharakuPathConstant._P720)) != null && p720 instanceof String) {
+        if (dash != null && (p720 = dash.get(easternbluPathConstant._P720)) != null && p720 instanceof String) {
             videoUrl = p720.toString();
         }
 
@@ -321,7 +321,7 @@ public class CharakuVideo implements Serializable {
     }
 
     /**
-     * Based on the logic of the deprecated TrackHelper.buildCharakuVideo and TrackHelper.buildTrack
+     * Based on the logic of the deprecated TrackHelper.buildeasternbluVideo and TrackHelper.buildTrack
      * <p>
      * Set images.poster.url as first priority if available
      *
@@ -335,10 +335,10 @@ public class CharakuVideo implements Serializable {
             return posterUrl;
         }
 
-        //        if (trackJson.has(CharakuPathConstant._IMAGES) && trackJson.get(CharakuPathConstant._IMAGES) instanceof JSONObject) {
-        //            JSONObject images = trackJson.getJSONObject(CharakuPathConstant._IMAGES);
-        //            JSONObject poster = images.getJSONObject(CharakuPathConstant._POSTER);
-        //            String imagePosterUrl = poster.getString(CharakuPathConstant._URL);
+        //        if (trackJson.has(easternbluPathConstant._IMAGES) && trackJson.get(easternbluPathConstant._IMAGES) instanceof JSONObject) {
+        //            JSONObject images = trackJson.getJSONObject(easternbluPathConstant._IMAGES);
+        //            JSONObject poster = images.getJSONObject(easternbluPathConstant._POSTER);
+        //            String imagePosterUrl = poster.getString(easternbluPathConstant._URL);
         //            video.setPosterUrl(imagePosterUrl);
         //        }
 
@@ -349,10 +349,10 @@ public class CharakuVideo implements Serializable {
         if (track != null) {
             trackPosterUrl = track.getImagePosterUrl();
         }
-        //    JSONObject images = (JSONObject) videoJson.get(CharakuPathConstant._IMAGES);
-        //    JSONObject poster = (JSONObject) images.get(CharakuPathConstant._POSTER);
+        //    JSONObject images = (JSONObject) videoJson.get(easternbluPathConstant._IMAGES);
+        //    JSONObject poster = (JSONObject) images.get(easternbluPathConstant._POSTER);
         //
-        //    String posterUrl = Common.PROTOCOL_HTTP + poster.getString(CharakuPathConstant._URL).replace(Common.DOUBLE_SLASH, Common.EMPTY_STRING);
+        //    String posterUrl = Common.PROTOCOL_HTTP + poster.getString(easternbluPathConstant._URL).replace(Common.DOUBLE_SLASH, Common.EMPTY_STRING);
         if (images != null && images.getPosterUrl() != null) {
             videoImagePosterUrl = images.getPosterUrl();
             videoImagePosterUrl = Common.PROTOCOL_HTTP + videoImagePosterUrl.replace(Common.DOUBLE_SLASH, Common.EMPTY_STRING);

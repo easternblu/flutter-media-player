@@ -1,4 +1,4 @@
-package com.charaku.kstream.common.util.throttle;
+package com.easternblu.kstream.common.util.throttle;
 
 import android.os.SystemClock;
 

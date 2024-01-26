@@ -1,10 +1,10 @@
 
-package com.charaku.kstream.common.util.cardvalidator;
+package com.easternblu.kstream.common.util.cardvalidator;
 
 import android.text.Editable;
 import android.text.TextUtils;
 
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.util.Strings;
 
 import java.util.Set;
 
@@ -134,7 +134,7 @@ public final class CreditCardUtils {
     /**
      * Get the length of each section of the credit card number once formatted
      * <p>
-     * Ideally need to match the {@link com.charaku.kstream.common.util.cardvalidator.strategy.FormatStrategy} implementations
+     * Ideally need to match the {@link com.easternblu.kstream.common.util.cardvalidator.strategy.FormatStrategy} implementations
      *
      * @param type
      * @return

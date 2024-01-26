@@ -1,6 +1,6 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
-import com.charaku.kstream.common.api.CharakuPathConstant;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -16,11 +16,11 @@ import java.io.Serializable;
 //            "url": "string"
 //        }
 //    }
-public class CharakuImages implements Serializable {
+public class easternbluImages implements Serializable {
 
     
     @Expose
-    @SerializedName(CharakuPathConstant._POSTER)
+    @SerializedName(easternbluPathConstant._POSTER)
     protected Poster poster;
 
     public Poster getPoster() {
@@ -34,7 +34,7 @@ public class CharakuImages implements Serializable {
     public static class Poster implements Serializable{
 
         @Expose
-        @SerializedName(CharakuPathConstant._URL)
+        @SerializedName(easternbluPathConstant._URL)
         protected String url;
 
         public String getUrl() {

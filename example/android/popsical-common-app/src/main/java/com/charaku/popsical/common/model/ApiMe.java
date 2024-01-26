@@ -1,10 +1,10 @@
-package com.charaku.kstream.common.model;
+package com.easternblu.kstream.common.model;
 
 import android.text.TextUtils;
 
-import com.charaku.kstream.common.Common;
-import com.charaku.kstream.common.api.CharakuPathConstant;
-import com.charaku.kstream.common.util.Strings;
+import com.easternblu.kstream.common.Common;
+import com.easternblu.kstream.common.api.easternbluPathConstant;
+import com.easternblu.kstream.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -13,28 +13,28 @@ import java.util.List;
 
 @SuppressWarnings({Common.UNUSED, Common.WEAKER_ACCESS})
 public class ApiMe implements Serializable {
-    @SerializedName(CharakuPathConstant._ID)
+    @SerializedName(easternbluPathConstant._ID)
     @Expose
     private int id;
-    @SerializedName(CharakuPathConstant._EMAIL)
+    @SerializedName(easternbluPathConstant._EMAIL)
     @Expose
     private String email;
-    @SerializedName(CharakuPathConstant._FIRST_NAME)
+    @SerializedName(easternbluPathConstant._FIRST_NAME)
     @Expose
     private String firstName;
-    @SerializedName(CharakuPathConstant._LAST_NAME)
+    @SerializedName(easternbluPathConstant._LAST_NAME)
     @Expose
     private String lastName;
-    @SerializedName(CharakuPathConstant._PROFILE_PIC)
+    @SerializedName(easternbluPathConstant._PROFILE_PIC)
     @Expose
     private String profilePic;
-    @SerializedName(CharakuPathConstant._PREMIUM)
+    @SerializedName(easternbluPathConstant._PREMIUM)
     @Expose
     private boolean premium;
-    @SerializedName(CharakuPathConstant._PROFILES)
+    @SerializedName(easternbluPathConstant._PROFILES)
     @Expose
     private List<Profile> profiles;
-    @SerializedName(CharakuPathConstant._DEVICES)
+    @SerializedName(easternbluPathConstant._DEVICES)
     @Expose
     private List<Device> devices = null;
 
@@ -119,25 +119,25 @@ public class ApiMe implements Serializable {
 
     public class Device {
 
-        @SerializedName(CharakuPathConstant._DEVICE_UID)
+        @SerializedName(easternbluPathConstant._DEVICE_UID)
         @Expose
         private String deviceUid;
-        @SerializedName(CharakuPathConstant._IP_ADDRESS)
+        @SerializedName(easternbluPathConstant._IP_ADDRESS)
         @Expose
         private String ipAddress;
-        @SerializedName(CharakuPathConstant._MAC_ADDRESS)
+        @SerializedName(easternbluPathConstant._MAC_ADDRESS)
         @Expose
         private String macAddress;
-        @SerializedName(CharakuPathConstant._PORT)
+        @SerializedName(easternbluPathConstant._PORT)
         @Expose
         private int port;
-        @SerializedName(CharakuPathConstant._OS)
+        @SerializedName(easternbluPathConstant._OS)
         @Expose
         private String os;
-        @SerializedName(CharakuPathConstant._OS_VERSION)
+        @SerializedName(easternbluPathConstant._OS_VERSION)
         @Expose
         private String osVersion;
-        @SerializedName(CharakuPathConstant._TYPE)
+        @SerializedName(easternbluPathConstant._TYPE)
         @Expose
         private String type;
 
@@ -200,19 +200,19 @@ public class ApiMe implements Serializable {
 
     public class Profile {
 
-        @SerializedName(CharakuPathConstant._ID)
+        @SerializedName(easternbluPathConstant._ID)
         @Expose
         private int id;
-        @SerializedName(CharakuPathConstant._NAME)
+        @SerializedName(easternbluPathConstant._NAME)
         @Expose
         private String name;
-        @SerializedName(CharakuPathConstant._PLAYLIST_ID)
+        @SerializedName(easternbluPathConstant._PLAYLIST_ID)
         @Expose
         private int playlistId;
-        @SerializedName(CharakuPathConstant._HISTORY_PLAYLIST_ID)
+        @SerializedName(easternbluPathConstant._HISTORY_PLAYLIST_ID)
         @Expose
         public int historyPlaylistId;
-        @SerializedName(CharakuPathConstant._URLS)
+        @SerializedName(easternbluPathConstant._URLS)
         @Expose
         private Urls urls;
 
@@ -257,7 +257,7 @@ public class ApiMe implements Serializable {
         }
 
         public class Urls {
-            @SerializedName(CharakuPathConstant._PLAYLIST)
+            @SerializedName(easternbluPathConstant._PLAYLIST)
             @Expose
             private String playlist;
 
