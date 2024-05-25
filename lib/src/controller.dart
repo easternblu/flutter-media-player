@@ -1,70 +1,70 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class kstreamMediaController with ChangeNotifier {
-  MethodChannel? methodChannel;
-  String? _url = "";
+class PopsicalMediaController with ChangeNotifier {
+  MethodChannel methodChannel;
+  String _url = "";
 
-  String? get url => _url;
-  String? _title = "";
+  String get url => _url;
+  String _title = "";
 
-  String? get title => _title;
-  String? _subtitle = "";
+  String get title => _title;
+  String _subtitle = "";
 
-  String? get subtitle => _subtitle;
-  bool? _loop = false;
+  String get subtitle => _subtitle;
+  bool _loop = false;
 
-  bool? get loop => _loop;
-  bool? _autoPlay = false;
+  bool get loop => _loop;
+  bool _autoPlay = false;
 
-  bool? get autoPlay => _autoPlay;
-  double? _position = -1;
+  bool get autoPlay => _autoPlay;
+  double _position = -1;
 
-  double? get position => _position;
-  double? _pitch = -1;
+  double get position => _position;
+  double _pitch = -1;
 
-  double? get pitch => _pitch;
-  double? _speed = -1;
+  double get pitch => _pitch;
+  double _speed = -1;
 
-  double? get speed => _speed;
-  String? _preferredAudioLanguage = "en";
+  double get speed => _speed;
+  String _preferredAudioLanguage = "en";
 
-  String? get preferredAudioLanguage => _preferredAudioLanguage;
-  String? _userId = "";
+  String get preferredAudioLanguage => _preferredAudioLanguage;
+  String _userId = "";
 
-  String? get userId => _userId;
-  String? _trackId = "";
+  String get userId => _userId;
+  String _trackId = "";
 
-  String? get trackId => _trackId;
-  String? _videoId = "";
+  String get trackId => _trackId;
+  String _videoId = "";
 
-  String? get videoId => _videoId;
-  String? _muxKey = "";
+  String get videoId => _videoId;
+  String _muxKey = "";
 
-  String? get muxKey => _muxKey;
-  String? _muxName = "";
+  String get muxKey => _muxKey;
+  String _muxName = "";
 
-  String? get muxName => _muxName;
-  bool? _enableMux = false;
+  String get muxName => _muxName;
+  bool _enableMux = false;
 
-  bool? get enableMux => _enableMux;
+  bool get enableMux => _enableMux;
 
-  kstreamMediaController(String? url,
-      {void Function()? onInited,
-      final String? title,
-      final String? subtitle,
-      final bool? loop,
-      final bool? autoPlay,
-      final double? position,
-      final double? pitch,
-      final double? speed,
-      final String? audioLanguage,
-      final String? userId,
-      final String? trackId,
-      final String? videoId,
-      final String? muxName,
-      final String? muxKey,
-      final bool? enableMux}) {
+  PopsicalMediaController(String url,
+      {void Function() onInited,
+      final String title,
+      final String subtitle,
+      final bool loop,
+      final bool autoPlay,
+      final double position,
+      final double pitch,
+      final double speed,
+      final String audioLanguage,
+      final String userId,
+      final String trackId,
+      final String videoId,
+      final String muxName,
+      final String muxKey,
+      final bool enableMux}) {
     _url = url ?? _url;
     _title = title ?? _title;
     _subtitle = subtitle ?? _subtitle;
@@ -84,24 +84,24 @@ class kstreamMediaController with ChangeNotifier {
 
   void seekTo(double position) async {
     if (methodChannel != null) {
-      await methodChannel?.invokeMethod("seekTo", {"position": position});
+      await methodChannel.invokeMethod("seekTo", {"position": position});
     }
   }
 
   Future<void> playPause() async {
     if (methodChannel != null) {
-      await methodChannel?.invokeMethod("playPause");
+      await methodChannel.invokeMethod("playPause");
     }
   }
 
   Future<void> toggleLooping() async {
-    _loop = _loop != null ? (_loop = !_loop!) : false;
-    await methodChannel?.invokeMethod("setLooping", {"loop": _loop});
+    _loop = _loop = !_loop;
+    await methodChannel.invokeMethod("setLooping", {"loop": _loop});
   }
 
   Future<void> setPlaybackSpeed(double speed) async {
     if (methodChannel != null) {
-      await methodChannel?.invokeMethod("setPlaybackSpeed", {
+      await methodChannel.invokeMethod("setPlaybackSpeed", {
         "speed": speed.toString(),
       });
     }
@@ -109,55 +109,55 @@ class kstreamMediaController with ChangeNotifier {
 
   Future<void> setPitch(double pitch) async {
     if (methodChannel != null) {
-      await methodChannel?.invokeMethod("setPitch", {
+      await methodChannel.invokeMethod("setPitch", {
         "pitch": pitch.toString(),
       });
     }
   }
 
-  Future<double?> getPitch() async {
+  Future<double> getPitch() async {
     if (methodChannel != null) {
-      final pitch = await methodChannel?.invokeMethod("getPitch");
-      _pitch = pitch as double?;
+      final pitch = await methodChannel.invokeMethod("getPitch");
+      _pitch = pitch as double;
     }
     return _pitch;
   }
 
-  Future<double?> getPlaybackSpeed() async {
+  Future<double> getPlaybackSpeed() async {
     if (methodChannel != null) {
-      final speed = await methodChannel?.invokeMethod("getPlaybackSpeed");
-      _speed = speed as double?;
+      final speed = await methodChannel.invokeMethod("getPlaybackSpeed");
+      _speed = speed as double;
     }
     return _speed;
   }
 
-  Future<void> setPreferredAudioLanguageChanged({String? code}) async {
+  Future<void> setPreferredAudioLanguageChanged({String code}) async {
     if (methodChannel != null) {
       _preferredAudioLanguage = code != null
           ? code
           : _preferredAudioLanguage == 'en'
               ? 'ie'
               : 'en';
-      await methodChannel?.invokeMethod(
+      await methodChannel.invokeMethod(
           "setPreferredAudioLanguage", {"code": _preferredAudioLanguage});
     }
   }
 
   Future<void> onMediaChanged(
-      {String? url,
-      bool? autoPlay,
-      bool? loop,
-      String? title,
-      String? subtitle,
-      double? position,
-      double? speed,
-      String? audioLanguage,
-      double? pitch,
-      String? userId,
-      String? trackId,
-      String? videoId,
-      String? muxName,
-      String? muxKey}) async {
+      {String url,
+      bool autoPlay,
+      bool loop,
+      String title,
+      String subtitle,
+      double position,
+      double speed,
+      String audioLanguage,
+      double pitch,
+      String userId,
+      String trackId,
+      String videoId,
+      String muxName,
+      String muxKey}) async {
     _url = url;
     _autoPlay = autoPlay;
     _loop = loop;
@@ -193,6 +193,6 @@ class kstreamMediaController with ChangeNotifier {
   Future<void> onPlatformViewCreated(int viewId) async {
     if (methodChannel != null) return;
     methodChannel =
-        MethodChannel("tv.kstream/NativeVideoPlayerMethodChannel_$viewId");
+        MethodChannel("tv.popsical/NativeVideoPlayerMethodChannel_$viewId");
   }
 }

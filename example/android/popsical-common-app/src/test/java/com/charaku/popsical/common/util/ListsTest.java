@@ -1,6 +1,6 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
-import com.easternblu.kstream.common.CommonTest;
+import com.easternblu.khub.common.CommonTest;
 
 import org.junit.Test;
 

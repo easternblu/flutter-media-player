@@ -4,7 +4,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content">
 
-    <!--<com.easternblu.kstream.ktr.view.BasicStrokeTextView-->
+    <!--<com.easternblu.khub.ktr.view.BasicStrokeTextView-->
         <!--android:id="@+id/textview_layer0"-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
@@ -17,7 +17,7 @@
         <!--strokeAttrs:textStrokeColor="@android:color/black"-->
         <!--strokeAttrs:textStrokeWidth="1"/>-->
 
-    <!--<com.easternblu.kstream.ktr.view.BasicStrokeTextView-->
+    <!--<com.easternblu.khub.ktr.view.BasicStrokeTextView-->
         <!--android:id="@+id/textview_layer1"-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->

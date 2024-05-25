@@ -1,8 +1,8 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
-import com.easternblu.kstream.common.CommonTest;
-import com.easternblu.kstream.common.util.throttle.ThreadSafeThrottle;
-import com.easternblu.kstream.common.util.throttle.Throttle;
+import com.easternblu.khub.common.CommonTest;
+import com.easternblu.khub.common.util.throttle.ThreadSafeThrottle;
+import com.easternblu.khub.common.util.throttle.Throttle;
 
 import org.junit.Test;
 

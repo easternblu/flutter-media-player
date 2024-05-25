@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.api;
+package com.easternblu.khub.common.api;
 
 import androidx.annotation.StringDef;
 
@@ -9,7 +9,7 @@ import java.lang.annotation.RetentionPolicy;
  * Path and parameter keys
  * Created by leechunhoe on 4/7/16.
  */
-public interface easternbluPathConstant {
+public interface CharakuPathConstant {
 
     /**
      * Decide this on app side
@@ -328,7 +328,7 @@ public interface easternbluPathConstant {
     public static final String _ALGOLIA_ATTRIBUTE_BLOCK = _BLOCK;
 
 
-    public static final String _kstream_SIMPLEDATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
+    public static final String _POPSICAL_SIMPLEDATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
 
     public static final String GENDER_MALE = "m";
     public static final String GENDER_FEMALE = "f";

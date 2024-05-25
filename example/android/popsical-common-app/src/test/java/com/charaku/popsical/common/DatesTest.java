@@ -1,7 +1,7 @@
-package com.easternblu.kstream.common;
+package com.easternblu.khub.common;
 
 
-import com.easternblu.kstream.common.util.Dates;
+import com.easternblu.khub.common.util.Dates;
 
 import org.junit.Test;
 

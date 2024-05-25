@@ -1,4 +1,4 @@
-group 'com.kstream.plugin_player'
+group 'com.khub.plugin_player'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -43,7 +43,7 @@ android {
 
 dependencies {
       implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
-    implementation 'com.google.android.exoplayer:exoplayer:2.14.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.1'
     implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.22.3'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.media:media:1.1.0"
@@ -53,7 +53,7 @@ dependencies {
     implementation "uk.co.chrisjenx:calligraphy:2.2.0"
     implementation(name:'mux-r2.11.1', ext:'aar')
     implementation project(':player')
-    implementation project(':kstream-common-app')
+    implementation project(':popsical-common-app')
 }
 ext {
     minSdkVersion = 21

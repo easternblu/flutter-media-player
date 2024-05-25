@@ -1,7 +1,7 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
 
-import com.easternblu.kstream.common.CommonTest;
+import com.easternblu.khub.common.CommonTest;
 
 import org.junit.Test;
 
@@ -21,7 +21,7 @@ public class FilesTest extends CommonTest {
         File downloadFolder = Files.getDownloadFolder();
         assertTrue("Download folder exist", downloadFolder.exists());
 
-        File track1Mp4 = Files.getDownloadFile("kstream/1.mp4");
+        File track1Mp4 = Files.getDownloadFile("popsical/1.mp4");
         assertTrue("Track1 file doesnot exist", track1Mp4.exists());
 
 //        Result<String> okResult = new Result<>("OK");

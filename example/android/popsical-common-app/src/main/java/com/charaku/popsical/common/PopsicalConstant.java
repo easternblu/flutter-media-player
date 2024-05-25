@@ -1,17 +1,17 @@
-package com.easternblu.kstream.common;
+package com.easternblu.khub.common;
 
 /**
- * Constants for kstream
+ * Constants for Popsical
  * Created by leechunhoe on 3/8/16.
  */
 @SuppressWarnings({Common.UNUSED})
-public class kstreamConstant implements kstreamRemoteToTvConstant, kstreamTvToRemoteConstant {
+public class PopsicalConstant implements PopsicalRemoteToTvConstant, PopsicalTvToRemoteConstant {
     public static final String DEFAULT_URL = "http://192.168.1.1";
 
     public static final int PARTY_CODE_LENGTH = 6;
 
-    public static final String TAG_kstream_TV = "kstream_TV";
-    public static final String TAG_kstream_REMOTE_ANDROID = "kstream_REMOTE_ANDROID";
+    public static final String TAG_POPSICAL_TV = "POPSICAL_TV";
+    public static final String TAG_POPSICAL_REMOTE_ANDROID = "POPSICAL_REMOTE_ANDROID";
 
     public static final String ERR_CODE = "err_code";
     public static final String API_ERROR = "api_error";
@@ -31,9 +31,9 @@ public class kstreamConstant implements kstreamRemoteToTvConstant, kstreamTvToRe
 
 
 
-    public static final String TAG_ERROR = "kstream";
+    public static final String TAG_ERROR = "Popsical";
 
-    //  https://github.com/easternblu/digimon/blob/master/doc/api/v1/api.md#device-resource
+    //  https://github.com/charaku/digimon/blob/master/doc/api/v1/api.md#device-resource
     public static final String DEVICE_TYPE_TV = "tv";
     public static final String DEVICE_TYPE_REMOTE = "remote";
 
@@ -100,26 +100,26 @@ public class kstreamConstant implements kstreamRemoteToTvConstant, kstreamTvToRe
     //
     //================================================================================
     // short for "from"
-    public static final String kstream_BROADCAST_PARAM_FROM = "f";
+    public static final String POPSICAL_BROADCAST_PARAM_FROM = "f";
 
     /**
-     * Possible values of kstream_BROADCAST_PARAM_FROM
+     * Possible values of POPSICAL_BROADCAST_PARAM_FROM
      */
-    public static final String kstream_BROADCAST_PARAM_FROM_VALUE_TV = "tv";
-    public static final String kstream_BROADCAST_PARAM_FROM_VALUE_REMOTE_ANDROID = "ra";
-    public static final String kstream_BROADCAST_PARAM_FROM_VALUE_TV_REMOTE_IOS = "ri";
+    public static final String POPSICAL_BROADCAST_PARAM_FROM_VALUE_TV = "tv";
+    public static final String POPSICAL_BROADCAST_PARAM_FROM_VALUE_REMOTE_ANDROID = "ra";
+    public static final String POPSICAL_BROADCAST_PARAM_FROM_VALUE_TV_REMOTE_IOS = "ri";
     
     // short for "code"
-    public static final String kstream_BROADCAST_PARAM_CODE_SIMPLIFIED = "c";
+    public static final String POPSICAL_BROADCAST_PARAM_CODE_SIMPLIFIED = "c";
 
     // short for "value"
-    public static final String kstream_BROADCAST_PARAM_VALUE_SIMPLIFIED = "v";
+    public static final String POPSICAL_BROADCAST_PARAM_VALUE_SIMPLIFIED = "v";
 
     // short for "value_string"
-    public static final String kstream_BROADCAST_PARAM_VALUE_STRING_SIMPLIFIED = "vs";
+    public static final String POPSICAL_BROADCAST_PARAM_VALUE_STRING_SIMPLIFIED = "vs";
 
-    // short for "value_object" we added this to avoid making kstream_BROADCAST_PARAM_VALUE_STRING too messy
-    public static final String kstream_BROADCAST_PARAM_VALUE_OBJECT_SIMPLIFIED = "vo";
+    // short for "value_object" we added this to avoid making POPSICAL_BROADCAST_PARAM_VALUE_STRING too messy
+    public static final String POPSICAL_BROADCAST_PARAM_VALUE_OBJECT_SIMPLIFIED = "vo";
     //endregion
 
 }

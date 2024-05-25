@@ -1,5 +1,5 @@
 include ':player'
-include ':kstream-common-app'
-project(':kstream-common-app').projectDir = new File('../example/android/kstream-common-app')
+include ':popsical-common-app'
+project(':popsical-common-app').projectDir = new File('../example/android/popsical-common-app')
 project(':player').projectDir = new File('../example/android/player')
 rootProject.name = 'plugin_player'

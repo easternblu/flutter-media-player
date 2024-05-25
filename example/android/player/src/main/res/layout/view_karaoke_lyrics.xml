@@ -18,14 +18,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left">
 
-                <com.easternblu.kstream.ktr.view.TempoIndicatorView
+                <com.easternblu.khub.ktr.view.TempoIndicatorView
                     android:id="@+id/temp_indicator1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:visibility="visible" />
             </FrameLayout>
 
-            <com.easternblu.kstream.ktr.view.LineLayout
+            <com.easternblu.khub.ktr.view.LineLayout
                 android:id="@+id/layout_line1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:orientation="horizontal">
 
 
-            </com.easternblu.kstream.ktr.view.LineLayout>
+            </com.easternblu.khub.ktr.view.LineLayout>
 
             <FrameLayout
                 android:id="@+id/layout_line2_indicator"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right">
 
-                <com.easternblu.kstream.ktr.view.TempoIndicatorView
+                <com.easternblu.khub.ktr.view.TempoIndicatorView
                     android:id="@+id/temp_indicator2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
 
 
             <!--</LinearLayout>-->
-            <com.easternblu.kstream.ktr.view.LineLayout
+            <com.easternblu.khub.ktr.view.LineLayout
                 android:id="@+id/layout_line2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 android:orientation="horizontal">
 
 
-            </com.easternblu.kstream.ktr.view.LineLayout>
+            </com.easternblu.khub.ktr.view.LineLayout>
 
 
         </LinearLayout>
@@ -74,7 +74,7 @@
     </FrameLayout>
 
 
-    <com.easternblu.kstream.ktr.view.FuriganaStrokeTextView
+    <com.easternblu.khub.ktr.view.FuriganaStrokeTextView
         android:id="@+id/textview_header"
         android:layout_width="wrap_content"
         android:layout_marginLeft="@dimen/margin_lyrics"
@@ -84,7 +84,7 @@
         android:gravity="top|center_horizontal"
         android:visibility="gone" />
 
-    <com.easternblu.kstream.ktr.view.FuriganaStrokeTextView
+    <com.easternblu.khub.ktr.view.FuriganaStrokeTextView
         android:id="@+id/textview_footer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

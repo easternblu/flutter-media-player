@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.easternblu.kstream.common.model;
+package com.easternblu.khub.common.model;
 
 import androidx.annotation.Nullable;
 
-import com.easternblu.kstream.common.Common;
-import com.easternblu.kstream.common.api.easternbluPathConstant;
-import com.easternblu.kstream.common.util.Strings;
+import com.easternblu.khub.common.Common;
+import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -33,37 +33,37 @@ import java.util.List;
 public class Playlist implements Serializable {
 
     @Expose
-    @SerializedName(easternbluPathConstant._ID)
+    @SerializedName(CharakuPathConstant._ID)
     protected int id;
 
     @Expose
-    @SerializedName(easternbluPathConstant._PROFILE_ID)
+    @SerializedName(CharakuPathConstant._PROFILE_ID)
     protected int profileId;
 
     @Expose
-    @SerializedName(easternbluPathConstant._TAGS)
+    @SerializedName(CharakuPathConstant._TAGS)
     protected String tags;
 
     @Expose
-    @SerializedName(easternbluPathConstant._NAME)
+    @SerializedName(CharakuPathConstant._NAME)
     protected String name;
 
     @Expose
-    @SerializedName(easternbluPathConstant._TOTAL_TRACKS)
+    @SerializedName(CharakuPathConstant._TOTAL_TRACKS)
     protected int totalTracks;
 
 
     @Expose
-    @SerializedName(easternbluPathConstant._DESCRIPTION)
+    @SerializedName(CharakuPathConstant._DESCRIPTION)
     protected String description;
     
     @Expose
-    @SerializedName(easternbluPathConstant._POSITION)
+    @SerializedName(CharakuPathConstant._POSITION)
     protected int position;
 
     @Expose
-    @SerializedName(easternbluPathConstant._IMAGES)
-    protected easternbluImages images;
+    @SerializedName(CharakuPathConstant._IMAGES)
+    protected CharakuImages images;
     protected String normalized = null;
 
     public int getId() {
@@ -98,7 +98,7 @@ public class Playlist implements Serializable {
     }
 
 
-    public easternbluImages getImages() {
+    public CharakuImages getImages() {
         return images;
     }
 

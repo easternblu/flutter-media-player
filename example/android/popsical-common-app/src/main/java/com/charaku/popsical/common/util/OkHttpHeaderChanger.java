@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
 import java.io.IOException;
 import java.util.Map;

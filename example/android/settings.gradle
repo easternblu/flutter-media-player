@@ -1,6 +1,6 @@
 include ':app'
 include ':player'
-include ':kstream-common-app'
+include ':popsical-common-app'
 def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
 def properties = new Properties()
 

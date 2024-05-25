@@ -1,11 +1,11 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
 import android.os.Build;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.easternblu.kstream.common.Common;
+import com.easternblu.khub.common.Common;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

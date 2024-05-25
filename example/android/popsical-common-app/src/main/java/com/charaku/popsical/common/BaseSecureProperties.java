@@ -1,13 +1,13 @@
-package com.easternblu.kstream.common;
+package com.easternblu.khub.common;
 
 import android.app.Application;
 import android.content.Context;
 import androidx.annotation.Nullable;
 
-import com.easternblu.kstream.common.util.Base64;
-import com.easternblu.kstream.common.util.CipherHelper;
-import com.easternblu.kstream.common.util.CloseableUtil;
-import com.easternblu.kstream.common.util.Strings;
+import com.easternblu.khub.common.util.Base64;
+import com.easternblu.khub.common.util.CipherHelper;
+import com.easternblu.khub.common.util.CloseableUtil;
+import com.easternblu.khub.common.util.Strings;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,7 +21,7 @@ import timber.log.Timber;
  * <p>
  * See build.gradle for SecureFileHelper usage
  * <p>
- * Based on the properties file in kstream.common.properties and how it is copied to strings.xml in build.gradle. It is deemded too insecure
+ * Based on the properties file in popsical.common.properties and how it is copied to strings.xml in build.gradle. It is deemded too insecure
  * if we jsut let api key and id exposed plainly in strings.xml. So this class is used in conjuction with SecureFileHelper
  * which will encrypt the properties file during compile time using a symmetric key and initial-vector
  * <p>
@@ -35,7 +35,7 @@ public class BaseSecureProperties extends Properties {
     }
 
     /**
-     * 1) read the kstream.tv.properties<p>
+     * 1) read the popsical.tv.properties<p>
      * 2) wrap it in a decrypting stream<p>
      * 3) load it into {@link Properties}<p>
      * 5) This method MUST be called in {@link Application#onCreate()}<p>

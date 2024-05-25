@@ -1,4 +1,4 @@
-package com.easternblu.kstream.media;
+package com.easternblu.khub.media;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.easternblu.kstream.media.test", appContext.getPackageName());
+        assertEquals("com.easternblu.khub.media.test", appContext.getPackageName());
     }
 }

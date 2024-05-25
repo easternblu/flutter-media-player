@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.util.throttle;
+package com.easternblu.khub.common.util.throttle;
 
 import android.os.SystemClock;
 

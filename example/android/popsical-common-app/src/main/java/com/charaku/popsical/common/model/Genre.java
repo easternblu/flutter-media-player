@@ -1,6 +1,6 @@
-package com.easternblu.kstream.common.model;
+package com.easternblu.khub.common.model;
 
-import com.easternblu.kstream.common.api.easternbluPathConstant;
+import com.easternblu.khub.common.api.CharakuPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -12,19 +12,19 @@ import java.io.Serializable;
 public class Genre implements Serializable {
 
     @Expose
-    @SerializedName(easternbluPathConstant._KEY)
+    @SerializedName(CharakuPathConstant._KEY)
     protected String key;
 
     @Expose
-    @SerializedName(easternbluPathConstant._NAME)
+    @SerializedName(CharakuPathConstant._NAME)
     protected String name;
 
     @Expose
-    @SerializedName(easternbluPathConstant._POSTER_URL)
+    @SerializedName(CharakuPathConstant._POSTER_URL)
     protected String posterUrl;
 
     @Expose
-    @SerializedName(easternbluPathConstant._ICON_URL)
+    @SerializedName(CharakuPathConstant._ICON_URL)
     protected String iconUrl;
 
 

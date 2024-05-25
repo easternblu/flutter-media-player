@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.kstream.plugin_player">
+  package="com.khub.plugin_player">
     <application>
         <receiver
             android:name=".video.RemoteReceiver" 

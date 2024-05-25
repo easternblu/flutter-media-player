@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -51,8 +51,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.URLUtil;
 import android.widget.TextView;
 
-import com.easternblu.kstream.common.Common;
-import com.easternblu.kstream.common.R;
+import com.easternblu.khub.common.Common;
+import com.easternblu.khub.common.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

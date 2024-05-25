@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.api;
+package com.easternblu.khub.common.api;
 
 import android.content.Context;
 import androidx.annotation.MainThread;
@@ -7,11 +7,11 @@ import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 import android.util.Pair;
 
-import com.easternblu.kstream.common.util.Maps;
-import com.easternblu.kstream.common.util.OkHttpHeaderChanger;
-import com.easternblu.kstream.common.util.OkHttpLogger;
-import com.easternblu.kstream.common.util.Sets;
-import com.easternblu.kstream.common.util.Strings;
+import com.easternblu.khub.common.util.Maps;
+import com.easternblu.khub.common.util.OkHttpHeaderChanger;
+import com.easternblu.khub.common.util.OkHttpLogger;
+import com.easternblu.khub.common.util.Sets;
+import com.easternblu.khub.common.util.Strings;
 import com.google.gson.Gson;
 
 import java.io.File;

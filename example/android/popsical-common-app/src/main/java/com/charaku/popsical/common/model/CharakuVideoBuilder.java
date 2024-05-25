@@ -1,11 +1,11 @@
-package com.easternblu.kstream.common.model;
+package com.easternblu.khub.common.model;
 
 import java.util.Map;
 
 /**
- * A builder object generated using {@link easternbluVideo} constructor
+ * A builder object generated using {@link CharakuVideo} constructor
  */
-public class easternbluVideoBuilder {
+public class CharakuVideoBuilder {
     private int mId;
     private int mArtistId;
     private String mTitle;
@@ -18,92 +18,92 @@ public class easternbluVideoBuilder {
     private String mOldVideoUrl;
     private String mVideoUrl;
     private String mPosterUrl;
-    private easternbluImages mImages;
+    private CharakuImages mImages;
     private Map<String, Object> mDash;
     private Map<String, Object> mHls;
     private Track mTrack;
 
-    public easternbluVideoBuilder setId(int id) {
+    public CharakuVideoBuilder setId(int id) {
         mId = id;
         return this;
     }
 
-    public easternbluVideoBuilder setArtistId(int artistId) {
+    public CharakuVideoBuilder setArtistId(int artistId) {
         mArtistId = artistId;
         return this;
     }
 
-    public easternbluVideoBuilder setTitle(String title) {
+    public CharakuVideoBuilder setTitle(String title) {
         mTitle = title;
         return this;
     }
 
-    public easternbluVideoBuilder setHasStream(boolean hasStream) {
+    public CharakuVideoBuilder setHasStream(boolean hasStream) {
         mHasStream = hasStream;
         return this;
     }
 
-    public easternbluVideoBuilder setRuntime(long runtime) {
+    public CharakuVideoBuilder setRuntime(long runtime) {
         mRuntime = runtime;
         return this;
     }
 
-    public easternbluVideoBuilder setType(String type) {
+    public CharakuVideoBuilder setType(String type) {
         mType = type;
         return this;
     }
 
-    public easternbluVideoBuilder setNumber(int number) {
+    public CharakuVideoBuilder setNumber(int number) {
         mNumber = number;
         return this;
     }
 
-    public easternbluVideoBuilder setDescription(String description) {
+    public CharakuVideoBuilder setDescription(String description) {
         mDescription = description;
         return this;
     }
 
-    public easternbluVideoBuilder setReleaseDate(String releaseDate) {
+    public CharakuVideoBuilder setReleaseDate(String releaseDate) {
         mReleaseDate = releaseDate;
         return this;
     }
 
-    public easternbluVideoBuilder setOldVideoUrl(String oldVideoUrl) {
+    public CharakuVideoBuilder setOldVideoUrl(String oldVideoUrl) {
         mOldVideoUrl = oldVideoUrl;
         return this;
     }
 
-    public easternbluVideoBuilder setVideoUrl(String videoUrl) {
+    public CharakuVideoBuilder setVideoUrl(String videoUrl) {
         mVideoUrl = videoUrl;
         return this;
     }
 
-    public easternbluVideoBuilder setPosterUrl(String posterUrl) {
+    public CharakuVideoBuilder setPosterUrl(String posterUrl) {
         mPosterUrl = posterUrl;
         return this;
     }
 
-    public easternbluVideoBuilder setImages(easternbluImages images) {
+    public CharakuVideoBuilder setImages(CharakuImages images) {
         mImages = images;
         return this;
     }
 
-    public easternbluVideoBuilder setDash(Map<String, Object> dash) {
+    public CharakuVideoBuilder setDash(Map<String, Object> dash) {
         mDash = dash;
         return this;
     }
 
-    public easternbluVideoBuilder setHls(Map<String, Object> hls) {
+    public CharakuVideoBuilder setHls(Map<String, Object> hls) {
         mHls = hls;
         return this;
     }
 
-    public easternbluVideoBuilder setTrack(Track track) {
+    public CharakuVideoBuilder setTrack(Track track) {
         mTrack = track;
         return this;
     }
 
-    public easternbluVideo createeasternbluVideo() {
-        return new easternbluVideo(mId, mArtistId, mTitle, mHasStream, mRuntime, mType, mNumber, mDescription, mReleaseDate, mOldVideoUrl, mVideoUrl, mPosterUrl, mImages, mDash, mHls, mTrack);
+    public CharakuVideo createCharakuVideo() {
+        return new CharakuVideo(mId, mArtistId, mTitle, mHasStream, mRuntime, mType, mNumber, mDescription, mReleaseDate, mOldVideoUrl, mVideoUrl, mPosterUrl, mImages, mDash, mHls, mTrack);
     }
 }

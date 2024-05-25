@@ -3,7 +3,7 @@
 //import android.net.Uri;
 //import android.util.Log;
 //
-//import com.easternblu.kstream.media.exoplayer2.VocalTrackLogic;
+//import com.easternblu.khub.media.exoplayer2.VocalTrackLogic;
 ////import com.google.android.exoplayer2.util.MimeTypes;
 //import com.mdpparser.data.model.DashAdaptationSet;
 //import com.mdpparser.data.model.DashManifest;

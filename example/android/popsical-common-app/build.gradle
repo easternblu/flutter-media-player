@@ -16,7 +16,7 @@ android {
     buildTypes {
         release {
             Properties properties = new Properties()
-//            properties.load(new FileInputStream("${System.properties['user.home']}/kstream.common.properties"))
+//            properties.load(new FileInputStream("${System.properties['user.home']}/popsical.common.properties"))
 
 //            def which_server = properties.getProperty('which_server.release')
 //            resValue "string", "which_server", which_server
@@ -26,7 +26,7 @@ android {
         }
         debug {
             Properties properties = new Properties()
-//            properties.load(new FileInputStream("${System.properties['user.home']}/kstream.common.properties"))
+//            properties.load(new FileInputStream("${System.properties['user.home']}/popsical.common.properties"))
 
 //            def which_server = properties.getProperty('which_server.debug')
 //            resValue "string", "which_server", which_server

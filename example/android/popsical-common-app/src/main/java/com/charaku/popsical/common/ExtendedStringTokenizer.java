@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common;
+package com.easternblu.khub.common;
 
 import java.util.HashSet;
 import java.util.List;

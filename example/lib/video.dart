@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:plugin_player/kstream_video_player.dart';
+import 'package:plugin_player/src/player_observer.dart';
+import 'package:plugin_player/src/controller.dart';
+import 'package:plugin_player/src/video.dart';
+import 'package:plugin_player/src/video_event.dart';
+import 'package:plugin_player/src/plugin_lyrics.dart';
 
 class VideoPlayout extends StatefulWidget {
-  final bool? showPlayerControls;
+  final bool showPlayerControls;
 
-  const VideoPlayout({Key? key, this.showPlayerControls}) : super(key: key);
+  const VideoPlayout({Key key, this.showPlayerControls}) : super(key: key);
 
   @override
   _VideoPlayoutState createState() => _VideoPlayoutState();
@@ -12,14 +16,14 @@ class VideoPlayout extends StatefulWidget {
 
 class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
   final String _url =
-      'https://v.kstream.tv/134313_-JUHg3HdcqAQfAb86eBB2g/hls/master_manifest.m3u8';
+      'https://v.popsical.tv/134313_-JUHg3HdcqAQfAb86eBB2g/hls/master_manifest.m3u8';
 
-  kstreamMediaController? controller;
-  LyricsController? lyricsController;
+  PopsicalMediaController controller;
+  LyricsController lyricsController;
   @override
   void initState() {
     super.initState();
-    controller = kstreamMediaController(_url,
+    controller = PopsicalMediaController(_url,
         autoPlay: true,
         loop: true,
         pitch: 1,
@@ -48,7 +52,7 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
                   IconButton(
                     icon: Icon(Icons.adjust),
                     onPressed: () async {
-                      controller?.playPause();
+                      controller.playPause();
                     },
                   ),
                 ])),
@@ -87,26 +91,26 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
 
   @override
   void onPlay() {
-    lyricsController?.onMediaStart();
+    lyricsController.onMediaStart();
     super.onPlay();
   }
 
   @override
   void onPause() {
-    lyricsController?.onMediaPause();
+    lyricsController.onMediaPause();
     super.onPause();
   }
 
   @override
   void onComplete() {
-    lyricsController?.resetLyricsView();
+    lyricsController.resetLyricsView();
     super.onComplete();
   }
 
   @override
   void onTime(int position) {
     if (position > 0) {
-      lyricsController?.onPlayerProgressUpdate(position * 1000);
+      lyricsController.onPlayerProgressUpdate(position * 1000);
     }
     super.onTime(position);
   }
@@ -118,9 +122,9 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
 
   @override
   void onDuration(int duration) async {
-    await lyricsController?.setLyricsDuration(duration);
+    await lyricsController.setLyricsDuration(duration);
     if (duration > 0) {
-      await lyricsController?.loadLyrics(lyrics);
+      await lyricsController.loadLyrics(lyrics);
     }
     super.onDuration(duration);
   }
@@ -143,10 +147,10 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
       "[offset:0]\n" +
       "[re:1]\n" +
       "[ve:1]\n" +
-      "[X-kstream-Singer-Color:#0000ff]\n" +
-      "[X-kstream-font-scale:1]\n" +
-      "[X-kstream-lang:en]\n" +
-      "[X-kstream-Margins-V2:0.025,0.15,0.025,0.15]\n" +
+      "[X-Popsical-Singer-Color:#0000ff]\n" +
+      "[X-Popsical-font-scale:1]\n" +
+      "[X-Popsical-lang:en]\n" +
+      "[X-Popsical-Margins-V2:0.025,0.15,0.025,0.15]\n" +
       "\n" +
       "\n" +
       "[00:03.613] Seize <00:03.898> <00:04.043> the <00:04.259> <00:04.437> day <00:04.868> <00:05.190> or <00:05.453> <00:05.519> die <00:05.686> <00:05.854> regretting <00:06.620> <00:06.702> the <00:06.796> <00:07.001> time <00:07.272> <00:07.418> you <00:07.572> <00:07.721> lost <00:08.371>\n" +

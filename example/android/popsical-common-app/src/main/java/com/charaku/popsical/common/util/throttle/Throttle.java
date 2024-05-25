@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.util.throttle;
+package com.easternblu.khub.common.util.throttle;
 
 /**
  * Created by pan on 7/6/17.

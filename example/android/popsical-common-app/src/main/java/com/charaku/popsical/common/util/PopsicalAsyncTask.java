@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
 
 import android.annotation.TargetApi;
@@ -25,33 +25,33 @@ import java.util.concurrent.atomic.AtomicInteger;
  * <p>
  * Created by yatpanng on 19/9/17.
  */
-public abstract class kstreamAsyncTask<Params, Progress, Result> extends AsyncTask<Params, Progress, Result> {
+public abstract class PopsicalAsyncTask<Params, Progress, Result> extends AsyncTask<Params, Progress, Result> {
 
     private static final int MINIMUM_POOL_SIZE = 4, MAXIMUM_POOL_SIZE = 8;
     private static final int KEEP_ALIVE_SECONDS = 30;
 
-    private static final ThreadFactory skstreamThreadFactory = new ThreadFactory() {
+    private static final ThreadFactory sPopsicalThreadFactory = new ThreadFactory() {
         private final AtomicInteger mCount = new AtomicInteger(1);
 
         public Thread newThread(Runnable r) {
-            return new Thread(r, "kstreamAsyncTask #" + mCount.getAndIncrement());
+            return new Thread(r, "PopsicalAsyncTask #" + mCount.getAndIncrement());
         }
     };
 
-    private static final BlockingQueue<Runnable> skstreamPoolWorkQueue =
+    private static final BlockingQueue<Runnable> sPopsicalPoolWorkQueue =
             new LinkedBlockingQueue<Runnable>(128);
 
     /**
      * An {@link Executor} that can be used to execute tasks in parallel.
      */
-    public static final Executor kstream_THREAD_POOL_EXECUTOR;
+    public static final Executor POPSICAL_THREAD_POOL_EXECUTOR;
 
     static {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
                 MINIMUM_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE_SECONDS, TimeUnit.SECONDS,
-                skstreamPoolWorkQueue, skstreamThreadFactory);
+                sPopsicalPoolWorkQueue, sPopsicalThreadFactory);
         threadPoolExecutor.allowCoreThreadTimeOut(true);
-        kstream_THREAD_POOL_EXECUTOR = threadPoolExecutor;
+        POPSICAL_THREAD_POOL_EXECUTOR = threadPoolExecutor;
     }
 
 
@@ -64,9 +64,9 @@ public abstract class kstreamAsyncTask<Params, Progress, Result> extends AsyncTa
      * @return
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB) // API 11
-    public kstreamAsyncTask<Params, Progress, Result> executeNow(Params... params) {
+    public PopsicalAsyncTask<Params, Progress, Result> executeNow(Params... params) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-            this.executeOnExecutor(kstream_THREAD_POOL_EXECUTOR, params);
+            this.executeOnExecutor(POPSICAL_THREAD_POOL_EXECUTOR, params);
         else
             this.execute(params);
         return this;
@@ -94,7 +94,7 @@ public abstract class kstreamAsyncTask<Params, Progress, Result> extends AsyncTa
 //         */
 //        RUNNING,
 //        /**
-//         * Indicates that {@link kstreamAsyncTask#onPostExecute} has finished.
+//         * Indicates that {@link PopsicalAsyncTask#onPostExecute} has finished.
 //         */
 //        FINISHED,
 //    }
@@ -106,7 +106,7 @@ public abstract class kstreamAsyncTask<Params, Progress, Result> extends AsyncTa
 //    protected volatile boolean cancelled = false;
 //    protected volatile Thread runningThread = null;
 //
-//    public kstreamAsyncTask() {
+//    public PopsicalAsyncTask() {
 //    }
 //
 //
@@ -141,7 +141,7 @@ public abstract class kstreamAsyncTask<Params, Progress, Result> extends AsyncTa
 //    }
 //
 //    @MainThread
-//    public final kstreamAsyncTask<Params, Progress, Result> execute(final Params... params) {
+//    public final PopsicalAsyncTask<Params, Progress, Result> execute(final Params... params) {
 //        if (!isMainThread()) {
 //            throw new IllegalArgumentException("Must execute on main thread");
 //        }

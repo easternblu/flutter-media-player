@@ -1,12 +1,12 @@
-package com.easternblu.kstream.common.rx;
+package com.easternblu.khub.common.rx;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.Pair;
 
-import com.easternblu.kstream.common.util.Converter;
-import com.easternblu.kstream.common.util.Maps;
-import com.easternblu.kstream.common.util.Strings;
+import com.easternblu.khub.common.util.Converter;
+import com.easternblu.khub.common.util.Maps;
+import com.easternblu.khub.common.util.Strings;
 
 import java.util.Collections;
 import java.util.Comparator;

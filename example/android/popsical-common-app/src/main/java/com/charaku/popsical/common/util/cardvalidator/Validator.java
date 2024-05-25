@@ -1,8 +1,8 @@
 
-package com.easternblu.kstream.common.util.cardvalidator;
+package com.easternblu.khub.common.util.cardvalidator;
 
 
-import com.easternblu.kstream.common.util.cardvalidator.strategy.FormatStrategy;
+import com.easternblu.khub.common.util.cardvalidator.strategy.FormatStrategy;
 
 /**
  * Created by tyln on 28.04.16.

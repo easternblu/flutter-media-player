@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common;
+package com.easternblu.khub.common;
 
 /**
  * Created by pan on 21/12/17.

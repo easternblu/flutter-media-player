@@ -1,4 +1,4 @@
-package com.easternblu.kstream.media;
+package com.easternblu.khub.media;
 
 import org.junit.Test;
 

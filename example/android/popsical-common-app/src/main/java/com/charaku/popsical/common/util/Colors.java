@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.util;
+package com.easternblu.khub.common.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;

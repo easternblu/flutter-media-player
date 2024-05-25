@@ -1,12 +1,12 @@
-package com.easternblu.kstream.common.model;
+package com.easternblu.khub.common.model;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.easternblu.kstream.common.Common;
-import com.easternblu.kstream.common.api.easternbluPathConstant;
-import com.easternblu.kstream.common.util.Lists;
-import com.easternblu.kstream.common.util.Strings;
+import com.easternblu.khub.common.Common;
+import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.util.Lists;
+import com.easternblu.khub.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -23,34 +23,34 @@ public class Artist implements Serializable {
     public static final String ARTIST_LAZY_DELIMS = ",+&^;";
 
     @Expose
-    @SerializedName(easternbluPathConstant._ID)
+    @SerializedName(CharakuPathConstant._ID)
     protected int id;
 
     @Expose
-    @SerializedName(easternbluPathConstant._NAME)
+    @SerializedName(CharakuPathConstant._NAME)
     protected String name;
 
     @Expose
-    @SerializedName(easternbluPathConstant._GENDER)
+    @SerializedName(CharakuPathConstant._GENDER)
     protected String gender;
 
     @Expose
-    @SerializedName(easternbluPathConstant._LANG_CODES)
+    @SerializedName(CharakuPathConstant._LANG_CODES)
     protected String[] langCodes;
 
     @Expose
-    @SerializedName(easternbluPathConstant._POSTER_URL)
+    @SerializedName(CharakuPathConstant._POSTER_URL)
     protected String posterUrl;
 
 
     @Expose
-    @SerializedName(easternbluPathConstant._TOTAL_TRACKS)
+    @SerializedName(CharakuPathConstant._TOTAL_TRACKS)
     protected long totalTracks;
 
 
     @Expose
-    @SerializedName(easternbluPathConstant._IMAGES)
-    protected easternbluImages images;
+    @SerializedName(CharakuPathConstant._IMAGES)
+    protected CharakuImages images;
 
     protected List<String> names = null;
 
@@ -150,7 +150,7 @@ public class Artist implements Serializable {
         this.posterUrl = posterUrl;
     }
 
-    public easternbluImages getImages() {
+    public CharakuImages getImages() {
         return images;
     }
 

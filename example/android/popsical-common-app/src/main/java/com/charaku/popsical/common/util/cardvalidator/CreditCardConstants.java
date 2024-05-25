@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.util.cardvalidator;
+package com.easternblu.khub.common.util.cardvalidator;
 
 /**
  * Created by tyln on 28.04.16.

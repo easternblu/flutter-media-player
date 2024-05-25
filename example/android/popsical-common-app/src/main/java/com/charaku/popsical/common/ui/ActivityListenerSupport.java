@@ -1,4 +1,4 @@
-package com.easternblu.kstream.common.ui;
+package com.easternblu.khub.common.ui;
 
 
 import android.os.Bundle;

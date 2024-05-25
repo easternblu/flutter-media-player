@@ -1,43 +1,43 @@
-//package com.easternblu.kstream.common.api;
+//package com.easternblu.khub.common.api;
 //
 //import android.content.Context;
 //
-//import com.easternblu.kstream.common.Common;
-//import com.easternblu.kstream.common.R;
+//import com.easternblu.khub.common.Common;
+//import com.easternblu.khub.common.R;
 //
-//import static com.easternblu.kstream.common.Common.AND;
-//import static com.easternblu.kstream.common.Common.EQUALS;
-//import static com.easternblu.kstream.common.Common.QUESTION_MARK;
-//import static com.easternblu.kstream.common.Common.SLASH;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant.ARTIST_ID_SUB;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant.JSON;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant.PLAYLIST_ID_SUB;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant.PLAYLIST_TRACK_ID_SUB;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant.PROFILE_ID_SUB;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant.TRACK_ID_SUB;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant._INCLUDES;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant._PAGE;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant._PER_PAGE;
-//import static com.easternblu.kstream.common.api.easternbluPathConstant._TRACKS;
+//import static com.easternblu.khub.common.Common.AND;
+//import static com.easternblu.khub.common.Common.EQUALS;
+//import static com.easternblu.khub.common.Common.QUESTION_MARK;
+//import static com.easternblu.khub.common.Common.SLASH;
+//import static com.easternblu.khub.common.api.CharakuPathConstant.ARTIST_ID_SUB;
+//import static com.easternblu.khub.common.api.CharakuPathConstant.JSON;
+//import static com.easternblu.khub.common.api.CharakuPathConstant.PLAYLIST_ID_SUB;
+//import static com.easternblu.khub.common.api.CharakuPathConstant.PLAYLIST_TRACK_ID_SUB;
+//import static com.easternblu.khub.common.api.CharakuPathConstant.PROFILE_ID_SUB;
+//import static com.easternblu.khub.common.api.CharakuPathConstant.TRACK_ID_SUB;
+//import static com.easternblu.khub.common.api.CharakuPathConstant._INCLUDES;
+//import static com.easternblu.khub.common.api.CharakuPathConstant._PAGE;
+//import static com.easternblu.khub.common.api.CharakuPathConstant._PER_PAGE;
+//import static com.easternblu.khub.common.api.CharakuPathConstant._TRACKS;
 //
 ///**
 // * A place to get URL with your custom parameter(s)
 // * Created by leechunhoe on 15/11/16.
 // */
 //@SuppressWarnings({Common.WEAKER_ACCESS, Common.UNUSED})
-//public class kstreamApi {
+//public class PopsicalApi {
 //    public static final int SERVER_INSTANCE_PRODUCTION = 0;
 //    public static final int SERVER_INSTANCE_STAGING = 1;
 //    public static final int[] SERVER_INSTANCES = {SERVER_INSTANCE_PRODUCTION, SERVER_INSTANCE_STAGING};
 //
-//    public static final String kstream_WEB_DOMAIN = "https://www.kstream.com";
-//    public static final String kstream_WEB_DOMAIN_HOST = "kstream.com";
+//    public static final String POPSICAL_WEB_DOMAIN = "https://www.popsical.com";
+//    public static final String POPSICAL_WEB_DOMAIN_HOST = "popsical.com";
 //
-//    public static final String kstream_API_DOMAIN_PRODUCTION = "https://api.kstream.tv";
-//    public static final String kstream_API_DOMAIN_STAGING = "https://api-staging.kstream.tv";
-//    public static final String kstream_API_DOMAIN_TEST = "http://localhost:4000";
-////    public static final String kstream_API_DOMAIN_PRODUCTION = "https://app.kstream.tv";
-////    public static final String kstream_API_DOMAIN_STAGING = "https://app-staging.kstream.tv";
+//    public static final String POPSICAL_API_DOMAIN_PRODUCTION = "https://api.popsical.tv";
+//    public static final String POPSICAL_API_DOMAIN_STAGING = "https://api-staging.popsical.tv";
+//    public static final String POPSICAL_API_DOMAIN_TEST = "http://localhost:4000";
+////    public static final String POPSICAL_API_DOMAIN_PRODUCTION = "https://app.popsical.tv";
+////    public static final String POPSICAL_API_DOMAIN_STAGING = "https://app-staging.popsical.tv";
 //
 //    protected static final String API_VERSION_ONE = "/v1";
 //    protected static final String API_VERSION_TWO = "/v2";
@@ -87,9 +87,9 @@
 //    public static String getFullEndpoint(String apiEndPoint, int whichServer) {
 //        switch (whichServer) {
 //            case SERVER_INSTANCE_PRODUCTION:
-//                return kstream_API_DOMAIN_PRODUCTION + apiEndPoint;
+//                return POPSICAL_API_DOMAIN_PRODUCTION + apiEndPoint;
 //            case SERVER_INSTANCE_STAGING:
-//                return kstream_API_DOMAIN_STAGING + apiEndPoint;
+//                return POPSICAL_API_DOMAIN_STAGING + apiEndPoint;
 //            default:
 //                return Common.EMPTY_STRING;
 //        }
@@ -102,7 +102,7 @@
 //     * @return Algolia track index name
 //     */
 //    public static String getAlgoliaSearchTrackIndexName(Context context) {
-//        int whichServer = kstreamApi.whichServer(context);
+//        int whichServer = PopsicalApi.whichServer(context);
 //        return getAlgoliaSearchTrackIndexName(whichServer);
 //    }
 //
@@ -114,9 +114,9 @@
 //     */
 //    public static String getAlgoliaSearchTrackIndexName(int whichServer) {
 //        switch (whichServer) {
-//            case kstreamApi.SERVER_INSTANCE_STAGING:
+//            case PopsicalApi.SERVER_INSTANCE_STAGING:
 //                return ALGOLIA_SEARCH_TRACK_INDEX_NAME_STAGING;
-//            case kstreamApi.SERVER_INSTANCE_PRODUCTION:
+//            case PopsicalApi.SERVER_INSTANCE_PRODUCTION:
 //                return ALGOLIA_SEARCH_TRACK_INDEX_NAME_PRODUCTION;
 //            default:
 //                return Common.EMPTY_STRING;
@@ -130,7 +130,7 @@
 //     * @return Algolia artist index name
 //     */
 //    public static String getAlgoliaSearchArtistIndexName(Context context) {
-//        int whichServer = kstreamApi.whichServer(context);
+//        int whichServer = PopsicalApi.whichServer(context);
 //        return getAlgoliaSearchArtistIndexName(whichServer);
 //    }
 //
@@ -142,9 +142,9 @@
 //     */
 //    public static String getAlgoliaSearchArtistIndexName(int whichServer) {
 //        switch (whichServer) {
-//            case kstreamApi.SERVER_INSTANCE_STAGING:
+//            case PopsicalApi.SERVER_INSTANCE_STAGING:
 //                return ALGOLIA_SEARCH_ARTIST_INDEX_NAME_STAGING;
-//            case kstreamApi.SERVER_INSTANCE_PRODUCTION:
+//            case PopsicalApi.SERVER_INSTANCE_PRODUCTION:
 //                return ALGOLIA_SEARCH_ARTIST_INDEX_NAME_PRODUCTION;
 //            default:
 //                return Common.EMPTY_STRING;
@@ -246,7 +246,7 @@
 //
 //    /**
 //     * GET /me/play_queue.json
-//     * @see <a href="http://developers.kstream.com/#!/PlayQueue/get_me_play_queue_json">http://developers.kstream.com/#!/PlayQueue/get_me_play_queue_json</a>
+//     * @see <a href="http://developers.popsical.com/#!/PlayQueue/get_me_play_queue_json">http://developers.popsical.com/#!/PlayQueue/get_me_play_queue_json</a>
 //     *
 //     * @param page    Page number
 //     * @param perPage Tracks per page
@@ -262,7 +262,7 @@
 //
 //    public static String getGenrePlayListWithTracksApi(String genre, String languageCodes, int currentPage, int playListsPerPage) {
 //        String query = _INCLUDES + EQUALS + _TRACKS
-//                + AND + easternbluPathConstant._LANG + EQUALS + languageCodes
+//                + AND + CharakuPathConstant._LANG + EQUALS + languageCodes
 //                + AND + _PAGE + EQUALS + currentPage
 //                + AND + _PER_PAGE + EQUALS + playListsPerPage;
 //        return GENRE_PLAY_LISTS_API + SLASH + genre + JSON + QUESTION_MARK + query;
@@ -270,7 +270,7 @@
 //
 //    /**
 //     * GET /v1/artist/{id}.json
-//     * https://github.com/easternblu/digimon/blob/master/doc/api/v1/api.md#get-artist-show
+//     * https://github.com/charaku/digimon/blob/master/doc/api/v1/api.md#get-artist-show
 //     *
 //     * @param artistId Artist ID
 //     * @return Url
@@ -283,7 +283,7 @@
 //
 //    /**
 //     * GET /v1/tracks/{id}.json
-//     * https://github.com/easternblu/digimon/blob/master/doc/api/v1/api.md#get-tracks-show
+//     * https://github.com/charaku/digimon/blob/master/doc/api/v1/api.md#get-tracks-show
 //     *
 //     * @param trackId Track ID
 //     * @return Url
@@ -312,7 +312,7 @@
 //     */
 //    public static String registerDeviceUid(int userId) {
 //        String url = REGISTER_DEVICE_API;
-//        url = url.replace(easternbluPathConstant.USER_ID_SUB, Integer.toString(userId));
+//        url = url.replace(CharakuPathConstant.USER_ID_SUB, Integer.toString(userId));
 //        return url;
 //    }
 //}
