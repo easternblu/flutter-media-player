@@ -131,10 +131,10 @@
       "name": "plugin_player",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-05-25T06:01:05.693100Z",
+  "generated": "2024-05-25T06:13:45.763962Z",
   "generator": "pub",
   "generatorVersion": "2.15.0"
 }

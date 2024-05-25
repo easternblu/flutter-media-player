@@ -1,4 +1,4 @@
-library khub_flutter_player;
+library popsical_flutter_player;
 
 export './src/controller.dart';
 export 'src/video.dart';

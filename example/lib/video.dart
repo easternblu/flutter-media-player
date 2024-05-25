@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:plugin_player/src/player_observer.dart';
-import 'package:plugin_player/src/controller.dart';
-import 'package:plugin_player/src/video.dart';
-import 'package:plugin_player/src/video_event.dart';
-import 'package:plugin_player/src/plugin_lyrics.dart';
+import 'package:plugin_player/popsical_video_player.dart';
 
 class VideoPlayout extends StatefulWidget {
-  final bool showPlayerControls;
+  final bool? showPlayerControls;
 
-  const VideoPlayout({Key key, this.showPlayerControls}) : super(key: key);
+  const VideoPlayout({Key? key, this.showPlayerControls}) : super(key: key);
 
   @override
   _VideoPlayoutState createState() => _VideoPlayoutState();
@@ -18,12 +14,12 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
   final String _url =
       'https://v.popsical.tv/134313_-JUHg3HdcqAQfAb86eBB2g/hls/master_manifest.m3u8';
 
-  KhubMediaController controller;
-  LyricsController lyricsController;
+  PopsicalMediaController? controller;
+  LyricsController? lyricsController;
   @override
   void initState() {
     super.initState();
-    controller = KhubMediaController(_url,
+    controller = PopsicalMediaController(_url,
         autoPlay: true,
         loop: true,
         pitch: 1,
@@ -52,7 +48,7 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
                   IconButton(
                     icon: Icon(Icons.adjust),
                     onPressed: () async {
-                      controller.playPause();
+                      controller?.playPause();
                     },
                   ),
                 ])),
@@ -91,26 +87,26 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
 
   @override
   void onPlay() {
-    lyricsController.onMediaStart();
+    lyricsController?.onMediaStart();
     super.onPlay();
   }
 
   @override
   void onPause() {
-    lyricsController.onMediaPause();
+    lyricsController?.onMediaPause();
     super.onPause();
   }
 
   @override
   void onComplete() {
-    lyricsController.resetLyricsView();
+    lyricsController?.resetLyricsView();
     super.onComplete();
   }
 
   @override
   void onTime(int position) {
     if (position > 0) {
-      lyricsController.onPlayerProgressUpdate(position * 1000);
+      lyricsController?.onPlayerProgressUpdate(position * 1000);
     }
     super.onTime(position);
   }
@@ -122,9 +118,9 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
 
   @override
   void onDuration(int duration) async {
-    await lyricsController.setLyricsDuration(duration);
+    await lyricsController?.setLyricsDuration(duration);
     if (duration > 0) {
-      await lyricsController.loadLyrics(lyrics);
+      await lyricsController?.loadLyrics(lyrics);
     }
     super.onDuration(duration);
   }
