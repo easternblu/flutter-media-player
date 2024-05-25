@@ -196,7 +196,7 @@ public class PopsicalPlayerLayout extends PlayerView implements FlutterAVPlayer,
         this.setPlayer(mPlayerView);
         new EventChannel(
                 messenger,
-                "tv.popsical/NativeVideoPlayerEventChannel_" + this.viewId,
+                "tv.khub/NativeVideoPlayerEventChannel_" + this.viewId,
                 JSONMethodCodec.INSTANCE).setStreamHandler(this);
         updateMediaSource();
         setupMediaSession();

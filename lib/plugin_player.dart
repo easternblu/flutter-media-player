@@ -49,7 +49,7 @@
 
 // class LyricsController {
 //   LyricsController._(int id)
-//       : _channel = new MethodChannel('tv.popsical/LyricsMethodChannel_$id');
+//       : _channel = new MethodChannel('tv.khub/LyricsMethodChannel_$id');
 
 //   MethodChannel _channel;
 

@@ -41,7 +41,7 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
     private var playing = false
 
     init {
-        MethodChannel(messenger, "tv.popsical/LyricsMethodChannel_$id")
+        MethodChannel(messenger, "tv.khub/LyricsMethodChannel_$id")
                 .setMethodCallHandler(this)
         context?.let { App.setContext(it) }
         initEasyPrefs()

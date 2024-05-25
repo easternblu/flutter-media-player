@@ -193,6 +193,6 @@ class PopsicalMediaController with ChangeNotifier {
   Future<void> onPlatformViewCreated(int viewId) async {
     if (methodChannel != null) return;
     methodChannel =
-        MethodChannel("tv.popsical/NativeVideoPlayerMethodChannel_$viewId");
+        MethodChannel("tv.khub/NativeVideoPlayerMethodChannel_$viewId");
   }
 }

@@ -21,7 +21,7 @@ class PlayerView(context: Context, id: Int, messenger: BinaryMessenger?,
     override fun dispose() {player.onDestroy()}
 
     init {
-        MethodChannel(messenger, "tv.popsical/NativeVideoPlayerMethodChannel_$id")
+        MethodChannel(messenger, "tv.khub/NativeVideoPlayerMethodChannel_$id")
                 .setMethodCallHandler(this)
     }
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
