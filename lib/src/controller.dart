@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class PopsicalMediaController with ChangeNotifier {
+class KhubMediaController with ChangeNotifier {
   MethodChannel methodChannel;
   String _url = "";
 
@@ -49,7 +49,7 @@ class PopsicalMediaController with ChangeNotifier {
 
   bool get enableMux => _enableMux;
 
-  PopsicalMediaController(String url,
+  KhubMediaController(String url,
       {void Function() onInited,
       final String title,
       final String subtitle,

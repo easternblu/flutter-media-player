@@ -18,12 +18,12 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
   final String _url =
       'https://v.popsical.tv/134313_-JUHg3HdcqAQfAb86eBB2g/hls/master_manifest.m3u8';
 
-  PopsicalMediaController controller;
+  KhubMediaController controller;
   LyricsController lyricsController;
   @override
   void initState() {
     super.initState();
-    controller = PopsicalMediaController(_url,
+    controller = KhubMediaController(_url,
         autoPlay: true,
         loop: true,
         pitch: 1,

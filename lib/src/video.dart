@@ -8,7 +8,7 @@ import 'controller.dart';
 
 class Video extends StatefulWidget {
   final Function onViewCreated;
-  final PopsicalMediaController controller;
+  final KhubMediaController controller;
 
   const Video({
     this.onViewCreated,
@@ -20,7 +20,7 @@ class Video extends StatefulWidget {
 }
 
 class _VideoState extends State<Video> {
-  PopsicalMediaController controller;
+  KhubMediaController controller;
   Widget _playerWidget = Container();
 
   void applyController(BuildContext context) {
