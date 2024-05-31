@@ -18,7 +18,7 @@ package com.easternblu.khub.common.model;
 import androidx.annotation.Nullable;
 
 import com.easternblu.khub.common.Common;
-import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.api.EasternbluPathConstant;
 import com.easternblu.khub.common.util.Strings;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -33,37 +33,37 @@ import java.util.List;
 public class Playlist implements Serializable {
 
     @Expose
-    @SerializedName(CharakuPathConstant._ID)
+    @SerializedName(EasternbluPathConstant._ID)
     protected int id;
 
     @Expose
-    @SerializedName(CharakuPathConstant._PROFILE_ID)
+    @SerializedName(EasternbluPathConstant._PROFILE_ID)
     protected int profileId;
 
     @Expose
-    @SerializedName(CharakuPathConstant._TAGS)
+    @SerializedName(EasternbluPathConstant._TAGS)
     protected String tags;
 
     @Expose
-    @SerializedName(CharakuPathConstant._NAME)
+    @SerializedName(EasternbluPathConstant._NAME)
     protected String name;
 
     @Expose
-    @SerializedName(CharakuPathConstant._TOTAL_TRACKS)
+    @SerializedName(EasternbluPathConstant._TOTAL_TRACKS)
     protected int totalTracks;
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._DESCRIPTION)
+    @SerializedName(EasternbluPathConstant._DESCRIPTION)
     protected String description;
     
     @Expose
-    @SerializedName(CharakuPathConstant._POSITION)
+    @SerializedName(EasternbluPathConstant._POSITION)
     protected int position;
 
     @Expose
-    @SerializedName(CharakuPathConstant._IMAGES)
-    protected CharakuImages images;
+    @SerializedName(EasternbluPathConstant._IMAGES)
+    protected EasternbluImages images;
     protected String normalized = null;
 
     public int getId() {
@@ -98,7 +98,7 @@ public class Playlist implements Serializable {
     }
 
 
-    public CharakuImages getImages() {
+    public EasternbluImages getImages() {
         return images;
     }
 

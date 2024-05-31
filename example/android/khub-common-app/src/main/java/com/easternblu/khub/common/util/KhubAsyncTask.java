@@ -30,7 +30,7 @@ public abstract class KhubAsyncTask<Params, Progress, Result> extends AsyncTask<
     private static final int MINIMUM_POOL_SIZE = 4, MAXIMUM_POOL_SIZE = 8;
     private static final int KEEP_ALIVE_SECONDS = 30;
 
-    private static final ThreadFactory sPopsicalThreadFactory = new ThreadFactory() {
+    private static final ThreadFactory sKhubThreadFactory = new ThreadFactory() {
         private final AtomicInteger mCount = new AtomicInteger(1);
 
         public Thread newThread(Runnable r) {
@@ -38,20 +38,20 @@ public abstract class KhubAsyncTask<Params, Progress, Result> extends AsyncTask<
         }
     };
 
-    private static final BlockingQueue<Runnable> sPopsicalPoolWorkQueue =
+    private static final BlockingQueue<Runnable> sKhubPoolWorkQueue =
             new LinkedBlockingQueue<Runnable>(128);
 
     /**
      * An {@link Executor} that can be used to execute tasks in parallel.
      */
-    public static final Executor POPSICAL_THREAD_POOL_EXECUTOR;
+    public static final Executor KHUB_THREAD_POOL_EXECUTOR;
 
     static {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
                 MINIMUM_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE_SECONDS, TimeUnit.SECONDS,
-                sPopsicalPoolWorkQueue, sPopsicalThreadFactory);
+                sKhubPoolWorkQueue, sKhubThreadFactory);
         threadPoolExecutor.allowCoreThreadTimeOut(true);
-        POPSICAL_THREAD_POOL_EXECUTOR = threadPoolExecutor;
+        KHUB_THREAD_POOL_EXECUTOR = threadPoolExecutor;
     }
 
 
@@ -64,9 +64,9 @@ public abstract class KhubAsyncTask<Params, Progress, Result> extends AsyncTask<
      * @return
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB) // API 11
-    public PopsicalAsyncTask<Params, Progress, Result> executeNow(Params... params) {
+    public KhubAsyncTask<Params, Progress, Result> executeNow(Params... params) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-            this.executeOnExecutor(POPSICAL_THREAD_POOL_EXECUTOR, params);
+            this.executeOnExecutor(KHUB_THREAD_POOL_EXECUTOR, params);
         else
             this.execute(params);
         return this;

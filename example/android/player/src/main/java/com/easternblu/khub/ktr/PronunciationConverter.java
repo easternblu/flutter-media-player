@@ -46,8 +46,8 @@ public class PronunciationConverter {
         if (hasPinyinSupport(lines)) {
             converter = new ChinesePinyinConverter();
             if (mode == Replace) {
-                lines.putMeta(LRCMetaNames.X_POPSICAL_FONT_SCALE, "0.8");
-                lines.putMeta(LRCMetaNames.X_POPSICAL_LANG, "ZH_pinyin");
+                lines.putMeta(LRCMetaNames.X_KHUB_FONT_SCALE, "0.8");
+                lines.putMeta(LRCMetaNames.X_KHUB_LANG, "ZH_pinyin");
             } else {
                 // nothing
             }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plugin_player/popsical_video_player.dart';
+import 'package:plugin_player/khub_video_player.dart';
 
 class VideoPlayout extends StatefulWidget {
   final bool? showPlayerControls;
@@ -12,7 +12,7 @@ class VideoPlayout extends StatefulWidget {
 
 class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
   final String _url =
-      'https://v.popsical.tv/134313_-JUHg3HdcqAQfAb86eBB2g/hls/master_manifest.m3u8';
+      'https://v.khub.tv/134313_-JUHg3HdcqAQfAb86eBB2g/hls/master_manifest.m3u8';
 
   KhubMediaController? controller;
   LyricsController? lyricsController;

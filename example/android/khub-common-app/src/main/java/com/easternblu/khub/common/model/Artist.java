@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.easternblu.khub.common.Common;
-import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.api.EasternbluPathConstant;
 import com.easternblu.khub.common.util.Lists;
 import com.easternblu.khub.common.util.Strings;
 import com.google.gson.annotations.Expose;
@@ -23,34 +23,34 @@ public class Artist implements Serializable {
     public static final String ARTIST_LAZY_DELIMS = ",+&^;";
 
     @Expose
-    @SerializedName(CharakuPathConstant._ID)
+    @SerializedName(EasternbluPathConstant._ID)
     protected int id;
 
     @Expose
-    @SerializedName(CharakuPathConstant._NAME)
+    @SerializedName(EasternbluPathConstant._NAME)
     protected String name;
 
     @Expose
-    @SerializedName(CharakuPathConstant._GENDER)
+    @SerializedName(EasternbluPathConstant._GENDER)
     protected String gender;
 
     @Expose
-    @SerializedName(CharakuPathConstant._LANG_CODES)
+    @SerializedName(EasternbluPathConstant._LANG_CODES)
     protected String[] langCodes;
 
     @Expose
-    @SerializedName(CharakuPathConstant._POSTER_URL)
+    @SerializedName(EasternbluPathConstant._POSTER_URL)
     protected String posterUrl;
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._TOTAL_TRACKS)
+    @SerializedName(EasternbluPathConstant._TOTAL_TRACKS)
     protected long totalTracks;
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._IMAGES)
-    protected CharakuImages images;
+    @SerializedName(EasternbluPathConstant._IMAGES)
+    protected EasternbluImages images;
 
     protected List<String> names = null;
 
@@ -150,7 +150,7 @@ public class Artist implements Serializable {
         this.posterUrl = posterUrl;
     }
 
-    public CharakuImages getImages() {
+    public EasternbluImages getImages() {
         return images;
     }
 

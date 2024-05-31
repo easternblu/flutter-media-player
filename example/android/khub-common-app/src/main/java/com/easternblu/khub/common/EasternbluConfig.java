@@ -3,7 +3,7 @@ package com.easternblu.khub.common;
 public class EasternbluConfig {
     /**
      * Deprecated
-     * Get R.string.which_server flag from popsical global properties file
+     * Get R.string.which_server flag from khub global properties file
      * 0 is production, 1 is staging
      */
     @Deprecated

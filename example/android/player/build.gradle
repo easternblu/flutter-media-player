@@ -47,7 +47,7 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.okHttpVersion}"
     implementation "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.okHttpVersion}"
 
-//    implementation project(':popsical-media-android-exoplayer')
+//    implementation project(':khub-media-android-exoplayer')
 
 
     implementation "org.jetbrains.kotlin:kotlin-reflect:$rootProject.ext.kotlin_version"

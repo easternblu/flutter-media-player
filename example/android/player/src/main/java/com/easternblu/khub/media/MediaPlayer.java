@@ -1888,7 +1888,7 @@
 //        ConnectionPool connectionPool = new ConnectionPool(0, 5, TimeUnit.MINUTES);
 //        //TODO: NOTE VIDEO MIGHT NEED A LONGER TIMEOUT
 //        OkHttpClient.Builder builder = new OkHttpClient.Builder().
-//                cache(new Cache(new File(getCacheDir(), "popsical_videos"), 1000 * 1000 * 1000)). // 1GB
+//                cache(new Cache(new File(getCacheDir(), "khub_videos"), 1000 * 1000 * 1000)). // 1GB
 //                connectTimeout(15, TimeUnit.SECONDS).
 //                readTimeout(15, TimeUnit.SECONDS). // fadhli wants a shorter timeout
 //                writeTimeout(15, TimeUnit.SECONDS). // fadhli wants a shorter timeout

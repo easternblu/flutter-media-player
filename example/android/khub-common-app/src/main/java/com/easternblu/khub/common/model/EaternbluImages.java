@@ -1,6 +1,6 @@
 package com.easternblu.khub.common.model;
 
-import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.api.EasternbluPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * Where to find the spec for this object:
- * http://developers.popsical.com/#!/Track/get_tracks_json
+ * http://developers.khub.com/#!/Track/get_tracks_json
  * Created by yatpanng on 15/2/17.
  */
 //    "images": {
@@ -20,7 +20,7 @@ public class EaternbluImages implements Serializable {
 
     
     @Expose
-    @SerializedName(CharakuPathConstant._POSTER)
+    @SerializedName(EasternbluPathConstant._POSTER)
     protected Poster poster;
 
     public Poster getPoster() {
@@ -34,7 +34,7 @@ public class EaternbluImages implements Serializable {
     public static class Poster implements Serializable{
 
         @Expose
-        @SerializedName(CharakuPathConstant._URL)
+        @SerializedName(EasternbluPathConstant._URL)
         protected String url;
 
         public String getUrl() {

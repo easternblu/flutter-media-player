@@ -15,12 +15,12 @@ public class TrackBuilder {
     private String mReleaseDate;
     private String mSource;
     private boolean mHasVideo;
-    private CharakuVideo mVideo;
+    private EasternbluVideo mVideo;
     private boolean mBlock;
 
     private BlockReason mBlockReason;
     private boolean mPremium;
-    private CharakuImages mImages;
+    private EasternbluImages mImages;
     private List<Artist> mArtists;
     private String mArtistsString;
     private boolean mTrackArtistsSorted;
@@ -77,7 +77,7 @@ public class TrackBuilder {
         return this;
     }
 
-    public TrackBuilder setVideo(CharakuVideo video) {
+    public TrackBuilder setVideo(EasternbluVideo video) {
         mVideo = video;
         return this;
     }
@@ -97,7 +97,7 @@ public class TrackBuilder {
         return this;
     }
 
-    public TrackBuilder setImages(CharakuImages images) {
+    public TrackBuilder setImages(EasternbluImages images) {
         mImages = images;
         return this;
     }

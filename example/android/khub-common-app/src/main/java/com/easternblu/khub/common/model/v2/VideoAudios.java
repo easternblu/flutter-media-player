@@ -1,6 +1,6 @@
 package com.easternblu.khub.common.model.v2;
 
-import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.api.EasternbluPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -13,16 +13,16 @@ import java.io.Serializable;
 public class VideoAudios implements Serializable {
 
     @Expose
-    @SerializedName(CharakuPathConstant._VIDEO_ID)
+    @SerializedName(EasternbluPathConstant._VIDEO_ID)
     protected int videoId;
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._VOCAL_URL)
+    @SerializedName(EasternbluPathConstant._VOCAL_URL)
     protected String vocalUrl;
 
     @Expose
-    @SerializedName(CharakuPathConstant._NON_VOCAL_URL)
+    @SerializedName(EasternbluPathConstant._NON_VOCAL_URL)
     protected String nonVocalUrl;
 
     public int getVideoId() {

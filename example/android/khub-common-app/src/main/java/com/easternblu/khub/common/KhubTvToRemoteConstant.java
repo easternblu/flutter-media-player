@@ -9,33 +9,33 @@ public interface KhubTvToRemoteConstant {
 
 
     /**
-     * See {@link KhubConstant#POPSICAL_BROADCAST_PARAM_CODE_SIMPLIFIED}
+     * See {@link KhubConstant#KHUB_BROADCAST_PARAM_CODE_SIMPLIFIED}
      */
     @Deprecated
-    String POPSICAL_TV_TO_REMOTE_BROADCAST_PARAM_CODE = "POPSICAL_TV_TO_REMOTE_BROADCAST_PARAM_CODE";
+    String KHUB_TV_TO_REMOTE_BROADCAST_PARAM_CODE = "KHUB_TV_TO_REMOTE_BROADCAST_PARAM_CODE";
 
 
     /**
-     * See {@link KhubConstant#POPSICAL_BROADCAST_PARAM_VALUE_SIMPLIFIED}
+     * See {@link KhubConstant#KHUB_BROADCAST_PARAM_VALUE_SIMPLIFIED}
      */
     @Deprecated
-    String POPSICAL_TV_TO_REMOTE_BROADCAST_PARAM_VALUE = "POPSICAL_TV_TO_REMOTE_BROADCAST_PARAM_VALUE";
+    String KHUB_TV_TO_REMOTE_BROADCAST_PARAM_VALUE = "KHUB_TV_TO_REMOTE_BROADCAST_PARAM_VALUE";
 
 
     /**
-     * See {@link KhubConstant#POPSICAL_BROADCAST_PARAM_VALUE_STRING_SIMPLIFIED}
+     * See {@link KhubConstant#KHUB_BROADCAST_PARAM_VALUE_STRING_SIMPLIFIED}
      */
     @Deprecated
-    String POPSICAL_TV_TO_REMOTE_BROADCAST_PARAM_VALUE_STRING = "POPSICAL_TV_TO_REMOTE_BROADCAST_PARAM_VALUE_STRING";
+    String KHUB_TV_TO_REMOTE_BROADCAST_PARAM_VALUE_STRING = "KHUB_TV_TO_REMOTE_BROADCAST_PARAM_VALUE_STRING";
 
     //region int code constants that TV sends to remote (These values should be nouns)
     //================================================================================
     // CODES
     //================================================================================
-    int POPSICAL_TV_UPDATE_PLAY_QUEUE = 0;
+    int KHUB_TV_UPDATE_PLAY_QUEUE = 0;
     @Deprecated
-    int POPSICAL_TV_PLAYQUEUE_ID = KhubRemoteToTvConstant.POPSICAL_REMOTE_VALUE_PLAYQUEUE_ID; // use POPSICAL_TV_TRUE_PLAYQUEUE_ID instead
-    int POPSICAL_TV_TRUE_PLAYQUEUE_ID = KhubRemoteToTvConstant.POPSICAL_REMOTE_VALUE_TRUE_PLAYQUEUE_ID;
+    int KHUB_TV_PLAYQUEUE_ID = KhubRemoteToTvConstant.KHUB_REMOTE_VALUE_PLAYQUEUE_ID; // use KHUB_TV_TRUE_PLAYQUEUE_ID instead
+    int KHUB_TV_TRUE_PLAYQUEUE_ID = KhubRemoteToTvConstant.KHUB_REMOTE_VALUE_TRUE_PLAYQUEUE_ID;
     @Deprecated
     int POPSICAL_TV_PARTYCODE = KhubRemoteToTvConstant.POPSICAL_REMOTE_VALUE_PARTYCODE;
     int POPSICAL_TV_SPEC = 2;//KhubRemoteToTvConstant.POPSICAL_REMOTE_VALUE_TV_SPEC;

@@ -10,8 +10,8 @@ public class KhubConstant implements KhubRemoteToTvConstant, KhubTvToRemoteConst
 
     public static final int PARTY_CODE_LENGTH = 6;
 
-    public static final String TAG_POPSICAL_TV = "POPSICAL_TV";
-    public static final String TAG_POPSICAL_REMOTE_ANDROID = "POPSICAL_REMOTE_ANDROID";
+    public static final String TAG_KHUB_TV = "KHUB_TV";
+    public static final String TAG_KHUB_REMOTE_ANDROID = "KHUB_REMOTE_ANDROID";
 
     public static final String ERR_CODE = "err_code";
     public static final String API_ERROR = "api_error";
@@ -33,7 +33,7 @@ public class KhubConstant implements KhubRemoteToTvConstant, KhubTvToRemoteConst
 
     public static final String TAG_ERROR = "Khub";
 
-    //  https://github.com/charaku/digimon/blob/master/doc/api/v1/api.md#device-resource
+    //  https://github.com/khub/digimon/blob/master/doc/api/v1/api.md#device-resource
     public static final String DEVICE_TYPE_TV = "tv";
     public static final String DEVICE_TYPE_REMOTE = "remote";
 
@@ -100,20 +100,20 @@ public class KhubConstant implements KhubRemoteToTvConstant, KhubTvToRemoteConst
     //
     //================================================================================
     // short for "from"
-    public static final String POPSICAL_BROADCAST_PARAM_FROM = "f";
+    public static final String KHUB_BROADCAST_PARAM_FROM = "f";
 
     /**
-     * Possible values of POPSICAL_BROADCAST_PARAM_FROM
+     * Possible values of KHUB_BROADCAST_PARAM_FROM
      */
-    public static final String POPSICAL_BROADCAST_PARAM_FROM_VALUE_TV = "tv";
-    public static final String POPSICAL_BROADCAST_PARAM_FROM_VALUE_REMOTE_ANDROID = "ra";
-    public static final String POPSICAL_BROADCAST_PARAM_FROM_VALUE_TV_REMOTE_IOS = "ri";
+    public static final String KHUB_BROADCAST_PARAM_FROM_VALUE_TV = "tv";
+    public static final String KHUB_BROADCAST_PARAM_FROM_VALUE_REMOTE_ANDROID = "ra";
+    public static final String KHUB_BROADCAST_PARAM_FROM_VALUE_TV_REMOTE_IOS = "ri";
     
     // short for "code"
-    public static final String POPSICAL_BROADCAST_PARAM_CODE_SIMPLIFIED = "c";
+    public static final String KHUB_BROADCAST_PARAM_CODE_SIMPLIFIED = "c";
 
     // short for "value"
-    public static final String POPSICAL_BROADCAST_PARAM_VALUE_SIMPLIFIED = "v";
+    public static final String KHUB_BROADCAST_PARAM_VALUE_SIMPLIFIED = "v";
 
     // short for "value_string"
     public static final String POPSICAL_BROADCAST_PARAM_VALUE_STRING_SIMPLIFIED = "vs";

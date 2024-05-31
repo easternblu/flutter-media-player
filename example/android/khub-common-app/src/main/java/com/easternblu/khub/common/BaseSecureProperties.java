@@ -21,7 +21,7 @@ import timber.log.Timber;
  * <p>
  * See build.gradle for SecureFileHelper usage
  * <p>
- * Based on the properties file in popsical.common.properties and how it is copied to strings.xml in build.gradle. It is deemded too insecure
+ * Based on the properties file in khub.common.properties and how it is copied to strings.xml in build.gradle. It is deemded too insecure
  * if we jsut let api key and id exposed plainly in strings.xml. So this class is used in conjuction with SecureFileHelper
  * which will encrypt the properties file during compile time using a symmetric key and initial-vector
  * <p>
@@ -35,7 +35,7 @@ public class BaseSecureProperties extends Properties {
     }
 
     /**
-     * 1) read the popsical.tv.properties<p>
+     * 1) read the khub.tv.properties<p>
      * 2) wrap it in a decrypting stream<p>
      * 3) load it into {@link Properties}<p>
      * 5) This method MUST be called in {@link Application#onCreate()}<p>

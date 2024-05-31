@@ -29,8 +29,8 @@ public class PhraseJoiner implements LRCMetaNames {
     private Map<Phrase, Meta> metas = new HashMap<>();
 
     public void joinPhrases(Lines lines) {
-        maxJoinGapMs = lines.getLong(X_POPSICAL_MAX_JOIN_GAP_MS, maxJoinGapMs);
-        maxJoinADPLCoef = lines.getFloat(X_POPSICAL_MAX_JOIN_ADPL_COEF, maxJoinADPLCoef);
+        maxJoinGapMs = lines.getLong(X_KHUB_MAX_JOIN_GAP_MS, maxJoinGapMs);
+        maxJoinADPLCoef = lines.getFloat(X_KHUB_MAX_JOIN_ADPL_COEF, maxJoinADPLCoef);
 
         for (int i = 0; i < lines.size(); i++) {
             obtainStats(lines.getLine(i));

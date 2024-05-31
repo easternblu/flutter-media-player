@@ -1,6 +1,6 @@
 package com.easternblu.khub.common.model;
 
-import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.api.EasternbluPathConstant;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -14,15 +14,15 @@ import java.io.Serializable;
 public class PlayQueueUser implements Serializable {
 
     @Expose
-    @SerializedName(CharakuPathConstant._USER_ID)
+    @SerializedName(EasternbluPathConstant._USER_ID)
     private int userId;
 
     @Expose
-    @SerializedName(CharakuPathConstant._NAME)
+    @SerializedName(EasternbluPathConstant._NAME)
     private String name;
 
     @Expose
-    @SerializedName(CharakuPathConstant._PROFILE_PIC)
+    @SerializedName(EasternbluPathConstant._PROFILE_PIC)
     private String profilePic;
 
     public int getUserId() {

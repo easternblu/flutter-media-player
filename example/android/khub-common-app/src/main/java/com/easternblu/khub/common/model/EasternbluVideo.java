@@ -3,7 +3,7 @@ package com.easternblu.khub.common.model;
 import android.text.TextUtils;
 
 import com.easternblu.khub.common.Common;
-import com.easternblu.khub.common.api.CharakuPathConstant;
+import com.easternblu.khub.common.api.EasternbluPathConstant;
 import com.easternblu.khub.common.model.v2.VideoStreams;
 import com.easternblu.khub.common.util.Dates;
 import com.easternblu.khub.common.util.Range;
@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  * Where to find the spec for this object:
- * http://developers.popsical.com/#!/Track/get_tracks_json
+ * http://developers.khub.com/#!/Track/get_tracks_json
  */
 //    "video": {
 //        "id": 0,
@@ -43,12 +43,12 @@ public class EasternbluVideo implements Serializable {
      */
     public static class SkippableRange {
         @Expose
-        @SerializedName(CharakuPathConstant._FROM)
+        @SerializedName(EasternbluPathConstant._FROM)
         String fromRaw;
         Long from = null;
 
         @Expose
-        @SerializedName(CharakuPathConstant._TO)
+        @SerializedName(EasternbluPathConstant._TO)
         String toRaw;
         Long to = null;
 
@@ -80,24 +80,24 @@ public class EasternbluVideo implements Serializable {
     private static final String DUAL_TRACK = "5";
 
     @Expose
-    @SerializedName(CharakuPathConstant._ID)
+    @SerializedName(EasternbluPathConstant._ID)
     int id;
 
     @Expose
-    @SerializedName(CharakuPathConstant._ARTIST_ID)
+    @SerializedName(EasternbluPathConstant._ARTIST_ID)
     int artistId;
 
     @Expose
-    @SerializedName(CharakuPathConstant._TITLE)
+    @SerializedName(EasternbluPathConstant._TITLE)
     String title;
 
     @Expose
-    @SerializedName(CharakuPathConstant._HAS_STREAM)
+    @SerializedName(EasternbluPathConstant._HAS_STREAM)
     boolean hasStream;
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._VOCAL_CHANNEL)
+    @SerializedName(EasternbluPathConstant._VOCAL_CHANNEL)
     String vocalChannel;
 
 
@@ -113,7 +113,7 @@ public class EasternbluVideo implements Serializable {
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._VIDEO_URL)
+    @SerializedName(EasternbluPathConstant._VIDEO_URL)
     @Deprecated
     String oldVideoUrl;
 
@@ -129,11 +129,11 @@ public class EasternbluVideo implements Serializable {
 
 
     @Expose
-    @SerializedName(CharakuPathConstant._IMAGES)
-    protected CharakuImages images;
+    @SerializedName(EasternbluPathConstant._IMAGES)
+    protected EasternbluImages images;
 
     @Expose
-    @SerializedName(CharakuPathConstant._SKIPPABLE_RANGES)
+    @SerializedName(EasternbluPathConstant._SKIPPABLE_RANGES)
     protected List<SkippableRange> skippableRanges;
 
     /**
@@ -141,7 +141,7 @@ public class EasternbluVideo implements Serializable {
      */
     @Deprecated
     @Expose
-    @SerializedName(CharakuPathConstant._DASH)
+    @SerializedName(EasternbluPathConstant._DASH)
     protected Map<String, Object> dash;
 
     /**
@@ -149,7 +149,7 @@ public class EasternbluVideo implements Serializable {
      */
     @Deprecated
     @Expose
-    @SerializedName(CharakuPathConstant._HLS)
+    @SerializedName(EasternbluPathConstant._HLS)
     protected Map<String, Object> hls;
 
 
@@ -166,9 +166,9 @@ public class EasternbluVideo implements Serializable {
 
 
     /**
-     * Used by {@link CharakuVideoBuilder}
+     * Used by {@link EasternbluVideoBuilder}
      */
-    EasternbluVideo(int id, int artistId, String title, boolean hasStream, long runtime, String type, int number, String description, String releaseDate, String oldVideoUrl, String videoUrl, String posterUrl, CharakuImages images, Map<String, Object> dash, Map<String, Object> hls, Track track) {
+    EasternbluVideo(int id, int artistId, String title, boolean hasStream, long runtime, String type, int number, String description, String releaseDate, String oldVideoUrl, String videoUrl, String posterUrl, EasternbluImages images, Map<String, Object> dash, Map<String, Object> hls, Track track) {
         this.id = id;
         this.artistId = artistId;
         this.title = title;
@@ -189,7 +189,7 @@ public class EasternbluVideo implements Serializable {
 
 
     /**
-     * Consider using {@link CharakuVideoBuilder}
+     * Consider using {@link EasternbluVideoBuilder}
      *
      * @param id
      * @param artistId
@@ -297,7 +297,7 @@ public class EasternbluVideo implements Serializable {
         videoUrl = Common.EMPTY_STRING;
 
         Object p720;
-        if (dash != null && (p720 = dash.get(CharakuPathConstant._P720)) != null && p720 instanceof String) {
+        if (dash != null && (p720 = dash.get(EasternbluPathConstant._P720)) != null && p720 instanceof String) {
             videoUrl = p720.toString();
         }
 
@@ -321,7 +321,7 @@ public class EasternbluVideo implements Serializable {
     }
 
     /**
-     * Based on the logic of the deprecated TrackHelper.buildCharakuVideo and TrackHelper.buildTrack
+     * Based on the logic of the deprecated TrackHelper.buildEasternbluVideo and TrackHelper.buildTrack
      * <p>
      * Set images.poster.url as first priority if available
      *
@@ -335,10 +335,10 @@ public class EasternbluVideo implements Serializable {
             return posterUrl;
         }
 
-        //        if (trackJson.has(CharakuPathConstant._IMAGES) && trackJson.get(CharakuPathConstant._IMAGES) instanceof JSONObject) {
-        //            JSONObject images = trackJson.getJSONObject(CharakuPathConstant._IMAGES);
-        //            JSONObject poster = images.getJSONObject(CharakuPathConstant._POSTER);
-        //            String imagePosterUrl = poster.getString(CharakuPathConstant._URL);
+        //        if (trackJson.has(EasternbluPathConstant._IMAGES) && trackJson.get(EasternbluPathConstant._IMAGES) instanceof JSONObject) {
+        //            JSONObject images = trackJson.getJSONObject(EasternbluPathConstant._IMAGES);
+        //            JSONObject poster = images.getJSONObject(EasternbluPathConstant._POSTER);
+        //            String imagePosterUrl = poster.getString(EasternbluPathConstant._URL);
         //            video.setPosterUrl(imagePosterUrl);
         //        }
 
@@ -349,10 +349,10 @@ public class EasternbluVideo implements Serializable {
         if (track != null) {
             trackPosterUrl = track.getImagePosterUrl();
         }
-        //    JSONObject images = (JSONObject) videoJson.get(CharakuPathConstant._IMAGES);
-        //    JSONObject poster = (JSONObject) images.get(CharakuPathConstant._POSTER);
+        //    JSONObject images = (JSONObject) videoJson.get(EasternbluPathConstant._IMAGES);
+        //    JSONObject poster = (JSONObject) images.get(EasternbluPathConstant._POSTER);
         //
-        //    String posterUrl = Common.PROTOCOL_HTTP + poster.getString(CharakuPathConstant._URL).replace(Common.DOUBLE_SLASH, Common.EMPTY_STRING);
+        //    String posterUrl = Common.PROTOCOL_HTTP + poster.getString(EasternbluPathConstant._URL).replace(Common.DOUBLE_SLASH, Common.EMPTY_STRING);
         if (images != null && images.getPosterUrl() != null) {
             videoImagePosterUrl = images.getPosterUrl();
             videoImagePosterUrl = Common.PROTOCOL_HTTP + videoImagePosterUrl.replace(Common.DOUBLE_SLASH, Common.EMPTY_STRING);

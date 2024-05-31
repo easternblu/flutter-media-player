@@ -78,8 +78,8 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
         try {
 
             val debugLyricsRendering = Prefs.getBoolean(AppPrefs.PREFS_DEBUG_LYRICS_RENDERER, false)
-            val popsicalKaraokeLyricsStyle = KhubKaraokeLyricsStyle
-            popsicalKaraokeLyricsStyle(
+            val khubKaraokeLyricsStyle = KhubKaraokeLyricsStyle
+            khubKaraokeLyricsStyle(
                     ctx,
                     Views.loadTypeface(ctx, Views.COOLVETICA_REGULAR),
                     Views.loadTypeface(ctx, Views.SHARP_STD_CLOUD_YUAN_CU_GBK)).setup(karaokeLyricsView, lines, debugLyricsRendering, getScreenSizeDp(

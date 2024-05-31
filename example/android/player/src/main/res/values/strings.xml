@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">popsical-media</string>
+    <string name="app_name">khub-media</string>
 
     <string name="enable_random_adaptation" translatable="false">Enable random adaptation</string>
     <string name="error_unsupported_video" translatable="false">Media includes video tracks, but none are playable by this device</string>
