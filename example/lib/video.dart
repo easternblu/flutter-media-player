@@ -14,12 +14,12 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
   final String _url =
       'https://v.popsical.tv/134313_-JUHg3HdcqAQfAb86eBB2g/hls/master_manifest.m3u8';
 
-  PopsicalMediaController? controller;
+  KhubMediaController? controller;
   LyricsController? lyricsController;
   @override
   void initState() {
     super.initState();
-    controller = PopsicalMediaController(_url,
+    controller = KhubMediaController(_url,
         autoPlay: true,
         loop: true,
         pitch: 1,
@@ -143,10 +143,10 @@ class _VideoPlayoutState extends State<VideoPlayout> with PlayerObserver {
       "[offset:0]\n" +
       "[re:1]\n" +
       "[ve:1]\n" +
-      "[X-Popsical-Singer-Color:#0000ff]\n" +
-      "[X-Popsical-font-scale:1]\n" +
-      "[X-Popsical-lang:en]\n" +
-      "[X-Popsical-Margins-V2:0.025,0.15,0.025,0.15]\n" +
+      "[X-Khub-Singer-Color:#0000ff]\n" +
+      "[X-Khub-font-scale:1]\n" +
+      "[X-Khub-lang:en]\n" +
+      "[X-Khub-Margins-V2:0.025,0.15,0.025,0.15]\n" +
       "\n" +
       "\n" +
       "[00:03.613] Seize <00:03.898> <00:04.043> the <00:04.259> <00:04.437> day <00:04.868> <00:05.190> or <00:05.453> <00:05.519> die <00:05.686> <00:05.854> regretting <00:06.620> <00:06.702> the <00:06.796> <00:07.001> time <00:07.272> <00:07.418> you <00:07.572> <00:07.721> lost <00:08.371>\n" +

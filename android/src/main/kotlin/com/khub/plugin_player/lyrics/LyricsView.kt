@@ -11,7 +11,7 @@ import com.easternblu.khub.common.util.SizeF
 import com.easternblu.khub.ktr.KaraokeLyricsView
 import com.easternblu.khub.ktr.LRC2KTRConverter
 import com.easternblu.khub.ktr.PlayerDelegate
-import com.easternblu.khub.ktr.PopsicalKaraokeLyricsStyle
+import com.easternblu.khub.ktr.KhubKaraokeLyricsStyle
 import com.easternblu.khub.ktr.model.Lines
 import com.pixplicity.easyprefs.library.Prefs
 import com.khub.plugin_player.R
@@ -78,7 +78,8 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
         try {
 
             val debugLyricsRendering = Prefs.getBoolean(AppPrefs.PREFS_DEBUG_LYRICS_RENDERER, false)
-            PopsicalKaraokeLyricsStyle(
+            val popsicalKaraokeLyricsStyle = KhubKaraokeLyricsStyle
+            popsicalKaraokeLyricsStyle(
                     ctx,
                     Views.loadTypeface(ctx, Views.COOLVETICA_REGULAR),
                     Views.loadTypeface(ctx, Views.SHARP_STD_CLOUD_YUAN_CU_GBK)).setup(karaokeLyricsView, lines, debugLyricsRendering, getScreenSizeDp(

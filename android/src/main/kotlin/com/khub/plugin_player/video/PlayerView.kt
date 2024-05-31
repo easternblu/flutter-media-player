@@ -14,7 +14,7 @@ class PlayerView(context: Context, id: Int, messenger: BinaryMessenger?,
     var eventChannel = EventChannel(
             messenger, "tv.khub/NativeVideoPlayerEventChannel_" + id,JSONMethodCodec.INSTANCE)
 
-    private var player: PopsicalPlayerLayout = PopsicalPlayerLayout(context, messenger, id, eventChannel, creationParams)
+    private var player: KhubPlayerLayout = KhubPlayerLayout(context, messenger, id, eventChannel, creationParams)
     override fun getView(): View {
         return player
     }

@@ -21,13 +21,13 @@ public class RemoteReceiver extends BroadcastReceiver {
 
                         case KeyEvent.KEYCODE_MEDIA_PAUSE:
 
-                            PopsicalPlayerLayout.activePlayer.setPlayWhenReady(false);
+                            KhubPlayerLayout.activePlayer.setPlayWhenReady(false);
 
                             break;
 
                         case KeyEvent.KEYCODE_MEDIA_PLAY:
 
-                            PopsicalPlayerLayout.activePlayer.setPlayWhenReady(true);
+                            KhubPlayerLayout.activePlayer.setPlayWhenReady(true);
 
                             break;
                     }
