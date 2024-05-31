@@ -116,10 +116,10 @@ public class KhubConstant implements KhubRemoteToTvConstant, KhubTvToRemoteConst
     public static final String KHUB_BROADCAST_PARAM_VALUE_SIMPLIFIED = "v";
 
     // short for "value_string"
-    public static final String POPSICAL_BROADCAST_PARAM_VALUE_STRING_SIMPLIFIED = "vs";
+    public static final String KHUB_BROADCAST_PARAM_VALUE_STRING_SIMPLIFIED = "vs";
 
-    // short for "value_object" we added this to avoid making POPSICAL_BROADCAST_PARAM_VALUE_STRING too messy
-    public static final String POPSICAL_BROADCAST_PARAM_VALUE_OBJECT_SIMPLIFIED = "vo";
+    // short for "value_object" we added this to avoid making KHUB_BROADCAST_PARAM_VALUE_STRING too messy
+    public static final String KHUB_BROADCAST_PARAM_VALUE_OBJECT_SIMPLIFIED = "vo";
     //endregion
 
 }

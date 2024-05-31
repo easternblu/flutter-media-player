@@ -42,12 +42,12 @@ import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_UPDATE_P
 import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VALUE_BACK;
 import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VALUE_DOWN;
 import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VALUE_LEFT;
-import static com.easternblu.khub.common.KhubConstant.TITLE_POPSICAL_REMOTE_VALUE_OK;
-import static com.easternblu.khub.common.KhubConstant.TITLE_POPSICAL_REMOTE_VALUE_RESET;
-import static com.easternblu.khub.common.KhubConstant.TITLE_POPSICAL_REMOTE_VALUE_RIGHT;
-import static com.easternblu.khub.common.KhubConstant.TITLE_POPSICAL_REMOTE_VALUE_UP;
-import static com.easternblu.khub.common.KhubConstant.TITLE_POPSICAL_REMOTE_VOCAL;
-import static com.easternblu.khub.common.KhubConstant.TITLE_POPSICAL_REMOTE_VOCAL_VOLUME;
+import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VALUE_OK;
+import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VALUE_RESET;
+import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VALUE_RIGHT;
+import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VALUE_UP;
+import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VOCAL;
+import static com.easternblu.khub.common.KhubConstant.TITLE_KHUB_REMOTE_VOCAL_VOLUME;
 
 /**
  * Utility for
@@ -57,7 +57,7 @@ import static com.easternblu.khub.common.KhubConstant.TITLE_POPSICAL_REMOTE_VOCA
 public class KhubSocketUtil {
     /**
      * Get title for remote to TV command keys, for Firebase reporting purpose
-     * https://khub.myjetbrains.com/youtrack/issue/POPSICAL-541
+     * https://khub.myjetbrains.com/youtrack/issue/KHUB-541
      *
      * @param remoteToTvCommandKey {@link Integer} Remote to TV command key
      * @return {@link String} Title of remoteToTvCommandKey
@@ -71,53 +71,53 @@ public class KhubSocketUtil {
     public static String getRemoteToTvCodeTitle(int remoteToTvCommandCode) {
         String key;
         switch (remoteToTvCommandCode) {
-            case POPSICAL_REMOTE_MUSIC_VOLUME:
-                key = TITLE_POPSICAL_REMOTE_MUSIC_VOLUME;
+            case KHUB_REMOTE_MUSIC_VOLUME:
+                key = TITLE_KHUB_REMOTE_MUSIC_VOLUME;
                 break;
-            case POPSICAL_REMOTE_VOCAL_VOLUME:
-                key = TITLE_POPSICAL_REMOTE_VOCAL_VOLUME;
+            case KHUB_REMOTE_VOCAL_VOLUME:
+                key = TITLE_KHUB_REMOTE_VOCAL_VOLUME;
                 break;
-            case POPSICAL_REMOTE_PITCH:
-                key = TITLE_POPSICAL_REMOTE_PITCH;
+            case KHUB_REMOTE_PITCH:
+                key = TITLE_KHUB_REMOTE_PITCH;
                 break;
-            case POPSICAL_REMOTE_SPEED:
-                key = TITLE_POPSICAL_REMOTE_SPEED;
+            case KHUB_REMOTE_SPEED:
+                key = TITLE_KHUB_REMOTE_SPEED;
                 break;
-            case POPSICAL_REMOTE_SUBTITLE:
-                key = TITLE_POPSICAL_REMOTE_SUBTITLE;
+            case KHUB_REMOTE_SUBTITLE:
+                key = TITLE_KHUB_REMOTE_SUBTITLE;
                 break;
-            case POPSICAL_REMOTE_VOCAL:
-                key = TITLE_POPSICAL_REMOTE_VOCAL;
+            case KHUB_REMOTE_VOCAL:
+                key = TITLE_KHUB_REMOTE_VOCAL;
                 break;
-            case POPSICAL_REMOTE_SKIP_VIDEO:
-                key = TITLE_POPSICAL_REMOTE_SKIP_VIDEO;
+            case KHUB_REMOTE_SKIP_VIDEO:
+                key = TITLE_KHUB_REMOTE_SKIP_VIDEO;
                 break;
-            case POPSICAL_REMOTE_PLAY_PAUSE_VIDEO:
-                key = TITLE_POPSICAL_REMOTE_PLAY_PAUSE_VIDEO;
+            case KHUB_REMOTE_PLAY_PAUSE_VIDEO:
+                key = TITLE_KHUB_REMOTE_PLAY_PAUSE_VIDEO;
                 break;
-            case POPSICAL_REMOTE_CONTROL_PAD:
-                key = TITLE_POPSICAL_REMOTE_CONTROL_PAD;
+            case KHUB_REMOTE_CONTROL_PAD:
+                key = TITLE_KHUB_REMOTE_CONTROL_PAD;
                 break;
-            case POPSICAL_REMOTE_DEVICE_NAME:
-                key = TITLE_POPSICAL_REMOTE_DEVICE_NAME;
+            case KHUB_REMOTE_DEVICE_NAME:
+                key = TITLE_KHUB_REMOTE_DEVICE_NAME;
                 break;
-            case POPSICAL_REMOTE_UPDATE_PLAY_QUEUE:
-                key = TITLE_POPSICAL_REMOTE_UPDATE_PLAY_QUEUE;
+            case KHUB_REMOTE_UPDATE_PLAY_QUEUE:
+                key = TITLE_KHUB_REMOTE_UPDATE_PLAY_QUEUE;
                 break;
-            case POPSICAL_REMOTE_REMOVE_PLAY_QUEUE_TRACK:
-                key = TITLE_POPSICAL_REMOTE_REMOVE_PLAY_QUEUE_TRACK;
+            case KHUB_REMOTE_REMOVE_PLAY_QUEUE_TRACK:
+                key = TITLE_KHUB_REMOTE_REMOVE_PLAY_QUEUE_TRACK;
                 break;
-            case POPSICAL_REMOTE_ADD_PLAY_QUEUE_TRACK:
-                key = TITLE_POPSICAL_REMOTE_ADD_PLAY_QUEUE_TRACK;
+            case KHUB_REMOTE_ADD_PLAY_QUEUE_TRACK:
+                key = TITLE_KHUB_REMOTE_ADD_PLAY_QUEUE_TRACK;
                 break;
-            case POPSICAL_REMOTE_PLAY_NOW:
-                key = TITLE_POPSICAL_REMOTE_PLAY_NOW;
+            case KHUB_REMOTE_PLAY_NOW:
+                key = TITLE_KHUB_REMOTE_PLAY_NOW;
                 break;
-            case POPSICAL_REMOTE_UPDATE_NEXT_TRACK:
-                key = TITLE_POPSICAL_REMOTE_UPDATE_NEXT_TRACK;
+            case KHUB_REMOTE_UPDATE_NEXT_TRACK:
+                key = TITLE_KHUB_REMOTE_UPDATE_NEXT_TRACK;
                 break;
-            case POPSICAL_REMOTE_REPLAY_VIDEO:
-                key = TITLE_POPSICAL_REMOTE_REPLAY_VIDEO;
+            case KHUB_REMOTE_REPLAY_VIDEO:
+                key = TITLE_KHUB_REMOTE_REPLAY_VIDEO;
                 break;
             default:
                 return Common.EMPTY_STRING;
@@ -130,26 +130,26 @@ public class KhubSocketUtil {
         String value;
 
         switch (remoteToTvCommandValue) {
-            case POPSICAL_REMOTE_VALUE_DOWN:
-                value = TITLE_POPSICAL_REMOTE_VALUE_DOWN;
+            case KHUB_REMOTE_VALUE_DOWN:
+                value = TITLE_KHUB_REMOTE_VALUE_DOWN;
                 break;
-            case POPSICAL_REMOTE_VALUE_UP:
-                value = TITLE_POPSICAL_REMOTE_VALUE_UP;
+            case KHUB_REMOTE_VALUE_UP:
+                value = TITLE_KHUB_REMOTE_VALUE_UP;
                 break;
-            case POPSICAL_REMOTE_VALUE_LEFT:
-                value = TITLE_POPSICAL_REMOTE_VALUE_LEFT;
+            case KHUB_REMOTE_VALUE_LEFT:
+                value = TITLE_KHUB_REMOTE_VALUE_LEFT;
                 break;
-            case POPSICAL_REMOTE_VALUE_RIGHT:
-                value = TITLE_POPSICAL_REMOTE_VALUE_RIGHT;
+            case KHUB_REMOTE_VALUE_RIGHT:
+                value = TITLE_KHUB_REMOTE_VALUE_RIGHT;
                 break;
-            case POPSICAL_REMOTE_VALUE_OK:
-                value = TITLE_POPSICAL_REMOTE_VALUE_OK;
+            case KHUB_REMOTE_VALUE_OK:
+                value = TITLE_KHUB_REMOTE_VALUE_OK;
                 break;
-            case POPSICAL_REMOTE_VALUE_BACK:
-                value = TITLE_POPSICAL_REMOTE_VALUE_BACK;
+            case KHUB_REMOTE_VALUE_BACK:
+                value = TITLE_KHUB_REMOTE_VALUE_BACK;
                 break;
-            case POPSICAL_REMOTE_VALUE_RESET:
-                value = TITLE_POPSICAL_REMOTE_VALUE_RESET;
+            case KHUB_REMOTE_VALUE_RESET:
+                value = TITLE_KHUB_REMOTE_VALUE_RESET;
                 break;
             default:
                 return Common.EMPTY_STRING;

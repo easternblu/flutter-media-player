@@ -328,7 +328,7 @@ public interface EasternbluPathConstant {
     public static final String _ALGOLIA_ATTRIBUTE_BLOCK = _BLOCK;
 
 
-    public static final String _POPSICAL_SIMPLEDATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
+    public static final String _KHUB_SIMPLEDATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
 
     public static final String GENDER_MALE = "m";
     public static final String GENDER_FEMALE = "f";
