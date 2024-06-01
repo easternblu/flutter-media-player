@@ -42,15 +42,15 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
 
     init {
         MethodChannel(messenger, "tv.khub/LyricsMethodChannel_$id")
-                .setMethodCallHandler(this)
+            .setMethodCallHandler(this)
         context?.let { App.setContext(it) }
         initEasyPrefs()
         initTimber()
         CalligraphyConfig.initDefault(
-                CalligraphyConfig.Builder()
-                        .setDefaultFontPath(Views.APP_FONT_DEFAULT)
-                        .setFontAttrId(R.attr.fontPath)
-                        .build()
+            CalligraphyConfig.Builder()
+                .setDefaultFontPath(Views.APP_FONT_DEFAULT)
+                .setFontAttrId(R.attr.fontPath)
+                .build()
         )
         mView.setBackgroundColor(Color.TRANSPARENT)
     }
@@ -78,12 +78,11 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
         try {
 
             val debugLyricsRendering = Prefs.getBoolean(AppPrefs.PREFS_DEBUG_LYRICS_RENDERER, false)
-            val khubKaraokeLyricsStyle = KhubKaraokeLyricsStyle
-            khubKaraokeLyricsStyle(
-                    ctx,
-                    Views.loadTypeface(ctx, Views.COOLVETICA_REGULAR),
-                    Views.loadTypeface(ctx, Views.SHARP_STD_CLOUD_YUAN_CU_GBK)).setup(karaokeLyricsView, lines, debugLyricsRendering, getScreenSizeDp(
-                    resources
+            KhubKaraokeLyricsStyle(
+                ctx,
+                Views.loadTypeface(ctx, Views.COOLVETICA_REGULAR),
+                Views.loadTypeface(ctx, Views.SHARP_STD_CLOUD_YUAN_CU_GBK)).setup(karaokeLyricsView, lines, debugLyricsRendering, getScreenSizeDp(
+                resources
             ))
 
             karaokeLyricsView.isFuriganaEnabled = PrefsKt.lyricsFurigana
@@ -190,8 +189,8 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
     }
 
     override fun onSharedPreferenceChanged(
-            sharedPreferences: SharedPreferences?,
-            prefName: String
+        sharedPreferences: SharedPreferences?,
+        prefName: String
     ) {
         if (AppPrefs.SHARE_PREF_LISTENER_ENABLED) {
             Timber.d("onSharedPreferenceChanged: prefName = $prefName")
@@ -201,17 +200,17 @@ class LyricsView(context: Context?, id: Int, messenger: BinaryMessenger?) : Plat
 
     private fun initEasyPrefs() {
         Prefs.Builder()
-                .setContext(ctx)
-                .setMode(ContextWrapper.MODE_PRIVATE)
-                .setPrefsName(ctx?.packageName)
-                .setUseDefaultSharedPreference(true)
-                .build()
+            .setContext(ctx)
+            .setMode(ContextWrapper.MODE_PRIVATE)
+            .setPrefsName(ctx?.packageName)
+            .setUseDefaultSharedPreference(true)
+            .build()
         Prefs.getPreferences().registerOnSharedPreferenceChangeListener(this)
     }
 
     private fun initTimber() {
         Timber.plant(
-                Timber.DebugTree()
+            Timber.DebugTree()
         )
     }
 
