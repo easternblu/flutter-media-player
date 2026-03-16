@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class VideoEvent {
   VideoEvent({
-    @required this.eventType,
+    required this.eventType,
     this.buffered,
   });
 

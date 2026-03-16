@@ -22,7 +22,7 @@ class PluginLyrics extends StatelessWidget {
         if (onLyricsViewCreated == null) {
           return;
         }
-        onLyricsViewCreated!(new LyricsController._(viewId));
+        onLyricsViewCreated!(LyricsController._(viewId));
       },
       hitTestBehavior: PlatformViewHitTestBehavior.translucent,
       gestureRecognizers: const <Factory<OneSequenceGestureRecognizer>>{},
@@ -32,7 +32,7 @@ class PluginLyrics extends StatelessWidget {
 
 class LyricsController {
   LyricsController._(int? id)
-      : _channel = new MethodChannel('tv.khub/LyricsMethodChannel_$id');
+      : _channel = MethodChannel('tv.khub/LyricsMethodChannel_$id');
 
   MethodChannel? _channel;
 

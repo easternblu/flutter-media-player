@@ -12,7 +12,7 @@ class Video extends StatefulWidget {
 
   const Video({
     this.onViewCreated,
-    @required this.controller,
+    required this.controller,
   });
 
   @override
